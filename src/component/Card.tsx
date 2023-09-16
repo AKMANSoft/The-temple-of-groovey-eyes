@@ -16,8 +16,8 @@ type Props = {
 export default function Card({ heading, subheading, content, button, src,transbutton }: Props) {
     return (
         <div
-            className="flex flex-col bg-secondary rounded-[40px] w-[490px] h-auto  p-[10px]" >
-            <div className="w-[470px]  h-[320px]  overflow-hidden    rounded-t-[40px] flex items-center">
+            className="flex flex-col bg-secondary rounded-[40px] max-w-[490px] w-full h-auto  p-[10px]" >
+            <div className="max-w-[470px] w-full  h-[320px]  overflow-hidden    rounded-t-[40px] flex items-center">
                 <img
                     src={src}
                     width={470}

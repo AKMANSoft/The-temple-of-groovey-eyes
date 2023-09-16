@@ -17,6 +17,8 @@ export default {
         "star-image": "url(/images/star.png)",
         "pillar-image":"url(/images/pillar.png)",
         "ourteam-image":"url(/images/ourteam.png)",
+        "whitepaper-image":"url(/images/white-paper.png)",
+        "footer-image":"url(/images/footer.png)",
         "primary-image-mobile": "url(/images/theme-bg-mobile.png)",
       },
       backgroundPosition: {
@@ -24,12 +26,28 @@ export default {
         "star-image":"center",
         "pillar-image": "center",
         "ourteam-image": "center",
+        "whitepaper-image": "center",
+        "footer-image": "center",
       },
       backgroundSize: {
         "primary-image": "cover",
         "star-image": "cover",
         "pillar-image": "cover",
         "ourteam-image": "cover",
+        "whitepaper-image": "fill",
+        "footer-image": "cover",
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '1' },
+          '25%': { opacity: '0' },
+          '50%': { opacity: '1' },
+
+          '100%': { opacity: '1' },
+        },
+      },
+      animation: {
+        'fade-in': 'fadeIn 1s ease-in-out', // Use the keyframes animation with a duration of 1 second
       },
       fontFamily: {
         'Inter': "Inter",
