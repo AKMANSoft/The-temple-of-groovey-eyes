@@ -10,6 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "cn": "^0.1.1",
+    "lib": "^5.0.1",
+    "lib-utils-ts": "^2.0.4-stable",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.15.0",
