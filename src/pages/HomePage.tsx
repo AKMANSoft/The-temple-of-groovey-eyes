@@ -102,11 +102,10 @@ export default function HomePage() {
                 </div>
             </section>
             <section className="flex flex-col items-center justify-center bg-ourteam-image h-[772px] ">
-                <div className="max-w-[1000px] w-full ">
                     <p className="text-pink text-[60px] font-normal uppercase">
                         OUR TEAM
                     </p>
-                    <div>
+                    <div className="flex items-center justify-between gap-5 max-w-[1000px] w-full">
                         <TeamComponent
                             src={"/images/circle.png"}
                             heading="Mary Salen"
@@ -118,7 +117,6 @@ export default function HomePage() {
                         />
                     </div>
 
-                </div>
             </section>
         </div>
     )
