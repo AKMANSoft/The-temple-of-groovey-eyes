@@ -34,7 +34,7 @@ export default function HomePage() {
     return (
         <div className="bg-primary">
             <Header />
-            <section className="flex flex-col h-[560px] bg-primary-image-mobile bg-no-repeat lg:bg-primary-image  md:h-[1100px] lg:h-[1270px] items-center justify-center bg-black ">
+            <section className="flex flex-col h-[560px] bg-primary-image-mobile bg-no-repeat lg:bg-primary-image  md:h-[1100px] lg:h-[1270px] 2xl:h-[1650px] items-center justify-center bg-black ">
                 <div className="text-center h-[168px] flex relative w-[336px]">
                     {texts.map((text, index) => (
                         <p
