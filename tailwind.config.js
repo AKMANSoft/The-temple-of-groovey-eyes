@@ -40,16 +40,17 @@ export default {
         "primary-image-mobile": "cover",
       },
       keyframes: {
-        fadeIn: {
-          '0%': { opacity: '1' },
-          '25%': { opacity: '0' },
-          '50%': { opacity: '1' },
-
-          '100%': { opacity: '1' },
+        'zoom-out': {
+          '0%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(0)' },
+        },
+        'zoom-in': {
+          '50%': { transform: 'scale(0)' },
+          '100%': { transform: 'scale(1)' },
         },
       },
       animation: {
-        'fade-in': 'fadeIn 1s ease-in-out', // Use the keyframes animation with a duration of 1 second
+        'zoom-out-in': 'zoom-out 3s ease-in-out, zoom-in 3s ease-in-out 3s',
       },
       fontFamily: {
         'Inter': "Inter",

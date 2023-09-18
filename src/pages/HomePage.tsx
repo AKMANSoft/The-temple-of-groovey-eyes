@@ -25,11 +25,11 @@ export default function HomePage() {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setCurrentIndex((prevIndex) => (prevIndex + 1) % texts.length);
+          setCurrentIndex((prevIndex) => (prevIndex + 1) % texts.length);
         }, 2000); // Change text every 2 seconds (adjust as needed)
-
+    
         return () => clearInterval(interval);
-    }, []);
+      }, []);
     return (
         <div className="bg-primary">
             <header className="bg-black w-full  h-full ">
@@ -57,15 +57,15 @@ export default function HomePage() {
                     {texts.map((text, index) => (
                         <p
                             key={index}
-                            className={`text-secondary w-[180px] md:w-[336px]  md:leading-[56px] text-2xl md:text-[50px] left-[24%] md:left-0  font-normal uppercase absolute  top-[10%] 
-              ${currentIndex === index ? 'opacity-100 animate-fade-in delay-1000' : 'opacity-0'} transition-opacity`}
+                            className={`text-secondary w-[180px] md:w-[336px] md:leading-[56px] text-2xl md:text-[50px] left-[24%] md:left-0 font-normal uppercase absolute top-[10%] animate-zoom-out-in infinite ${currentIndex === index ? 'opacity-100' : 'opacity-0'
+                                } transition-opacity`}
                         >
                             {text}
                         </p>
                     ))}
                 </div>
 
-                <button className="text-lg font-normal text-secondary bg-primary px-10 py-5 uppercase rounded-[40px] mt-[111px]">
+                <button className="text-lg font-normal text-secondary bg-primary px-10 py-5 uppercase rounded-[40px] md:mt-[111px]">
                     Get Ordained Today
                 </button>
             </section>
@@ -189,6 +189,14 @@ export default function HomePage() {
 
                             ))
                         }
+
+                    </div>
+                    <div className="w-full flex flex-col items-center  text-center gap-5 lg:gap-10 max-w-[810px] px-5 mt-5 lg:mt-[30px]">
+                        <p className="text-sm lg:text-base text-white  font-normal font-Inter">
+                            Imagine sharing a beautiful celebration in real time, in a beautiful virtual space where guests from all over the world can gather and interact with one another, without travel expenses! We can make it happen!
+                            <br /><br />
+                            Groovy Eyes see groovy things. They look on love and see beauty, they look for truth and see equality. It’s time to embrace love and equality, here and now, as a way of thinking and a way of life! Inequality and hate have no place in the GroovyVerse. Here, all people, regardless of age, physical ability, or location can participate and be celebrated, honored as a beloved friends and equals. The Temple welcomes spiritual people, agnostics, and atheists alike. Our sincerely held belief is in the sacredness of our present power to do good, and the holy nature of our time spent on Earth dedicated to action in pursuit of equality.
+                        </p>
                     </div>
                     <p className="text-white text-base lg:text-xl font-normal mt-10 lg:mt-[60px]">
                         This is the dream. This is the new way.
@@ -305,6 +313,7 @@ export default function HomePage() {
                                 <span className="font-bold">-You get equality! </span> If we all do our part we can make it happen!
                             </>}
                         />
+
                     </div>
 
 
