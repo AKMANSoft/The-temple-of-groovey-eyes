@@ -45,12 +45,12 @@ export default {
           '100%': { transform: 'scale(0)' },
         },
         'zoom-in': {
-          '0%': { transform: 'scale(0)' },
+          '10%': { transform: 'scale(0)' },
           '100%': { transform: 'scale(1)' },
         },
         "scroll": {
           '0%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(calc(-250px * 2))' },
+          '100%': { transform: 'translateX(calc(-300px * 2))' },
         },
       },
       animation: {
