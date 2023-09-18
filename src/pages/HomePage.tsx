@@ -8,10 +8,27 @@ import {
     AccordionTrigger,
 } from "@/component/accordion"
 
-
+import { Carousel } from 'react-responsive-carousel';
 
 
 export default function HomePage() {
+    
+    const texts = [
+        "There's A New Religion In Town",
+        "WHERE ALL PEOPLE ARE CREATED EQUAL",
+        "AND YOUR NATURAL RIGHTS ARE SACRED",
+        "JOIN US!"
+    ];
+
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % texts.length);
+        }, 2000); // Change text every 2 seconds (adjust as needed)
+
+        return () => clearInterval(interval);
+    }, []);
     return (
         <div className="bg-primary">
             <header className="bg-black w-full ">
@@ -41,9 +58,17 @@ export default function HomePage() {
                     </button>
                 </nav>
             </header>
-            <section className="flex flex-col bg-primary-image h-[1276px] bg-black items-center justify-center gap-[111px] -mt-9">
-                <div className="">
-                    <Anim  />
+            <section className="flex flex-col bg-primary-image h-[1276px] bg-black items-center justify-center relative">
+                <div className="text-center  h-[168px]  flex  ">
+                    {texts.map((text, index) => (
+                        <p
+                            key={index}
+                            className={`text-secondary w-[336px]  text-[50px] font-normal uppercase absolute top-[28%] left-[38%]
+              ${currentIndex === index ? 'opacity-100 animate-fade-in delay-1000' : 'opacity-0'} transition-opacity`}
+                        >
+                            {text}
+                        </p>
+                    ))}
                 </div>
 
                 <button className="text-lg font-normal text-secondary bg-primary px-10 py-5 uppercase rounded-[40px]">
@@ -152,7 +177,7 @@ export default function HomePage() {
                     </div>
 
                 </div>
-                <div className="flex mt-[60px] gap-10 overflow-hidden items-center justify-center ">
+                <div className="flex mt-[60px] gap-10  items-center justify-center ">
                     <img src="/icons/surrender3.png" className="w-[512px] h-[512px] rounded-full aspect-square" />
                     <img src="/icons/surrender.png" className="w-[512px] h-[512px] rounded-full aspect-square" />
                     <img src="/icons/surrender2.png" className="w-[512px] h-[512px] rounded-full aspect-square" />
@@ -333,37 +358,7 @@ export default function HomePage() {
 }
 
 
-function Anim() {
-    const texts = [
-        "There's A New Religion In Town",
-        "WHERE ALL PEOPLE ARE CREATED EQUAL",
-        "AND YOUR NATURAL RIGHTS ARE SACRED",
-        "JOIN US!"
-    ];
 
-    const [currentIndex, setCurrentIndex] = useState(0);
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentIndex((prevIndex) => (prevIndex + 1) % texts.length);
-        }, 2000); // Change text every 2 seconds (adjust as needed)
-
-        return () => clearInterval(interval);
-    }, []);
-
-    return (
-        <div className="text-center relative ">
-            {texts.map((text, index) => (
-                <p
-                    key={index}
-                    className={`text-secondary text-4xl font-normal uppercase absolute top-0 left-0 opacity-${currentIndex === index ? '100' : '0'} animate-fade-in delay-2000 transition-opacity`}
-                >
-                    {text}
-                </p>
-            ))}
-        </div>
-    );
-}
 
 type ExpandableProps = {
     heading: string,
