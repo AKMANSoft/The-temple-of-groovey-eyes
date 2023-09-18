@@ -45,7 +45,7 @@ export default {
           '100%': { transform: 'scale(0)' },
         },
         'zoom-in': {
-          '50%': { transform: 'scale(0)' },
+          '0%': { transform: 'scale(0)' },
           '100%': { transform: 'scale(1)' },
         },
         "scroll": {
@@ -54,7 +54,7 @@ export default {
         },
       },
       animation: {
-        'zoom-out-in': 'zoom-out 4s ease-in-out infinite , zoom-in 3s ease-in-out infinite',
+        'zoom-out-in': 'zoom-out 2s ease-in-out infinite , zoom-in 3s ease-in-out infinite',
         "scroll": 'scroll 10s linear infinite',
 
       },
