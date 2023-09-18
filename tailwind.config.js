@@ -28,6 +28,7 @@ export default {
         "ourteam-image": "center",
         "whitepaper-image": "center",
         "footer-image": "center",
+        "primary-image-mobile":"center",
       },
       backgroundSize: {
         "primary-image": "cover",
@@ -36,6 +37,7 @@ export default {
         "ourteam-image": "cover",
         "whitepaper-image": "fill",
         "footer-image": "cover",
+        "primary-image-mobile": "cover",
       },
       keyframes: {
         fadeIn: {

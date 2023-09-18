@@ -7,7 +7,7 @@ type Props={
 export  function PrimaryButton({children ,className}:Props) {
     return (
         <>
-        <a href="" className={cn("text-lg font-normal text-secondary bg-primary px-[30px] py-[14px] uppercase rounded-[40px]",
+        <a href="" className={cn("text-sm lg:text-lg font-normal text-secondary bg-primary px-[30px] py-[14px] uppercase rounded-[40px] ",
         className
         )}>
             {children}

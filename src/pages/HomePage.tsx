@@ -7,12 +7,13 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from "@/component/accordion"
+import Slider from "@/component/Slider";
+import MenuBar from "@/component/MenuBar";
 
-import { Carousel } from 'react-responsive-carousel';
+
 
 
 export default function HomePage() {
-    
     const texts = [
         "There's A New Religion In Town",
         "WHERE ALL PEOPLE ARE CREATED EQUAL",
@@ -31,39 +32,32 @@ export default function HomePage() {
     }, []);
     return (
         <div className="bg-primary">
-            <header className="bg-black w-full ">
-                <nav className="flex justify-between items-center max-w-screen-xl mx-auto w-full pt-5">
+            <header className="bg-black w-full  h-full ">
+                <nav className="flex justify-between items-center max-w-screen-xl px-5 xl:px-0 xl:mx-auto w-full pt-5 ">
                     <a href="#">
-                        <img src="/images/logo.png" width={120} height={116} className="w-[120px] h-[116px]" />
+                        <img src="/images/logo.png" width={120} height={116} className="w-[60px] h-auto lg:w-[120px] lg:h-[116px]" />
                     </a>
-                    <div className="text-white text-base font-normal flex justify-between gap-[50px]">
-                        <a href="">
-                            Home
-                        </a>
-                        <a href="">
-                            Roadmap
-                        </a>
-                        <a href="">
-                            Shop
-                        </a>
-                        <a href="">
-                            FAQ
-                        </a>
-                        <a href="">
-                            GET ORDAINED
-                        </a>
+                    <div className="text-white text-base font-normal xl:flex justify-between gap-[50px]  hidden">
+                        <a href="/"> Home </a>
+                        <a href="#roadmap">Roadmap </a>
+                        <a href="">Shop</a>
+                        <a href="#faq">FAQ</a>
+                        <a href="">GET ORDAINED</a>
                     </div>
-                    <button className="text-lg font-normal text-primary bg-white px-[30px] py-[14px] uppercase rounded-[40px]">
+                    <button className="text-lg font-normal text-primary bg-white px-[30px] py-[14px] uppercase rounded-[40px] xl:block hidden">
                         Join Whitelist
                     </button>
+                    <MenuBar />
+
                 </nav>
+
             </header>
-            <section className="flex flex-col bg-primary-image h-[1276px] bg-black items-center justify-center relative">
-                <div className="text-center  h-[168px]  flex  ">
+            <section className="flex flex-col h-[560px] bg-primary-image-mobile bg-no-repeat lg:bg-primary-image  md:h-[1100px] lg:h-[1270px] items-center justify-center bg-black ">
+                <div className="text-center h-[168px] flex relative w-[336px]">
                     {texts.map((text, index) => (
                         <p
                             key={index}
-                            className={`text-secondary w-[336px]  text-[50px] font-normal uppercase absolute top-[28%] left-[38%]
+                            className={`text-secondary w-[180px] md:w-[336px]  md:leading-[56px] text-2xl md:text-[50px] left-[24%] md:left-0  font-normal uppercase absolute  top-[10%] 
               ${currentIndex === index ? 'opacity-100 animate-fade-in delay-1000' : 'opacity-0'} transition-opacity`}
                         >
                             {text}
@@ -71,39 +65,42 @@ export default function HomePage() {
                     ))}
                 </div>
 
-                <button className="text-lg font-normal text-secondary bg-primary px-10 py-5 uppercase rounded-[40px]">
+                <button className="text-lg font-normal text-secondary bg-primary px-10 py-5 uppercase rounded-[40px] mt-[111px]">
                     Get Ordained Today
                 </button>
             </section>
-            <section className="flex items-center justify-center bg-star-image  h-[1200px] -mt-[56px] ">
-                <div className="flex flex-col items-center justify-center rounded-full bg-secondary max-w-[1000px] w-full max-h-[522px] h-full">
-                    <p className="flex flex-col items-center justify-center text-primary font-normal uppercase">
-                        <span className="text-[30px]">
+            <section className="flex items-center justify-center bg-star-image  h-[1200px] -mt-[20px] lg:-mt-[56px] px-[12px] md:max-lg:px-4">
+                <div className="flex flex-col items-center text-center justify-center rounded-full bg-secondary max-w-[1000px] md:w-full lg:max-h-[522px] lg:h-full h-[773px] md:h-auto p-5 pt-[60px] pb-[88px] md:max-lg:p-20">
+                    <p className="flex flex-col items-center justify-center text-primary font-normal uppercase w-[201px] md:w-full">
+                        <span className="text-base lg:text-[30px] ">
                             Groovy Eyes hold this truth to be self-evident:
                         </span>
-                        <span className="text-[50px]">
+                        <span className="text-2xl lg:text-[50px] lg:mt-2 ">
                             “All people are created equal.”
                         </span>
                     </p>
                     <p className="text-sm font-normal text-primary/70 max-w-[760px] w-full text-center font-Inter  mt-5 ">
                         The Temple of the Groovy Eye is a non-profit art and science-based religious institution registered in the Commonwealth of Pennsylvania, that relies on science to lead to fundamental truth and art to express it. Founded by artists, activists, and philosophers, the Temple is a place where spiritual people and atheists alike can come together and proclaim that: <span className="font-black">here is a holy place to be.</span> It is a place to meet; share ideas, art, and writing; learn about one another and form a more perfect union as we stand together to raise our voices in power, for equality of all people. And as an ordained member of the Temple of the Groovy Eye, you have both the moral authority to join people together in love and the legal authority to officiate marriage ceremonies that declare it so.
                     </p>
-                    <button className="text-lg font-normal text-secondary bg-primary px-[30px] py-[14px] uppercase rounded-[40px] mt-10">
-                        Get Ordained Today
-                    </button>
+                    <div className="mt-5 md:mt-10">
+                        <PrimaryButton className="text-sm lg:text-lg font-normal uppercase rounded-[40px] ">
+                            Get Ordained Today
+                        </PrimaryButton>
+                    </div>
+
 
                 </div>
 
             </section>
-            <section className="flex  items-center justify-center bg-pillar-image h-[1113px]">
-                <div className="max-w-[1000px] w-full text-center">
-                    <p className="text-white text-[60px] font-normal uppercase">
+            <section className="flex  items-center justify-center bg-pillar-image lg:h-[1113px]">
+                <div className="max-w-[1000px] w-full text-center pt-[53px] pb-[65px] lg:pt-0 lg:pb-0 px-4">
+                    <p className="text-white text-[26px] lg:text-[60px] font-normal uppercase">
                         THE PILLARS of the temple
                     </p>
-                    <p className="text-base font-normal font-Inter text-white mt-[10px] max-w-[904px] w-full">
+                    <p className="text-sm lg:text-base font-normal font-Inter text-white mt-[10px] max-w-[904px] w-full">
                         The Pillars are built on the bedrock of the science of creation and represent the stages of our unfolding philosophy. Our NFTs are designed to tell this story, each Pillar with its own unique style and message. We begin here with the first two Founding Pillars. Get ordained into one of these two and be the very first of the Groovy Eyes!
                     </p>
-                    <div className="mt-10 flex gap-5">
+                    <div className="mt-5 lg:mt-10 flex lg:flex-row flex-col items-center gap-5">
                         <Card
                             src={"/images/piller-of-beginning.png"}
                             heading="THE PILLAR OF THE BEGINNING"
@@ -134,11 +131,11 @@ export default function HomePage() {
                     </div>
                 </div>
             </section>
-            <section className="flex flex-col items-center justify-center bg-ourteam-image h-[772px] ">
-                <p className="text-pink text-[60px] font-normal uppercase">
+            <section className="flex flex-col items-center justify-center bg-ourteam-image lg:h-[772px] pb-[138px] lg:pb-0 ">
+                <p className="text-pink text-[26px] md:text-[60px] font-normal uppercase mt-[63px] lg:mt-0">
                     OUR TEAM
                 </p>
-                <div className="flex items-center justify-between gap-5 max-w-[1000px] w-full">
+                <div className="flex  lg:flex-row flex-col items-center justify-between gap-5 max-w-[1000px] w-full mt-[18px] md:mt-0">
                     <TeamComponent
                         src={"/images/circle.png"}
                         heading="Mary Salen"
@@ -161,32 +158,28 @@ export default function HomePage() {
                 </div>
 
             </section>
-            <section className="h-[3774px] bg-whitepaper-image bg-primary flex flex-col items-center  ">
+            <section className="h-[3774px]  bg-whitepaper-image bg-primary flex flex-col items-center px-5 lg:px-0">
 
-                <div className="flex flex-col items-center text-center max-w-[1000px] w-full px-[120px] py-[60px] bg-black/60 backdrop-blur-[10px]  rounded-[80px] mt-[100px]">
-                    <p className="text-pink text-[60px] font-normal uppercase ">
+                <div className="flex flex-col items-center text-center max-w-[1000px] w-full lg:px-[120px] py-[60px] bg-black/60 backdrop-blur-[10px] rounded-[30px]  lg:rounded-[80px] mt-[60px]  lg:mt-[100px] px-4">
+                    <p className="text-pink text-[26px] lg:text-[60px] font-normal uppercase ">
                         WHITEPAPER
                     </p>
-                    <p className="font-Inter font-normal text-base text-white/60 mt-5 ">
+                    <p className="font-Inter font-normal text-sm lg:text-base text-white/60 mt-[10px] lg:mt-5 ">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
                     </p>
-                    <div className="mt-[43px]">
+                    <div className="mt-[30px] lg:mt-[43px]">
                         <PrimaryButton className="bg-pink text-white">
                             DOWNLOAD WHITEPAPER
                         </PrimaryButton>
                     </div>
 
                 </div>
-                <div className="flex mt-[60px] gap-10  items-center justify-center ">
-                    <img src="/icons/surrender3.png" className="w-[512px] h-[512px] rounded-full aspect-square" />
-                    <img src="/icons/surrender.png" className="w-[512px] h-[512px] rounded-full aspect-square" />
-                    <img src="/icons/surrender2.png" className="w-[512px] h-[512px] rounded-full aspect-square" />
-                    <img src="/icons/surrender.png" className="w-[512px] h-[512px] rounded-full aspect-square" />
-
+                <div className="">
+                    <Slider />
                 </div>
 
-                <div className="flex flex-col items-center pb-[80px] pt-[60px] mt-[60px] bg-black/60 max-w-[1000px] w-full backdrop-blur-[10px] rounded-[80px] ">
-                    <p className="text-pink text-[60px] uppercase font-normal">
+                <div className="flex flex-col items-center pb-[83px] md:pb-[80px] pt-[60px] mt-[60px] bg-black/60 max-w-[1000px] w-full backdrop-blur-[10px] rounded-[30px] lg:rounded-[80px] " id="roadmap">
+                    <p className="text-pink text-[26px] lg:text-[60px] uppercase font-normal">
                         ROADMAP
                     </p>
                     <div className="flex flex-col gap-[30px]">
@@ -197,20 +190,20 @@ export default function HomePage() {
                             ))
                         }
                     </div>
-                    <p className="text-white text-xl font-normal mt-[60px]">
+                    <p className="text-white text-base lg:text-xl font-normal mt-10 lg:mt-[60px]">
                         This is the dream. This is the new way.
                     </p>
-                    <a href="#" className="mt-[54px]">
+                    <a href="#" className="mt-[30px] lg:mt-[54px]">
                         <PrimaryButton className="bg-pink text-white">
                             JOIN WHITELIST
                         </PrimaryButton>
                     </a>
                 </div>
-                <div className="flex flex-col items-center pb-[100px] pt-[60px] mt-[60px] bg-black/60 max-w-[1000px] w-full backdrop-blur-[10px] rounded-[80px] ">
+                <div id="faq" className=" flex flex-col items-center pb-10 lg:pb-[100px] pt-[60px] mt-[60px] bg-black/60 max-w-[1000px] w-full backdrop-blur-[10px] rounded-[30px] lg:rounded-[80px] ">
                     <p className="text-pink text-[60px] uppercase font-normal">
                         FAQs
                     </p>
-                    <div className="space-y-[10px]">
+                    <div className="space-y-[10px] px-[22px]">
                         <Expandable
                             heading=" What does Groovy Eye mean?"
                             content={<>
@@ -322,20 +315,18 @@ export default function HomePage() {
 
 
             </section>
-            <div className="h-[120px] bg-primary">
 
-            </div>
 
-            <footer className="bg-footer-image h-[838px] flex flex-col items-center justify-center ">
+            <footer className="bg-footer-image h-[960px] flex flex-col items-center justify-center ">
                 <a href="" className="bg-white rounded-full mt-[170px]">
-                    <img src="/images/logo.png" alt="" className="w-[160px] h-[157px]" />
+                    <img src="/images/logo.png" alt="" className="w-[160px] h-[155px] md:h-[157px]" />
                 </a>
-                <a href="" className="mt-[30px]">
+                <a href="" className="mt-[46px] md:mt-[30px]">
                     <PrimaryButton className="text-white bg-pink">
                         JOIN WHITELIST
                     </PrimaryButton>
                 </a>
-                <nav className="flex  items-center gap-5 mt-[34px]">
+                <nav className="flex  items-center gap-5  mt-[30px] md:mt-[34px]">
                     <a href="">
                         <img src="/svg/soundcloud.svg" alt="" />
                     </a>
@@ -376,7 +367,7 @@ function Expandable({ heading, content }: ExpandableProps) {
     return (
         <>
             <Accordion type="single" className="" collapsible>
-                <AccordionItem value="item-1" className=" py-[22px] px-6 bg-white/20">
+                <AccordionItem value="item-1" className="p-[30px]  py-[14px]  md:py-[22px] md:px-6 bg-white/20">
                     <AccordionTrigger className="" onClick={fontbold}>
                         <span style={headingStyle}>{heading}</span>
                     </AccordionTrigger>
@@ -433,11 +424,7 @@ const RoadMap = [
             </span>
         </p>
     },
-    {
-        heading: "", content: <p className="font-Inter">Imagine sharing a beautiful celebration in real time, in a beautiful virtual space where guests from all over the world can gather and interact with one another, without travel expenses! We can make it happen!
-            <br /><br />
-            Groovy Eyes see groovy things. They look on love and see beauty, they look for truth and see equality. It’s time to embrace love and equality, here and now, as a way of thinking and a way of life! Inequality and hate have no place in the GroovyVerse. Here, all people, regardless of age, physical ability, or location can participate and be celebrated, honored as a beloved friends and equals. The Temple welcomes spiritual people, agnostics, and atheists alike. Our sincerely held belief is in the sacredness of our present power to do good, and the holy nature of our time spent on Earth dedicated to action in pursuit of equality.</p>
-    }
+
 ]
 
 type RoadMap = {
@@ -453,11 +440,11 @@ type RoadMapListItemProps = {
 
 function RoadMapListItem({ RoadMap }: RoadMapListItemProps) {
     return (
-        <div className="w-full flex flex-col items-center  text-center gap-10 max-w-[810px]">
-            <p className="text-base text-white  font-normal">
+        <div className="w-full flex flex-col items-center  text-center gap-5 lg:gap-10 max-w-[810px] px-5">
+            <p className="text-sm lg:text-base text-white  font-normal">
                 {RoadMap.content}
             </p>
-            <p className="bg-secondary rounded-[60px] max-w-[800px] w-full text-primary h-[65px] flex items-center justify-center">
+            <p className="bg-secondary  text-sm lg:text-xl rounded-[40px] lg:rounded-[60px] max-w-[800px] w-full text-primary h-auto lg:h-[65px] flex items-center justify-center px-8 py-3">
                 {RoadMap.heading}
             </p>
         </div>
@@ -481,12 +468,12 @@ type TeamComponentProps = {
 function TeamComponent({ src, heading, content }: TeamComponentProps) {
     return (
         <>
-            <div className="flex flex-col w-[490px] h-[486px] p-10 pt-[30px] items-center  text-center rounded-[40px] bg-pink">
+            <div className="flex  flex-col w-[325px] h-auto md:w-[490px] md:h-[486px] px-[22px] pb-[33px] pt-10 md:p-10 md:pt-[30px] items-center  text-center rounded-[40px] bg-pink">
                 <img src={src} alt="" className="w-[199px] h-[200px] rounded-full text-white" />
-                <p className="mt-5 text-white text-[32px] font-normal">
+                <p className="mt-5 text-white text-xl md:text-[32px] font-normal">
                     {heading}
                 </p>
-                <p className="font-Inter font-normal text-white/80 text-sm mt-[11px]">
+                <p className="font-Inter font-normal text-white/80 text-sm mt-[11px] md:mt-[11px]">
                     {content}
                 </p>
 

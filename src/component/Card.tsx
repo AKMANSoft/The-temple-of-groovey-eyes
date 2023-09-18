@@ -25,23 +25,23 @@ export default function Card({ heading, subheading, content, button, src,transbu
                 />
 
             </div>
-            <div className="px-[10px] py-5 flex flex-col justify-between text-start gap-[72px]">
+            <div className="md:px-[10px] py-5 flex flex-col justify-between text-start gap-5 md:gap-[72px]">
                 <div className="">
-                    <p className="font-normal text-3xl text-primary uppercase">
+                    <p className="font-normal text-xl md:text-3xl text-primary uppercase">
                         {heading}
                     </p>
-                    <p className="text-base font-Inter font-bold text-primary pt-[2px] w-full max-w-[411px]">
+                    <p className="text-xs md:text-base font-Inter font-bold text-primary pt-[2px] w-full max-w-[411px]">
                         {subheading}
                     </p>
                     <p className="font-Inter  text-sm font-normal pt-4 text-primary/70">
                         {content}
                     </p>
                 </div>
-                <div className="flex gap-[34px] items-center ">
-                    <p className="text-lg font-normal text-secondary bg-primary px-[30px] w-[295px] py-[14px]  rounded-[40px] uppercase text-center">
+                <div className="flex md:flex-row flex-col gap-5 md:gap-[34px] items-center ">
+                    <p className="text-sm md:text-lg font-normal text-secondary bg-primary px-[30px] md:w-[295px] w-full py-[14px]  rounded-[40px] uppercase text-center">
                         {button}
                     </p>
-                    <p className="text-lg text-primary font-normal uppercase ">
+                    <p className="text-sm md:text-lg text-primary font-normal uppercase">
                         {transbutton}
                     </p>
 
