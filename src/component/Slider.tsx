@@ -23,7 +23,7 @@ function Slider() {
       <div
         className="flex gap-10 w-full"
         style={{
-          animation: `slide-${currentIndex} 3s linear infinite`,
+          animation: `slide-${currentIndex} 6s linear infinite`,
         }}
       >
         {images.map((image, index) => (

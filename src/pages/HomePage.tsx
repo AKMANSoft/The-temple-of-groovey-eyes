@@ -9,6 +9,8 @@ import {
 } from "@/component/accordion"
 import Slider from "@/component/Slider";
 import MenuBar from "@/component/MenuBar";
+import Footer from "@/component/Footer";
+import Header from "@/component/Header";
 
 
 
@@ -25,39 +27,20 @@ export default function HomePage() {
 
     useEffect(() => {
         const interval = setInterval(() => {
-          setCurrentIndex((prevIndex) => (prevIndex + 1) % texts.length);
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % texts.length);
         }, 2000); // Change text every 2 seconds (adjust as needed)
-    
+
         return () => clearInterval(interval);
-      }, []);
+    }, []);
     return (
         <div className="bg-primary">
-            <header className="bg-black w-full  h-full ">
-                <nav className="flex justify-between items-center max-w-screen-xl px-5 xl:px-0 xl:mx-auto w-full pt-5 ">
-                    <a href="#">
-                        <img src="/images/logo.png" width={120} height={116} className="w-[60px] h-auto lg:w-[120px] lg:h-[116px]" />
-                    </a>
-                    <div className="text-white text-base font-normal xl:flex justify-between gap-[50px]  hidden">
-                        <a href="/"> Home </a>
-                        <a href="#roadmap">Roadmap </a>
-                        <a href="">Shop</a>
-                        <a href="#faq">FAQ</a>
-                        <a href="">GET ORDAINED</a>
-                    </div>
-                    <button className="text-lg font-normal text-primary bg-white px-[30px] py-[14px] uppercase rounded-[40px] xl:block hidden">
-                        Join Whitelist
-                    </button>
-                    <MenuBar />
-
-                </nav>
-
-            </header>
+            <Header />
             <section className="flex flex-col h-[560px] bg-primary-image-mobile bg-no-repeat lg:bg-primary-image  md:h-[1100px] lg:h-[1270px] items-center justify-center bg-black ">
                 <div className="text-center h-[168px] flex relative w-[336px]">
                     {texts.map((text, index) => (
                         <p
                             key={index}
-                            className={`text-secondary w-[180px] md:w-[336px] md:leading-[56px] text-2xl md:text-[50px] left-[24%] md:left-0 font-normal uppercase absolute top-[10%] animate-zoom-out-in infinite ${currentIndex === index ? 'opacity-100' : 'opacity-0'
+                            className={`text-secondary w-[180px] md:w-[336px] md:leading-[56px] text-2xl md:text-[50px] left-[24%] md:left-0 font-normal uppercase absolute top-[10%] animate-zoom-out-in  ${currentIndex === index ? 'opacity-100' : 'opacity-0'
                                 } transition-opacity`}
                         >
                             {text}
@@ -158,7 +141,7 @@ export default function HomePage() {
                 </div>
 
             </section>
-            <section className="h-[3774px]  bg-whitepaper-image bg-primary flex flex-col items-center px-5 lg:px-0">
+            <section className="h-[4300px] lg:h-auto  bg-whitepaper-image bg-primary flex flex-col items-center px-5 lg:px-0">
 
                 <div className="flex flex-col items-center text-center max-w-[1000px] w-full lg:px-[120px] py-[60px] bg-black/60 backdrop-blur-[10px] rounded-[30px]  lg:rounded-[80px] mt-[60px]  lg:mt-[100px] px-4">
                     <p className="text-pink text-[26px] lg:text-[60px] font-normal uppercase ">
@@ -326,33 +309,7 @@ export default function HomePage() {
             </section>
 
 
-            <footer className="bg-footer-image h-[960px] flex flex-col items-center justify-center ">
-                <a href="" className="bg-white rounded-full mt-[170px]">
-                    <img src="/images/logo.png" alt="" className="w-[160px] h-[155px] md:h-[157px]" />
-                </a>
-                <a href="" className="mt-[46px] md:mt-[30px]">
-                    <PrimaryButton className="text-white bg-pink">
-                        JOIN WHITELIST
-                    </PrimaryButton>
-                </a>
-                <nav className="flex  items-center gap-5  mt-[30px] md:mt-[34px]">
-                    <a href="">
-                        <img src="/svg/soundcloud.svg" alt="" />
-                    </a>
-                    <a href="">
-                        <img src="/svg/twitter.svg" alt="" />
-                    </a>
-                    <a href="">
-                        <img src="/svg/insta.svg" alt="" />
-                    </a>
-                    <a href="">
-                        <img src="/svg/facebook.svg" alt="" />
-                    </a>
-                    <a href="">
-                        <img src="/svg/telegram.svg" alt="" />
-                    </a>
-                </nav>
-            </footer>
+            <Footer />
         </div>
     )
 }
@@ -375,7 +332,7 @@ function Expandable({ heading, content }: ExpandableProps) {
 
     return (
         <>
-            <Accordion type="single" className="" collapsible>
+            <Accordion type="single"  collapsible>
                 <AccordionItem value="item-1" className="p-[30px]  py-[14px]  md:py-[22px] md:px-6 bg-white/20">
                     <AccordionTrigger className="" onClick={fontbold}>
                         <span style={headingStyle}>{heading}</span>
