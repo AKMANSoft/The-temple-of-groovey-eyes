@@ -8,7 +8,6 @@ import {
     AccordionTrigger,
 } from "@/component/accordion"
 import Slider from "@/component/Slider";
-import MenuBar from "@/component/MenuBar";
 import Footer from "@/component/Footer";
 import Header from "@/component/Header";
 
@@ -28,7 +27,7 @@ export default function HomePage() {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % texts.length);
-        }, 2000); // Change text every 2 seconds (adjust as needed)
+        }, 3000); // Change text every 2 seconds (adjust as needed)
 
         return () => clearInterval(interval);
     }, []);
@@ -40,7 +39,7 @@ export default function HomePage() {
                     {texts.map((text, index) => (
                         <p
                             key={index}
-                            className={`text-secondary w-[180px] md:w-[336px] md:leading-[56px] text-2xl md:text-[50px] left-[24%] md:left-0 font-normal uppercase absolute top-[10%] animate-zoom-out-in  ${currentIndex === index ? 'opacity-100' : 'opacity-0'
+                            className={`text-secondary  w-[180px] md:w-[336px] md:leading-[56px] text-2xl md:text-[50px] left-[24%] md:left-0 font-normal uppercase absolute top-[10%] animate-zoom-out-in  ${currentIndex === index ? 'opacity-100' : 'opacity-0'
                                 } transition-opacity`}
                         >
                             {text}
@@ -141,7 +140,7 @@ export default function HomePage() {
                 </div>
 
             </section>
-            <section className="h-[4300px] lg:h-auto  bg-whitepaper-image bg-primary flex flex-col items-center px-5 lg:px-0">
+            <section className="h-[4300px]   bg-whitepaper-image bg-primary flex flex-col items-center px-5 lg:px-0">
 
                 <div className="flex flex-col items-center text-center max-w-[1000px] w-full lg:px-[120px] py-[60px] bg-black/60 backdrop-blur-[10px] rounded-[30px]  lg:rounded-[80px] mt-[60px]  lg:mt-[100px] px-4">
                     <p className="text-pink text-[26px] lg:text-[60px] font-normal uppercase ">
@@ -190,7 +189,7 @@ export default function HomePage() {
                         </PrimaryButton>
                     </a>
                 </div>
-                <div id="faq" className=" flex flex-col items-center pb-10 lg:pb-[100px] pt-[60px] mt-[60px] bg-black/60 max-w-[1000px] w-full backdrop-blur-[10px] rounded-[30px] lg:rounded-[80px] ">
+                <div id="faq" className="h-full flex flex-col items-center pb-10 lg:pb-[100px] pt-[60px] mt-[60px] bg-black/60 max-w-[1000px] w-full backdrop-blur-[10px] rounded-[30px] lg:rounded-[80px] ">
                     <p className="text-pink text-[60px] uppercase font-normal">
                         FAQs
                     </p>

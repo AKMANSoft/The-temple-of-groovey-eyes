@@ -41,16 +41,22 @@ export default {
       },
       keyframes: {
         'zoom-out': {
-          '0%': { transform: 'scale(1)' },
-          '50%': { transform: 'scale(0)' },
+          '50%': { transform: 'scale(1)' },
+          '100%': { transform: 'scale(0)' },
         },
         'zoom-in': {
           '50%': { transform: 'scale(0)' },
           '100%': { transform: 'scale(1)' },
         },
+        "scroll": {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(calc(-250px * 2))' },
+        },
       },
       animation: {
-        'zoom-out-in': 'zoom-out 3s ease-in-out, zoom-in 3s ease-in-out 3s',
+        'zoom-out-in': 'zoom-out 4s ease-in-out infinite , zoom-in 3s ease-in-out infinite',
+        "scroll": 'scroll 10s linear infinite',
+
       },
       fontFamily: {
         'Inter': "Inter",
