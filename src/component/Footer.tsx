@@ -5,7 +5,7 @@ export default function Footer(){
         <>
          <footer className="bg-footer-image h-[800px] lg:h-[960px]  flex flex-col items-center justify-center ">
                 <a href="" className="bg-white rounded-full mt-[170px]">
-                    <img src="/images/logo.png" alt="" className="w-[160px] h-[155px] md:h-[157px]" />
+                    <img src="/images/logo.svg" alt="" className="w-[160px] h-[155px] md:h-[157px]" />
                 </a>
                 <a href="" className="mt-[46px] md:mt-[30px]">
                     <PrimaryButton className="text-white bg-pink">
