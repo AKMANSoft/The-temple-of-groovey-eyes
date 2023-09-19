@@ -39,7 +39,7 @@ export default function HomePage() {
                     {texts.map((text, index) => (
                         <p
                             key={index}
-                            className={`text-secondary  w-[180px] md:w-[336px] md:leading-[56px] text-2xl md:text-[50px] left-[24%] md:left-0 font-normal uppercase absolute top-[10%] animate-zoom-out-in  ${currentIndex === index ? 'opacity-100' : 'opacity-0'
+                            className={` md:text-[50px] text-secondary  w-[180px] md:w-[336px] md:leading-[56px] text-2xl left-[24%] md:left-0 font-normal uppercase absolute top-[10%] animate-zoom-out-in  ${currentIndex === index ? 'opacity-100' : 'opacity-0'
                                 } transition-opacity`}
                         >
                             {text}
@@ -82,7 +82,7 @@ export default function HomePage() {
                     <p className="text-sm lg:text-base font-normal font-Inter text-white mt-[10px] max-w-[904px] w-full">
                         The Pillars are built on the bedrock of the science of creation and represent the stages of our unfolding philosophy. Our NFTs are designed to tell this story, each Pillar with its own unique style and message. We begin here with the first two Founding Pillars. Get ordained into one of these two and be the very first of the Groovy Eyes!
                     </p>
-                    <div className="mt-5 lg:mt-10 flex lg:flex-row flex-col items-center gap-5">
+                    <div className="flex flex-col items-center gap-5 mt-5 lg:mt-10 lg:flex-row">
                         <Card
                             src={"/images/piller-of-beginning.png"}
                             heading="THE PILLAR OF THE BEGINNING"
@@ -150,7 +150,7 @@ export default function HomePage() {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
                     </p>
                     <div className="mt-[30px] lg:mt-[43px]">
-                        <PrimaryButton className="bg-pink text-white">
+                        <PrimaryButton className="text-white bg-pink">
                             DOWNLOAD WHITEPAPER
                         </PrimaryButton>
                     </div>
@@ -174,7 +174,7 @@ export default function HomePage() {
 
                     </div>
                     <div className="w-full flex flex-col items-center  text-center gap-5 lg:gap-10 max-w-[810px] px-5 mt-5 lg:mt-[30px]">
-                        <p className="text-sm lg:text-base text-white  font-normal font-Inter">
+                        <p className="text-sm font-normal text-white lg:text-base font-Inter">
                             Imagine sharing a beautiful celebration in real time, in a beautiful virtual space where guests from all over the world can gather and interact with one another, without travel expenses! We can make it happen!
                             <br /><br />
                             Groovy Eyes see groovy things. They look on love and see beauty, they look for truth and see equality. It’s time to embrace love and equality, here and now, as a way of thinking and a way of life! Inequality and hate have no place in the GroovyVerse. Here, all people, regardless of age, physical ability, or location can participate and be celebrated, honored as a beloved friends and equals. The Temple welcomes spiritual people, agnostics, and atheists alike. Our sincerely held belief is in the sacredness of our present power to do good, and the holy nature of our time spent on Earth dedicated to action in pursuit of equality.
@@ -184,7 +184,7 @@ export default function HomePage() {
                         This is the dream. This is the new way.
                     </p>
                     <a href="#" className="mt-[30px] lg:mt-[54px]">
-                        <PrimaryButton className="bg-pink text-white">
+                        <PrimaryButton className="text-white bg-pink">
                             JOIN WHITELIST
                         </PrimaryButton>
                     </a>
@@ -331,7 +331,7 @@ function Expandable({ heading, content }: ExpandableProps) {
 
     return (
         <>
-            <Accordion type="single"  collapsible>
+            <Accordion type="single" collapsible>
                 <AccordionItem value="item-1" className="p-[30px]  py-[14px]  md:py-[22px] md:px-6 bg-white/20">
                     <AccordionTrigger className="" onClick={fontbold}>
                         <span style={headingStyle}>{heading}</span>
@@ -406,7 +406,7 @@ type RoadMapListItemProps = {
 function RoadMapListItem({ RoadMap }: RoadMapListItemProps) {
     return (
         <div className="w-full flex flex-col items-center  text-center gap-5 lg:gap-10 max-w-[810px] px-5">
-            <p className="text-sm lg:text-base text-white  font-normal">
+            <p className="text-sm font-normal text-white lg:text-base">
                 {RoadMap.content}
             </p>
             <p className="bg-secondary  text-sm lg:text-xl rounded-[40px] lg:rounded-[60px] max-w-[800px] w-full text-primary h-auto lg:h-[65px] flex items-center justify-center px-8 py-3">

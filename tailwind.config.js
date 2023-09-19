@@ -18,7 +18,7 @@ export default {
         "pillar-image":"url(/images/pillar.png)",
         "ourteam-image":"url(/images/ourteam.png)",
         "whitepaper-image":"url(/images/white-paper.png)",
-        "footer-image":"url(/images/footer.png)",
+        "footer-image":"url(/images/footer.jpg)",
         "primary-image-mobile": "url(/images/theme-bg-mobile.png)",
       },
       backgroundPosition: {
