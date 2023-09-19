@@ -1,27 +1,24 @@
 import { PrimaryButton } from "@/component/ui/Button";
 import Card from "@/component/ui/Card";
-import React, { useEffect, useState } from "react";
-import {
-    Accordion,
-    AccordionContent,
-    AccordionItem,
-    AccordionTrigger,
-} from "@/component/ui/Accordion"
+import  { useEffect, useState } from "react";
+
 import Slider from "@/component/Slider";
 import Footer from "@/component/Footer";
 import Header from "@/component/Header";
+import FAQExpandable from "./_FAQExpandable";
+import { cn } from "@/lib/utils";
+import RoadMapListItem from "./_RoadMapListItem";
+import TeamComponent from "./_TeamComponent";
 
 
-
+const texts = [
+    "There's A New Religion In Town",
+    "WHERE ALL PEOPLE ARE CREATED EQUAL",
+    "AND YOUR NATURAL RIGHTS ARE SACRED",
+    "JOIN US!"
+] as const
 
 export default function Page() {
-    const texts = [
-        "There's A New Religion In Town",
-        "WHERE ALL PEOPLE ARE CREATED EQUAL",
-        "AND YOUR NATURAL RIGHTS ARE SACRED",
-        "JOIN US!"
-    ];
-
     const [currentIndex, setCurrentIndex] = useState(0);
 
     useEffect(() => {
@@ -31,20 +28,22 @@ export default function Page() {
 
         return () => clearInterval(interval);
     }, []);
+
     return (
         <div className="bg-primary">
             <Header />
             <section className="flex flex-col h-[560px] bg-primary-image-mobile bg-no-repeat lg:bg-primary-image  md:h-[1100px] lg:h-[1270px] 2xl:h-[1650px] items-center justify-center bg-black ">
-                <div className="text-center h-[168px] flex relative w-[336px]">
-                    {texts.map((text, index) => (
+                <div className="text-center h-[168px] flex relative w-[336px] items-center justify-center">
+                    {
                         <p
-                            key={index}
-                            className={` md:text-[50px] text-secondary  w-[180px] md:w-[336px] md:leading-[56px] text-2xl left-[24%] md:left-0 font-normal uppercase absolute top-[10%] animate-zoom-out-in  ${currentIndex === index ? 'opacity-100' : 'opacity-0'
-                                } transition-opacity`}
+                            className={cn(
+                                `md:text-[50px] text-secondary w-[180px] md:w-[336px] md:leading-[56px]`,
+                                "text-2xl left-[24%] md:left-0 font-normal uppercase animate-zoom-out-in transition-opacity"
+                            )}
                         >
-                            {text}
+                            {texts[currentIndex]}
                         </p>
-                    ))}
+                    }
                 </div>
 
                 <button className="text-lg font-normal text-secondary bg-primary px-10 py-5 uppercase rounded-[40px] md:mt-[111px]">
@@ -194,37 +193,37 @@ export default function Page() {
                         FAQs
                     </p>
                     <div className="space-y-[10px] px-[22px]">
-                        <Expandable
+                        <FAQExpandable
                             heading=" What does Groovy Eye mean?"
                             content={<>
                                 We perceive one another from an interior place, from the core belief system there tells our eyes how to regard the things they see. Too many people look upon expressions of love and see ugliness, sin, and disgust. Too many people look upon women’s bodies and see shamefulness. Too many people look upon people of different races or physical abilities and see lesser people. These are unnatural ways of seeing. We know love is always beautiful, women’s bodies are not shameful, and biological differences don’t make anyone less. The problem, therefore, must be in their eyes.<br />
                                 To be a Groovy Eye, all you have to do is look a bit deeper, below the surface, where inherent commonality of humanity resides, and the job is done. You’ve found your people! Welcome to the Temple of the Groovy Eye! Welcome home.</>}
                         />
-                        <Expandable
+                        <FAQExpandable
                             heading="How did you come up with the idea for your art?"
                             content={<>
                                 The first two series of art I’ve created for the Temple NFTs – “Creation” and “The Wave” – tell a new kind of science-based creation story depicting a singular explosive event from which all biological life, all races and genders, originate equally––the simple truth from which every person’s natural rights are derived and guaranteed. As a lifelong feminist, I put the female form in the center to reclaim her rightful place in the act and process of creation. Each image is a single-capture photograph, not digitally or AI created art. Photography is art using a scientific instrument that allows you to “paint” with electromagnetic radiation. What a turn on! Each and every photo was set up and taken using proprietary lighting systems and really trippy studio designs. I created this art for you, and I hope you love it.</>}
                         />
-                        <Expandable
+                        <FAQExpandable
                             heading="What does that mean to be ordained?"
                             content={<>
                                 As a religious institution, The Temple of the Groovy Eye ordains like-minded individuals, or “Groovy Eyes,” who are our clergy. Once ordained, you will have the full legal status required to officiate marriages in the name of the Temple of the Groovy Eye. You get real credentials and can officiate real, legally binding marriages––as well as all other life celebrations, in exactly the same way as any other priest or minister.
                             </>}
                         />
-                        <Expandable
+                        <FAQExpandable
                             heading="Is the Temple of the Groovy Eye legally able to ordain individuals?"
                             content={<>
                                 Yes! We are registered in the Commonwealth of Pennsylvania as a <span className="font-bold">non-profit</span> religious institution, and as such, individuals ordained by the Temple are recognized in all 50 states!Please check with your local jurisdiction to be sure that no additional paperwork or confirmation is required. Letters of good standing from the Temple are not generally required but are available upon request to ordained members for a nominal fee.<br />
                                 International members should inquire with their local governments. We will work with you!
                             </>}
                         />
-                        <Expandable
+                        <FAQExpandable
                             heading="Can I get paid to officiate weddings and other ceremonies?"
                             content={<>
                                 You bet! Being an ordained “Groovy Eye” a <span className="font-bold">great</span> side hustle––or main hustle! Get paid to join people together in <span className="font-bold">love and equality</span> in the name of the Temple of the Groovy Eye. The going rate for marriage officiants in the USA ranges from <span className="font-bold"> $300-$800 per ceremony, plus expenses and extra for a rehearsal!</span> Get paid to do something beautiful! How cool is that?
                             </>}
                         />
-                        <Expandable
+                        <FAQExpandable
                             heading="Sounds GREAT! How do I get ordained?"
                             content={<>
                                 It’s quick and easy! Once you’ve purchased an NFT you are a member of the Temple, and you’ll have the opportunity to be instantly ordained! You’ll be asked to provide your full name, contact info, and attest to the sincerely held belief that: <span className="font-bold">
@@ -232,32 +231,32 @@ export default function Page() {
                                 It’s that easy! The entire ordination process takes about 30 seconds, and your acceptance is immediate. You can perform marriage ceremonies legally right away <span className="font-bold">– get your side-hustle business started the same day!</span>
                             </>}
                         />
-                        <Expandable
+                        <FAQExpandable
                             heading="How about virtual weddings in the GroovyVerse, are they legal?"
                             content={<>
                                 Yes! The Covid pandemic threw open the door to virtual weddings, which are now legal in many jurisdictions. Friends and family from across the world can share special moments and interact directly with friends and family members without the difficulties or expense of travel. The legal requirements of GroovyVerse weddings will vary depending on where the happy couple is located, so be sure to check with local officials.
                             </>}
                         />
-                        <Expandable
+                        <FAQExpandable
                             heading="When will the GroovyVerse be up and running?"
                             content={<>
                                 The Temple of the Groovy Eye has already secured the “land,” the virtual space to build the GroovyVerse. All “building funds” received from NFT sales will go directly into the development of the site, with the goal of going live <span className="font-bold">this year!</span>  Updates on progress will be regularly provided on the website.
                             </>}
                         />
-                        <Expandable
+                        <FAQExpandable
                             heading="Do I have to believe in God to join?"
                             content={<>
                                 <span className="font-bold"> NO!</span> We welcome all atheists, agnostics, and equality-loving spiritual people. Our focus is on the sanctity of here and now, and the holy nature of our own actions in the world.<span className="font-bold"> Here is a Holy Place to Be.
                                 </span>
                             </>}
                         />
-                        <Expandable
+                        <FAQExpandable
                             heading="Do you charge annual dues?"
                             content={<>
                                 We do not charge annual fees for founding NFT owners! We will charge a small annual fee for subsequent membership to enable us to maintain the functioning of the Temple. We want a community that is easy to join, inclusive, and welcoming. A first-time founding, first drop NFT purchase <span className="font-bold">will cover you forever.</span> You will remain a member for as long as you continue to share the Temple’s love for equality. Of course, we’d appreciate it very much if you’d consider buying our merch online too. Your purchases help us grow and improve our outreach—and make cool gifts—but are in no way required. We do provide members with a sweet discount though!
                             </>}
                         />
-                        <Expandable
+                        <FAQExpandable
                             heading="Mint details:"
                             content={<>
                                 Our initial drop is small, meant to create a strong, founding group, and consists of 500 NFTs divided into the first two foundational Pillars – “Creation,” and “The Wave.”<br />
@@ -265,13 +264,13 @@ export default function Page() {
                                 Founding members will have their names displayed in the Temple for the Grand Opening and archived as part of the Temple’s permanent history.
                             </>}
                         />
-                        <Expandable
+                        <FAQExpandable
                             heading="Why join?"
                             content={<>
                                 Join because we need you! Join because we can do a beautiful thing together! Join to be a legally ordained clergy member and a founding Groovy Eye! Join because you love equality and want a meaningful side-hustle. Let’s start something wonderful together.
                             </>}
                         />
-                        <Expandable
+                        <FAQExpandable
                             heading="What you get:"
                             content={<>
                                 A lot! The purchase of an NFT gets you a <span className="font-bold">lifetime membership!</span>
@@ -295,19 +294,9 @@ export default function Page() {
                                 <span className="font-bold">-You get equality! </span> If we all do our part we can make it happen!
                             </>}
                         />
-
                     </div>
-
-
-
-
                 </div>
-
-
-
             </section>
-
-
             <Footer />
         </div>
     )
@@ -315,58 +304,22 @@ export default function Page() {
 
 
 
-
-type ExpandableProps = {
-    heading: string,
-    content: React.ReactNode
-}
-function Expandable({ heading, content }: ExpandableProps) {
-    const [isFontBold, setIsFontBold] = useState(false);
-    const fontbold = () => {
-        setIsFontBold(!isFontBold);
-    };
-    const headingStyle = {
-        fontWeight: isFontBold ? 'bold' : 'normal',
-    };
-
-    return (
-        <>
-            <Accordion type="single" collapsible>
-                <AccordionItem value="item-1" className="p-[30px]  py-[14px]  md:py-[22px] md:px-6 bg-white/20">
-                    <AccordionTrigger className="" onClick={fontbold}>
-                        <span style={headingStyle}>{heading}</span>
-                    </AccordionTrigger>
-                    <AccordionContent className="">
-                        {content}
-                    </AccordionContent>
-                </AccordionItem>
-            </Accordion>
-        </>
-    )
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 const RoadMap = [
     {
-        heading: "This is not your grandfather’s religion.", content: <p><span className="font-Inter">
-            It’s time for a new religion! The Temple of the Groovy Eye is where atheists, agnostics, and equality-loving spiritual people from all around the world can join together in the noble pursuit of: Equality in Our Lifetime! Be part of the new science-based movement rooted in truth and love! Come share ideas with one another, tell your stories and be part of a bright new community of voices in tune with love and amplified by the knowledge that:
-        </span><span className="">All People Are Created Equal.</span><br /><br />
-            <span className="font-Inter">
-                Equality is a single thing. Groovy Eyes see the diversity inherent in our species as an evolutionary achievement––a glorious crown. Groovy Eyes embrace all genders and the LGBTQ+ community, we defend women’s rights and self-sovereignty, and we stand firmly against racism and prejudice. We are committed to preserving our environment for the next generation, and we are not afraid to speak on behalf of these issues and use our non-violent power to strive for equality.
-            </span>
+        heading: "This is not your grandfather’s religion.",
+        content: (
+            <p>
+                <span className="font-Inter">
+                    It’s time for a new religion! The Temple of the Groovy Eye is where atheists, agnostics, and equality-loving spiritual people from all around the world can join together in the noble pursuit of: Equality in Our Lifetime! Be part of the new science-based movement rooted in truth and love! Come share ideas with one another, tell your stories and be part of a bright new community of voices in tune with love and amplified by the knowledge that:
+                </span>
+                <span className="">All People Are Created Equal.</span>
+                <br /><br />
+                <span className="font-Inter">
+                    Equality is a single thing. Groovy Eyes see the diversity inherent in our species as an evolutionary achievement––a glorious crown. Groovy Eyes embrace all genders and the LGBTQ+ community, we defend women’s rights and self-sovereignty, and we stand firmly against racism and prejudice. We are committed to preserving our environment for the next generation, and we are not afraid to speak on behalf of these issues and use our non-violent power to strive for equality.
+                </span>
 
-        </p>
+            </p>
+        )
     },
     {
         heading: "The GroovyVerse is our sacred space", content: <p className="font-Inter">It’s time for truth and love to take their rightful place in the world and deliver the dream of equality for us all. We can achieve it now like never before, together––in the Metaverse!
@@ -374,47 +327,32 @@ const RoadMap = [
             The Temple of the Groovy Eye is a registered, non-profit religious institution in the Commonwealth of Pennsylvania, USA. A portion of the original purchase price for every NFT is tax-deductible (at least in the US) and will account for both your membership fee and a donation to the building fund for our Metaverse – the “GroovyVerse”. Original owners of the first drop of NFTs will have lifetime membership status.</p>
     },
     {
-        heading: "ALL memberships come with the opportunity to be ordained!", content: <p> <span className="font-Inter"> A place to gather, share art and writing, tell our stories and be pro-active. A worldwide union of free-thinking, freedom-loving people who are hungry for a community to belong to that shares the sincerely held belief that: </span>  <span> Here is a Holy Place to Be.</span>
-            <br /><br />
-            <span className="font-Inter">
-                The GroovyVerse is a safe space to be together as equals, regardless of physical ability or geographic location. It is place for wedding ceremonies, memorial services and solemnities, baby-welcoming ceremonies, hand-fastings and other celebrations of life and love. We want you with us!
-            </span>
-        </p>
+        heading: "ALL memberships come with the opportunity to be ordained!",
+        content: (
+            <p>
+                <span className="font-Inter"> A place to gather, share art and writing, tell our stories and be pro-active. A worldwide union of free-thinking, freedom-loving people who are hungry for a community to belong to that shares the sincerely held belief that: </span>  <span> Here is a Holy Place to Be.</span>
+                <br /><br />
+                <span className="font-Inter">
+                    The GroovyVerse is a safe space to be together as equals, regardless of physical ability or geographic location. It is place for wedding ceremonies, memorial services and solemnities, baby-welcoming ceremonies, hand-fastings and other celebrations of life and love. We want you with us!
+                </span>
+            </p>
+        )
     },
     {
-        heading: "You can even officiate weddings and other ceremonies in the GroovyVerse!", content: <p> <span className="font-Inter"> Members are also eligible to submit art and writing for consideration in the GroovyVerse gallery, newsletter, and blog. Moreover, Temple ordination authorizes you to </span><span className="">legally officiate marriage ceremonies</span> <span className="font-Inter"> in all 50 states and wherever your country’s local laws allow. But that’s not all, you could officiate hand-fastings, child-welcoming ceremonies, funerals and memorial services. You’ll receive your ordination credentials, a clergy parking pass, and an official Temple press pass to get you up close to newsworthy equality and social justice events to cover for the GroovyVerse. </span>
-            <br /><br />
-            <span className="font-Inter">
-                Be a love and equality activist—and earn extra income as a marriage officiant! Here in Pennsylvania, where the Temple is based, the fees for officiating a marriage range from $300-$800, plus expenses and a customary extra fee for a rehearsal. Of course, you can officiate for your friends and family for free, but it can also be a sweet side-hustle if you love the work and feel called to join people together in love and equality in the name of the Temple of the Groovy Eye.
-            </span>
-        </p>
+        heading: "You can even officiate weddings and other ceremonies in the GroovyVerse!",
+        content: (
+            <p>
+                <span className="font-Inter"> Members are also eligible to submit art and writing for consideration in the GroovyVerse gallery, newsletter, and blog. Moreover, Temple ordination authorizes you to </span><span className="">legally officiate marriage ceremonies</span> <span className="font-Inter"> in all 50 states and wherever your country’s local laws allow. But that’s not all, you could officiate hand-fastings, child-welcoming ceremonies, funerals and memorial services. You’ll receive your ordination credentials, a clergy parking pass, and an official Temple press pass to get you up close to newsworthy equality and social justice events to cover for the GroovyVerse. </span>
+                <br /><br />
+                <span className="font-Inter">
+                    Be a love and equality activist—and earn extra income as a marriage officiant! Here in Pennsylvania, where the Temple is based, the fees for officiating a marriage range from $300-$800, plus expenses and a customary extra fee for a rehearsal. Of course, you can officiate for your friends and family for free, but it can also be a sweet side-hustle if you love the work and feel called to join people together in love and equality in the name of the Temple of the Groovy Eye.
+                </span>
+            </p>
+        )
     },
 
 ]
 
-type RoadMap = {
-    heading: string,
-    content: React.ReactNode,
-}
-type RoadMapListItemProps = {
-    RoadMap: RoadMap
-}
-
-
-
-
-function RoadMapListItem({ RoadMap }: RoadMapListItemProps) {
-    return (
-        <div className="w-full flex flex-col items-center  text-center gap-5 lg:gap-10 max-w-[810px] px-5">
-            <p className="text-sm font-normal text-white lg:text-base">
-                {RoadMap.content}
-            </p>
-            <p className="bg-secondary  text-sm lg:text-xl rounded-[40px] lg:rounded-[60px] max-w-[800px] w-full text-primary h-auto lg:h-[65px] flex items-center justify-center px-8 py-3">
-                {RoadMap.heading}
-            </p>
-        </div>
-    )
-}
 
 
 
@@ -423,26 +361,3 @@ function RoadMapListItem({ RoadMap }: RoadMapListItemProps) {
 
 
 
-type TeamComponentProps = {
-    src: string;
-    heading: string;
-    content: React.ReactNode;
-
-}
-
-function TeamComponent({ src, heading, content }: TeamComponentProps) {
-    return (
-        <>
-            <div className="flex  flex-col w-[325px] h-auto md:w-[490px] md:h-[486px] px-[22px] pb-[33px] pt-10 md:p-10 md:pt-[30px] items-center  text-center rounded-[40px] bg-pink">
-                <img src={src} alt="" className="w-[199px] h-[200px] rounded-full text-white" />
-                <p className="mt-5 text-white text-xl md:text-[32px] font-normal">
-                    {heading}
-                </p>
-                <p className="font-Inter font-normal text-white/80 text-sm mt-[11px] md:mt-[11px]">
-                    {content}
-                </p>
-
-            </div>
-        </>
-    )
-}

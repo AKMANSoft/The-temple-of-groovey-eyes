@@ -1,9 +1,9 @@
-import { PrimaryButton } from "./Button";
+import { PrimaryButton } from "@/component/ui/Button";
 
-export default function Footer(){
-    return(
+export default function Footer() {
+    return (
         <>
-         <footer className="bg-footer-image h-[800px] lg:h-[960px]  flex flex-col items-center justify-center ">
+            <footer className="bg-footer-image h-[800px] lg:h-[960px]  flex flex-col items-center justify-center ">
                 <a href="" className="bg-white rounded-full mt-[170px]">
                     <img src="/images/logo.svg" alt="" className="w-[160px] h-[155px] md:h-[157px]" />
                 </a>

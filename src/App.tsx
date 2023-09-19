@@ -1,6 +1,6 @@
 
 import { RouterProvider } from "react-router-dom"
-import router from "./lib/router/lazy"
+import router from "./lib/router/eager"
 
 
 

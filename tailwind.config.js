@@ -32,7 +32,7 @@ export default {
       },
       backgroundSize: {
         "primary-image": "cover",
-        "star-image": "contain",
+        "star-image": "cover",
         "pillar-image": "cover",
         "ourteam-image": "cover",
         "whitepaper-image": "fill",
