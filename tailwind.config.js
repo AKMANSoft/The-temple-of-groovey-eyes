@@ -14,9 +14,9 @@ export default {
       backgroundImage: {
 
         "primary-image": "url(/images/theme.png)",
-        "star-image": "url(/images/star.png)",
-        "pillar-image":"url(/images/pillar.png)",
-        "ourteam-image":"url(/images/ourteam.png)",
+        "star-image": "url(/images/star.jpg)",
+        "pillar-image":"url(/images/pillar.jpg)",
+        "ourteam-image":"url(/images/ourteam.jpg)",
         "whitepaper-image":"url(/images/white-paper.png)",
         "footer-image":"url(/images/footer.jpg)",
         "primary-image-mobile": "url(/images/theme-bg-mobile.png)",
@@ -32,7 +32,7 @@ export default {
       },
       backgroundSize: {
         "primary-image": "cover",
-        "star-image": "cover",
+        "star-image": "contain",
         "pillar-image": "cover",
         "ourteam-image": "cover",
         "whitepaper-image": "fill",

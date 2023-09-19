@@ -1,12 +1,12 @@
-import { PrimaryButton } from "@/component/Button";
-import Card from "@/component/Card";
+import { PrimaryButton } from "@/component/ui/Button";
+import Card from "@/component/ui/Card";
 import React, { useEffect, useState } from "react";
 import {
     Accordion,
     AccordionContent,
     AccordionItem,
     AccordionTrigger,
-} from "@/component/accordion"
+} from "@/component/ui/Accordion"
 import Slider from "@/component/Slider";
 import Footer from "@/component/Footer";
 import Header from "@/component/Header";
@@ -14,7 +14,7 @@ import Header from "@/component/Header";
 
 
 
-export default function HomePage() {
+export default function Page() {
     const texts = [
         "There's A New Religion In Town",
         "WHERE ALL PEOPLE ARE CREATED EQUAL",
@@ -51,8 +51,8 @@ export default function HomePage() {
                     Get Ordained Today
                 </button>
             </section>
-            <section className="flex items-center justify-center bg-star-image  h-[1200px] -mt-[20px] lg:-mt-[56px] px-[12px] md:max-lg:px-4">
-                <div className="flex flex-col items-center text-center justify-center rounded-full bg-secondary max-w-[1000px] md:w-full lg:max-h-[522px] lg:h-full h-[773px] md:h-auto p-5 pt-[60px] pb-[88px] md:max-lg:p-20">
+            <section className="flex items-center justify-center bg-star-image bg-no-repeat w-full h-auto  -mt-[20px] lg:-mt-[56px] px-[12px] p-20">
+                <div className="flex flex-col items-center text-center justify-center rounded-full bg-secondary  max-w-[1000px] w-full h-auto aspect-[1.92/1] p-16">
                     <p className="flex flex-col items-center justify-center text-primary font-normal uppercase w-[201px] md:w-full">
                         <span className="text-base lg:text-[30px] ">
                             Groovy Eyes hold this truth to be self-evident:
@@ -84,7 +84,7 @@ export default function HomePage() {
                     </p>
                     <div className="flex flex-col items-center gap-5 mt-5 lg:mt-10 lg:flex-row">
                         <Card
-                            src={"/images/piller-of-beginning.png"}
+                            src={"/images/piller-of-beginning.jpg"}
                             heading="THE PILLAR OF THE BEGINNING"
                             subheading="“Matter is energy solidified.” – Albert Einstein"
                             content={
@@ -96,7 +96,7 @@ export default function HomePage() {
                             transbutton="View NFTS"
                         />
                         <Card
-                            src={"/images/piller-of-wave.png"}
+                            src={"/images/piller-of-wave.jpg"}
                             heading="THE PILLAR OF THE BEGINNING"
                             subheading="“Life is a wave, which in no two consecutive moments of its existence is composed of the same particles.” –John Tyndall"
                             content={
@@ -140,7 +140,7 @@ export default function HomePage() {
                 </div>
 
             </section>
-            <section className="h-[4300px]   bg-whitepaper-image bg-primary flex flex-col items-center px-5 lg:px-0">
+            <section className="lg:h-[4300px] h-[4385px] w-full   bg-whitepaper-image bg-primary flex flex-col items-center px-5 lg:px-0">
 
                 <div className="flex flex-col items-center text-center max-w-[1000px] w-full lg:px-[120px] py-[60px] bg-black/60 backdrop-blur-[10px] rounded-[30px]  lg:rounded-[80px] mt-[60px]  lg:mt-[100px] px-4">
                     <p className="text-pink text-[26px] lg:text-[60px] font-normal uppercase ">

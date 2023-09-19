@@ -1,10 +1,10 @@
 
 function Slider() {
   const images = [
-    "/icons/surrender3.png",
-    "/icons/surrender.png",
-    "/icons/surrender2.png",
-    "/icons/surrender.png"
+    "/icons/surrender3.jpg",
+    "/icons/surrender.jpg",
+    "/icons/surrender2.jpg",
+    "/icons/surrender.jppg"
   ];
 
 
@@ -12,7 +12,7 @@ function Slider() {
   return (
     <div className="w-full mt-[60px]  relative overflow-x-hidden ">
       <div
-        className="flex gap-10 w-full animate-scroll"
+        className="flex w-full gap-10 animate-scroll"
         
       >
         {images.map((image, index) => (
