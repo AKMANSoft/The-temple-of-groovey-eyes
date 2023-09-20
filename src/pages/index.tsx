@@ -1,14 +1,14 @@
-import { PrimaryButton } from "@/component/ui/Button";
-import Card from "@/component/ui/Card";
-import { useEffect, useState } from "react";
+import { PrimaryButton } from "@/components/ui/Button";
+import Card from "@/components/ui/Card";
+import { useEffect, useRef, useState } from "react";
 
-import Slider from "@/component/Slider";
-import Footer from "@/component/Footer";
-import Header from "@/component/Header";
-import FAQExpandable from "./_FAQExpandable";
+import Slider from "@/components/Slider";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 import { cn } from "@/lib/utils";
 import RoadMapListItem from "./_RoadMapListItem";
 import TeamComponent from "./_TeamComponent";
+import FAQsSection from "./_FAQSection";
 
 
 const texts = [
@@ -20,11 +20,12 @@ const texts = [
 
 export default function Page() {
     const [currentIndex, setCurrentIndex] = useState(0);
+    const gridSectionRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % texts.length);
-        }, 3200);
+        }, 4100);
 
         return () => clearInterval(interval);
     }, []);
@@ -32,7 +33,10 @@ export default function Page() {
     return (
         <div className="bg-black">
             <Header />
-            <section className="flex flex-col h-full md:h-auto w-full aspect-[3.7/4] bg-primary-image   md:aspect-[1.1/1]  items-center justify-center  md:bg-black  mt-4 md:-mt-6 lg:-mt-[32px]">
+            <section className={cn(
+                "flex flex-col h-full md:h-auto w-full aspect-[3.7/4] bg-primary-image md:aspect-[1.2/1] bg-no-repeat",
+                "  md:bg-black  mt-4 md:-mt-6 lg:mt-[0px]  items-center justify-center"
+            )}>
                 <div className="text-center h-[168px] flex relative w-[180px] md:w-[336px] items-center justify-center">
                     {
                         <p
@@ -46,13 +50,13 @@ export default function Page() {
                     }
                 </div>
 
-                <button className="text-sm md:text-lg font-normal text-secondary bg-primary py-[14px] px-[30px] md:px-10 md:py-5 uppercase rounded-[40px] md:mt-[111px] ">
+                <button className="text-sm md:text-lg font-normal text-secondary bg-primary py-[14px] px-[30px] md:px-10 md:py-5 uppercase rounded-[40px] md:mt-[140px] ">
                     Get Ordained Today
                 </button>
-                
+
             </section>
             <section className="relative z-10 py-20 -mt-3 bg-primary md:hidden">
-           
+
                 <div className="pt-2 ml-1 mr-3">
                     <img src="/images/start-bottom.png" alt="" className="absolute bottom-0 w-[92vw] left-[11px] -z-10" />
                     <img src="/images/star-top.png" alt="" className="absolute top-2 w-[92vw] left-[11px] -z-10 " />
@@ -71,7 +75,7 @@ export default function Page() {
                             </span>
                         </p>
 
-                        <div className="z-10 mt-5 lg:mt-10 bg-secondary">
+                        <div className="z-10 mt-5 lg:mt-10 bg-secondary ">
                             <PrimaryButton className="text-sm lg:text-lg font-normal uppercase rounded-[40px] ">
                                 Get Ordained Today
                             </PrimaryButton>
@@ -84,8 +88,14 @@ export default function Page() {
                 </div>
 
             </section>
-            <section className="hidden md:flex items-center justify-center  bg-star-image  w-full h-auto aspect-[1.93/1]  -mt-[18px] lg:-mt-[56px] md:px-[12px] ">
-                <div className="flex flex-col items-center text-center justify-center rounded-full bg-secondary max-w-[1000px] w-auto   h-auto  xl:p-16 xl:pt-[80px] xl:pb-[74px] p-5 pt-[60px] pb-[88px] md:max-lg:p-5">
+            <section className={cn(
+                "hidden md:flex items-center justify-center bg-star-image w-full h-auto aspect-[1.82/1] xl:aspect-[1.9/1]",
+                "-mt-[18px] lg:-mt-[20px] md:px-[12px] lg:px-[11%] xl:px-[15%] py-[9%]"
+            )}>
+                <div className={cn(
+                    "flex flex-col items-center text-center justify-center rounded-full bg-secondary w-full h-full",
+                    "xl:p-16 xl:pt-[80px] xl:pb-[74px] p-5 pt-[60px] pb-[88px] md:max-lg:p-5"
+                )}>
                     <p className="flex flex-col items-center justify-center text-primary font-normal uppercase w-[201px] md:w-full">
                         <span className="text-base xl:text-[30px] ">
                             Groovy Eyes hold this truth to be self-evident:
@@ -110,8 +120,8 @@ export default function Page() {
                 </div>
 
             </section>
-            <section className="flex  items-center justify-center bg-pillar-image lg:h-[1113px]">
-                <div className="max-w-[1000px] w-full text-center pt-[53px] pb-[65px] lg:pt-0 lg:pb-0 px-4">
+            <section className="flex justify-center bg-pillar-image lg:h-auto">
+                <div className="max-w-[1000px] w-full text-center pt-[53px] pb-[65px] lg:py-[100px]  px-4">
                     <p className="text-white text-[26px] lg:text-[60px] font-normal uppercase">
                         THE PILLARS of the temple
                     </p>
@@ -176,8 +186,10 @@ export default function Page() {
                 </div>
 
             </section>
-            <section className="flex flex-col items-center w-full  px-5 lg:h-[3740px] h-[4385px] bg-whitepaper-image bg-primary lg:px-0 ">
-
+            <section
+                ref={gridSectionRef}
+                style={{ paddingBottom: "951px" }}
+                className="flex flex-col items-center w-full  px-5 lg:h-[4320px] h-[4385px] bg-whitepaper-image bg-primary lg:px-0 ">
                 <div className="flex flex-col items-center text-center max-w-[1000px] w-full lg:px-[120px] py-[60px] bg-black/60 backdrop-blur-[10px] rounded-[30px]  lg:rounded-[80px] mt-[60px]  lg:mt-[100px] px-4">
                     <p className="text-pink text-[26px] lg:text-[60px] font-normal uppercase ">
                         WHITEPAPER
@@ -192,7 +204,7 @@ export default function Page() {
                     </div>
 
                 </div>
-                    <Slider />
+                <Slider containerRef={gridSectionRef} />
 
                 <div className="flex flex-col items-center pb-[83px] md:pb-[80px] pt-[60px] mt-[60px] bg-black/60 max-w-[1000px] w-full backdrop-blur-[10px] rounded-[30px] lg:rounded-[80px] " id="roadmap">
                     <p className="text-pink text-[26px] lg:text-[60px] uppercase font-normal">
@@ -223,116 +235,24 @@ export default function Page() {
                         </PrimaryButton>
                     </a>
                 </div>
-                <div id="faq" className="flex flex-col items-center pb-10 lg:pb-[100px] pt-[60px] mt-[60px] bg-black/60 max-w-[1000px] w-full backdrop-blur-[10px] rounded-[30px] lg:rounded-[80px] ">
+
+            </section>
+            <section className="bg-footer-image flex flex-col items-center">
+                <div id="faq"
+                    className={cn(
+                        "flex flex-col items-center pb-10 lg:pb-[100px] pt-[60px] bg-black/60",
+                        "max-w-[1000px] w-full backdrop-blur-[10px] rounded-[30px] lg:rounded-[80px]",
+                        "-mt-[951px]"
+                    )}>
                     <p className="text-pink text-[60px] uppercase font-normal">
                         FAQs
                     </p>
-                    <div className="space-y-[10px] px-[22px]">
-                        <FAQExpandable
-                            heading=" What does Groovy Eye mean?"
-                            content={<>
-                                We perceive one another from an interior place, from the core belief system there tells our eyes how to regard the things they see. Too many people look upon expressions of love and see ugliness, sin, and disgust. Too many people look upon women’s bodies and see shamefulness. Too many people look upon people of different races or physical abilities and see lesser people. These are unnatural ways of seeing. We know love is always beautiful, women’s bodies are not shameful, and biological differences don’t make anyone less. The problem, therefore, must be in their eyes.<br />
-                                To be a Groovy Eye, all you have to do is look a bit deeper, below the surface, where inherent commonality of humanity resides, and the job is done. You’ve found your people! Welcome to the Temple of the Groovy Eye! Welcome home.</>}
-                        />
-                        <FAQExpandable
-                            heading="How did you come up with the idea for your art?"
-                            content={<>
-                                The first two series of art I’ve created for the Temple NFTs – “Creation” and “The Wave” – tell a new kind of science-based creation story depicting a singular explosive event from which all biological life, all races and genders, originate equally––the simple truth from which every person’s natural rights are derived and guaranteed. As a lifelong feminist, I put the female form in the center to reclaim her rightful place in the act and process of creation. Each image is a single-capture photograph, not digitally or AI created art. Photography is art using a scientific instrument that allows you to “paint” with electromagnetic radiation. What a turn on! Each and every photo was set up and taken using proprietary lighting systems and really trippy studio designs. I created this art for you, and I hope you love it.</>}
-                        />
-                        <FAQExpandable
-                            heading="What does that mean to be ordained?"
-                            content={<>
-                                As a religious institution, The Temple of the Groovy Eye ordains like-minded individuals, or “Groovy Eyes,” who are our clergy. Once ordained, you will have the full legal status required to officiate marriages in the name of the Temple of the Groovy Eye. You get real credentials and can officiate real, legally binding marriages––as well as all other life celebrations, in exactly the same way as any other priest or minister.
-                            </>}
-                        />
-                        <FAQExpandable
-                            heading="Is the Temple of the Groovy Eye legally able to ordain individuals?"
-                            content={<>
-                                Yes! We are registered in the Commonwealth of Pennsylvania as a <span className="font-bold">non-profit</span> religious institution, and as such, individuals ordained by the Temple are recognized in all 50 states!Please check with your local jurisdiction to be sure that no additional paperwork or confirmation is required. Letters of good standing from the Temple are not generally required but are available upon request to ordained members for a nominal fee.<br />
-                                International members should inquire with their local governments. We will work with you!
-                            </>}
-                        />
-                        <FAQExpandable
-                            heading="Can I get paid to officiate weddings and other ceremonies?"
-                            content={<>
-                                You bet! Being an ordained “Groovy Eye” a <span className="font-bold">great</span> side hustle––or main hustle! Get paid to join people together in <span className="font-bold">love and equality</span> in the name of the Temple of the Groovy Eye. The going rate for marriage officiants in the USA ranges from <span className="font-bold"> $300-$800 per ceremony, plus expenses and extra for a rehearsal!</span> Get paid to do something beautiful! How cool is that?
-                            </>}
-                        />
-                        <FAQExpandable
-                            heading="Sounds GREAT! How do I get ordained?"
-                            content={<>
-                                It’s quick and easy! Once you’ve purchased an NFT you are a member of the Temple, and you’ll have the opportunity to be instantly ordained! You’ll be asked to provide your full name, contact info, and attest to the sincerely held belief that: <span className="font-bold">
-                                    All People are Created Equal</span> – that’s it! Everything that goes with that, goes with that.
-                                It’s that easy! The entire ordination process takes about 30 seconds, and your acceptance is immediate. You can perform marriage ceremonies legally right away <span className="font-bold">– get your side-hustle business started the same day!</span>
-                            </>}
-                        />
-                        <FAQExpandable
-                            heading="How about virtual weddings in the GroovyVerse, are they legal?"
-                            content={<>
-                                Yes! The Covid pandemic threw open the door to virtual weddings, which are now legal in many jurisdictions. Friends and family from across the world can share special moments and interact directly with friends and family members without the difficulties or expense of travel. The legal requirements of GroovyVerse weddings will vary depending on where the happy couple is located, so be sure to check with local officials.
-                            </>}
-                        />
-                        <FAQExpandable
-                            heading="When will the GroovyVerse be up and running?"
-                            content={<>
-                                The Temple of the Groovy Eye has already secured the “land,” the virtual space to build the GroovyVerse. All “building funds” received from NFT sales will go directly into the development of the site, with the goal of going live <span className="font-bold">this year!</span>  Updates on progress will be regularly provided on the website.
-                            </>}
-                        />
-                        <FAQExpandable
-                            heading="Do I have to believe in God to join?"
-                            content={<>
-                                <span className="font-bold"> NO!</span> We welcome all atheists, agnostics, and equality-loving spiritual people. Our focus is on the sanctity of here and now, and the holy nature of our own actions in the world.<span className="font-bold"> Here is a Holy Place to Be.
-                                </span>
-                            </>}
-                        />
-                        <FAQExpandable
-                            heading="Do you charge annual dues?"
-                            content={<>
-                                We do not charge annual fees for founding NFT owners! We will charge a small annual fee for subsequent membership to enable us to maintain the functioning of the Temple. We want a community that is easy to join, inclusive, and welcoming. A first-time founding, first drop NFT purchase <span className="font-bold">will cover you forever.</span> You will remain a member for as long as you continue to share the Temple’s love for equality. Of course, we’d appreciate it very much if you’d consider buying our merch online too. Your purchases help us grow and improve our outreach—and make cool gifts—but are in no way required. We do provide members with a sweet discount though!
-                            </>}
-                        />
-                        <FAQExpandable
-                            heading="Mint details:"
-                            content={<>
-                                Our initial drop is small, meant to create a strong, founding group, and consists of 500 NFTs divided into the first two foundational Pillars – “Creation,” and “The Wave.”<br />
-                                Price: $150 each, 30% of which is tax-deductible (in the US) and will account for your lifetime Temple of the Groovy Eye membership fee and donation to the “GroovyVerse Building Fund.”<br />
-                                Founding members will have their names displayed in the Temple for the Grand Opening and archived as part of the Temple’s permanent history.
-                            </>}
-                        />
-                        <FAQExpandable
-                            heading="Why join?"
-                            content={<>
-                                Join because we need you! Join because we can do a beautiful thing together! Join to be a legally ordained clergy member and a founding Groovy Eye! Join because you love equality and want a meaningful side-hustle. Let’s start something wonderful together.
-                            </>}
-                        />
-                        <FAQExpandable
-                            heading="What you get:"
-                            content={<>
-                                A lot! The purchase of an NFT gets you a <span className="font-bold">lifetime membership!</span>
-                                Plus:<br />
-                                <span className="font-bold">-You get a beautiful piece of original NFT photographic art,</span> created for the Temple of the Groovy Eye by an American woman artist, which you may display proudly, gift, collect, trade, and print for personal use.
-                                <br /><br />
-                                <span className="font-bold">-A Temple of the Groovy Eye certificate of ordination.</span> Members attest to their sincerely held belief in equality, provide contact information – and that’s it! You’re ordained! Your Temple certificate serves as proof of your credentials!
-                                <br /><br />
-                                <span className="font-bold">-A very groovy instant side-hustle – or main hustle!</span> This is not only fun, and an opportunity to speak out on behalf of love and equality, but an instant money-maker! The Temple will maintain a directory of ordained persons (with your consent) where people who want a Groovy Eye wedding, or other life-event ceremony, can find you.
-                                <br /><br />
-                                <span className="font-bold">-You’ll get a Temple of the Groovy Eye “clergy” parking pass,</span> to allow parking in spots reserved for “clergy” (that’s you!) near churches and other places of worship where you may be officiating a ceremony.
-                                <br /><br />
-                                -You’ll get a Temple press pass. Knowledge is power. We want to hear and learn from you and create a newsletter about Groovy Eyes everywhere. We want to know what’s going on around the world so we can work together. Use your press pass to cover events of interest to the Temple and submit your work for consideration to the GroovyVerse blog or newsletter. We want to hear from you!
-                                <br /><br />
-                                <span className="font-bold">-You will be able to get published!</span> Members can submit their own writing and artwork for consideration in our blog, newsletter, and gallery. Share your work with the Temple of the Groovy Eye community and describe your own personal journey of self-discovery. We want to know!
-                                <br /><br />
-                                <span className="font-bold"> -You get a day off!</span> The Temple of the Groovy Eye has named state and federal general election days as our religious holidays! If your employer gives you time off for religious holidays, you can take state and federal general Election Days off to engage in the sacred activity of voting to promote equality.
-                                <br /><br />
-                                <span className="font-bold">-You get a discount!</span> The Temple funds itself through the sale of Temple art. Once you’ve purchased your NFT, you never need to buy another thing from us to retain your membership. We encourage you, however, to shop at our Temple for cool merch. It helps us grow and improve our outreach. We appreciate your support so much we’ll give a sweet discount to all NFT holders.
-                                <br /><br />
-                                <span className="font-bold">-You get equality! </span> If we all do our part we can make it happen!
-                            </>}
-                        />
+                    <div className="px-[22px]">
+                        <FAQsSection />
                     </div>
                 </div>
+                <Footer />
             </section>
-            <Footer />
         </div>
     )
 }

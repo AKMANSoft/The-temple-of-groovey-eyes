@@ -1,6 +1,6 @@
 import { Cross1Icon } from "@radix-ui/react-icons";
 import { useState } from "react";
-import { PrimaryButton } from "@/component/ui/Button";
+import { PrimaryButton } from "@/components/ui/Button";
 
 
 
