@@ -1,6 +1,6 @@
 import { PrimaryButton } from "@/component/ui/Button";
 import Card from "@/component/ui/Card";
-import  { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 import Slider from "@/component/Slider";
 import Footer from "@/component/Footer";
@@ -24,21 +24,21 @@ export default function Page() {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % texts.length);
-        }, 3000); // Change text every 2 seconds (adjust as needed)
+        }, 3200);
 
         return () => clearInterval(interval);
     }, []);
 
     return (
-        <div className="bg-primary">
+        <div className="bg-black">
             <Header />
-            <section className="flex flex-col h-[560px] bg-primary-image-mobile bg-no-repeat lg:bg-primary-image  md:h-[1100px] lg:h-[1270px] 2xl:h-[1650px] items-center justify-center bg-black ">
-                <div className="text-center h-[168px] flex relative w-[336px] items-center justify-center">
+            <section className="flex flex-col h-full md:h-auto w-full aspect-[3.7/4] bg-primary-image   md:aspect-[1.1/1]  items-center justify-center  md:bg-black  mt-4 md:-mt-6 lg:-mt-[32px]">
+                <div className="text-center h-[168px] flex relative w-[180px] md:w-[336px] items-center justify-center">
                     {
                         <p
                             className={cn(
                                 `md:text-[50px] text-secondary w-[180px] md:w-[336px] md:leading-[56px]`,
-                                "text-2xl left-[24%] md:left-0 font-normal uppercase animate-zoom-out-in transition-opacity"
+                                "text-2xl left-[24%] md:left-0 font-normal uppercase animate-zoom-out-in transition-opacity "
                             )}
                         >
                             {texts[currentIndex]}
@@ -46,24 +46,61 @@ export default function Page() {
                     }
                 </div>
 
-                <button className="text-lg font-normal text-secondary bg-primary px-10 py-5 uppercase rounded-[40px] md:mt-[111px]">
+                <button className="text-sm md:text-lg font-normal text-secondary bg-primary py-[14px] px-[30px] md:px-10 md:py-5 uppercase rounded-[40px] md:mt-[111px] ">
                     Get Ordained Today
                 </button>
+                
             </section>
-            <section className="flex items-center justify-center bg-star-image bg-no-repeat w-full h-auto  -mt-[20px] lg:-mt-[56px] px-[12px] p-20">
-                <div className="flex flex-col items-center text-center justify-center rounded-full bg-secondary  max-w-[1000px] w-full h-auto aspect-[1.92/1] p-16">
+            <section className="relative z-10 py-20 -mt-3 bg-primary md:hidden">
+           
+                <div className="pt-2 ml-1 mr-3">
+                    <img src="/images/start-bottom.png" alt="" className="absolute bottom-0 w-[92vw] left-[11px] -z-10" />
+                    <img src="/images/star-top.png" alt="" className="absolute top-2 w-[92vw] left-[11px] -z-10 " />
+                    <div className=" flex flex-col items-center text-center justify-center rounded-full bg-secondary  max-w-[1000px] w-auto    h-auto  xl:p-16 xl:pt-[80px] xl:pb-[74px] p-5 pt-[60px] pb-[88px] md:max-lg:p-5 mx-3">
+                        <p className=" flex flex-col items-center justify-center text-primary font-normal uppercase w-[201px] md:w-full  ">
+                            <span className="text-base xl:text-[30px] ">
+                                Groovy Eyes hold this truth to be self-evident:
+                            </span>
+                            <span className="text-2xl xl:text-[50px] lg:mt-2 ">
+                                “All people are created equal.”
+                            </span>
+                        </p>
+                        <p className=" text-sm font-normal text-primary/70 lg:w-[760px] md:w-[500px] w-[343px] text-center font-Inter   mt-5  md:max-lg:mt-1 px-4">
+                            The Temple of the Groovy Eye is a non-profit art and science-based religious institution registered in the Commonwealth of Pennsylvania, that relies on science to lead to fundamental truth and art to express it. Founded by artists, activists, and philosophers, the Temple is a place where spiritual people and atheists alike can come together and proclaim that: <span className="font-black">here is a holy place to be.</span>  <span className="md:max-lg:hidden">
+                                It is a place to meet; share ideas, art, and writing; learn about one another and form a more perfect union as we stand together to raise our voices in power, for equality of all people. And as an ordained member of the Temple of the Groovy Eye, you have both the moral authority to join people together in love and the legal authority to officiate marriage ceremonies that declare it so.
+                            </span>
+                        </p>
+
+                        <div className="z-10 mt-5 lg:mt-10 bg-secondary">
+                            <PrimaryButton className="text-sm lg:text-lg font-normal uppercase rounded-[40px] ">
+                                Get Ordained Today
+                            </PrimaryButton>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+            </section>
+            <section className="hidden md:flex items-center justify-center  bg-star-image  w-full h-auto aspect-[1.93/1]  -mt-[18px] lg:-mt-[56px] md:px-[12px] ">
+                <div className="flex flex-col items-center text-center justify-center rounded-full bg-secondary max-w-[1000px] w-auto   h-auto  xl:p-16 xl:pt-[80px] xl:pb-[74px] p-5 pt-[60px] pb-[88px] md:max-lg:p-5">
                     <p className="flex flex-col items-center justify-center text-primary font-normal uppercase w-[201px] md:w-full">
-                        <span className="text-base lg:text-[30px] ">
+                        <span className="text-base xl:text-[30px] ">
                             Groovy Eyes hold this truth to be self-evident:
                         </span>
-                        <span className="text-2xl lg:text-[50px] lg:mt-2 ">
+                        <span className="text-2xl xl:text-[50px] lg:mt-2 ">
                             “All people are created equal.”
                         </span>
                     </p>
-                    <p className="text-sm font-normal text-primary/70 max-w-[760px] w-full text-center font-Inter  mt-5 ">
-                        The Temple of the Groovy Eye is a non-profit art and science-based religious institution registered in the Commonwealth of Pennsylvania, that relies on science to lead to fundamental truth and art to express it. Founded by artists, activists, and philosophers, the Temple is a place where spiritual people and atheists alike can come together and proclaim that: <span className="font-black">here is a holy place to be.</span> It is a place to meet; share ideas, art, and writing; learn about one another and form a more perfect union as we stand together to raise our voices in power, for equality of all people. And as an ordained member of the Temple of the Groovy Eye, you have both the moral authority to join people together in love and the legal authority to officiate marriage ceremonies that declare it so.
+                    <p className="text-sm font-normal text-primary/70 lg:w-[760px] md:w-[500px] w-[343px] text-center font-Inter  mt-5  md:max-lg:mt-1">
+                        The Temple of the Groovy Eye is a non-profit art and science-based religious institution registered in the Commonwealth of Pennsylvania, that relies on science to lead to fundamental truth and art to express it. Founded by artists, activists, and philosophers, the Temple is a place where spiritual people and atheists alike can come together and proclaim that: <span className="font-black">here is a holy place to be.</span>  <span className="md:max-lg:hidden">
+                            It is a place to meet; share ideas, art, and writing; learn about one another and form a more perfect union as we stand together to raise our voices in power, for equality of all people. And as an ordained member of the Temple of the Groovy Eye, you have both the moral authority to join people together in love and the legal authority to officiate marriage ceremonies that declare it so.
+                        </span>
                     </p>
-                    <div className="mt-5 md:mt-10">
+
+                    <div className="mt-5 lg:mt-10">
                         <PrimaryButton className="text-sm lg:text-lg font-normal uppercase rounded-[40px] ">
                             Get Ordained Today
                         </PrimaryButton>
@@ -139,7 +176,7 @@ export default function Page() {
                 </div>
 
             </section>
-            <section className="lg:h-[4300px] h-[4385px] w-full   bg-whitepaper-image bg-primary flex flex-col items-center px-5 lg:px-0">
+            <section className="flex flex-col items-center w-full  px-5 lg:h-[3740px] h-[4385px] bg-whitepaper-image bg-primary lg:px-0 ">
 
                 <div className="flex flex-col items-center text-center max-w-[1000px] w-full lg:px-[120px] py-[60px] bg-black/60 backdrop-blur-[10px] rounded-[30px]  lg:rounded-[80px] mt-[60px]  lg:mt-[100px] px-4">
                     <p className="text-pink text-[26px] lg:text-[60px] font-normal uppercase ">
@@ -155,9 +192,7 @@ export default function Page() {
                     </div>
 
                 </div>
-                <div className="">
                     <Slider />
-                </div>
 
                 <div className="flex flex-col items-center pb-[83px] md:pb-[80px] pt-[60px] mt-[60px] bg-black/60 max-w-[1000px] w-full backdrop-blur-[10px] rounded-[30px] lg:rounded-[80px] " id="roadmap">
                     <p className="text-pink text-[26px] lg:text-[60px] uppercase font-normal">
@@ -188,7 +223,7 @@ export default function Page() {
                         </PrimaryButton>
                     </a>
                 </div>
-                <div id="faq" className="h-full flex flex-col items-center pb-10 lg:pb-[100px] pt-[60px] mt-[60px] bg-black/60 max-w-[1000px] w-full backdrop-blur-[10px] rounded-[30px] lg:rounded-[80px] ">
+                <div id="faq" className="flex flex-col items-center pb-10 lg:pb-[100px] pt-[60px] mt-[60px] bg-black/60 max-w-[1000px] w-full backdrop-blur-[10px] rounded-[30px] lg:rounded-[80px] ">
                     <p className="text-pink text-[60px] uppercase font-normal">
                         FAQs
                     </p>

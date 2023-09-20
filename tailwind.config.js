@@ -13,13 +13,13 @@ export default {
       },
       backgroundImage: {
 
-        "primary-image": "url(/images/theme.png)",
+        "primary-image": "url(/images/hero.png)",
         "star-image": "url(/images/star.jpg)",
         "pillar-image":"url(/images/pillar.jpg)",
         "ourteam-image":"url(/images/ourteam.jpg)",
         "whitepaper-image":"url(/images/white-paper.png)",
         "footer-image":"url(/images/footer.jpg)",
-        "primary-image-mobile": "url(/images/theme-bg-mobile.png)",
+        "primary-image-mobile": "url(/images/theme-bg-mobile1.png)",
       },
       backgroundPosition: {
         "primary-image": "center",
@@ -54,7 +54,7 @@ export default {
         },
       },
       animation: {
-        'zoom-out-in': 'zoom-out 2s ease-in-out infinite , zoom-in 3s ease-in-out infinite',
+        'zoom-out-in': 'zoom-out  3s ease-in-out infinite , zoom-in 3s ease-in-out infinite',
         "scroll": 'scroll 10s linear infinite',
 
       },
