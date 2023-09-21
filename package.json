@@ -28,6 +28,7 @@
     "react-intersection-observer": "^9.5.2",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.15.0",
+    "resize-observer-polyfill": "^1.5.1",
     "tailwind-merge": "^1.14.0",
     "yargs": "^17.7.2"
   },
