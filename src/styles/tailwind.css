@@ -2,13 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-
 html {
-    font-family: 'Spicy Rice';
+  font-family: "Spicy Rice";
 }
 /* Define a CSS class using Tailwind CSS */
 .star {
-    background-image: url('/star-bg-mobile.svg'); /* Background image for all screens */
-    transform: rotate(90deg); /* Rotate the element */
-  }
-  
+  background-image: url("/star-bg-mobile.svg"); /* Background image for all screens */
+  transform: rotate(90deg); /* Rotate the element */
+}
+
+.no-scroll-bar::-webkit-scrollbar {
+  display: none !important;
+}
