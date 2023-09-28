@@ -27,7 +27,7 @@ export default function AnimatedText() {
           className={cn(
             `md:text-[50px] xl:text-[60px] text-secondary w-[180px] md:w-[336px] md:leading-[56px]`,
             "text-2xl font-normal uppercase",
-            "mt-12 md:mt-16 lg:mt-7 -ml-1 md:-ml-3"
+            "mt-28 md:mt-48  lg:mt-[99px] xl:mt-[260px] -ml-0 md:-ml-3 xl:-ml-5"
           )}
           animate={{
             scale: [0, 1, 0],

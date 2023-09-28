@@ -22,9 +22,11 @@ export default function Page() {
         )}
       >
         <AnimatedText />
+        <div className="mt-[70px] xl:mt-[230px]">
         <button className="text-sm md:text-lg font-normal text-secondary bg-primary py-[14px] px-[30px] md:px-10 md:py-5 uppercase rounded-[40px] mt-10 md:mt-[140px] lg:mt-[148px] ">
           Get Ordained Today
         </button>
+        </div>
       </section>
       <section className="relative z-10 px-4 py-20 pb-[98px]  md:-mt-2 bg-primary md:hidden">
         <div className="pt-2">
