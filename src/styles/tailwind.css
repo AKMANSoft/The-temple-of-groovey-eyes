@@ -14,3 +14,58 @@ html {
 .no-scroll-bar::-webkit-scrollbar {
   display: none !important;
 }
+
+.hero-section {
+  @apply aspect-[2.9/4]  md:aspect-[1.18/1] bg-no-repeat;
+  background-image: url(/images/hero-image.png);
+  background-size: cover;
+  background-color: black;
+  background-position: center;
+}
+
+.footer-bg {
+  @apply bg-primary;
+  background-image: url(/images/footer.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.grid-section-bg {
+  background-image: url(/images/white-paper.png);
+  background-size: 131px 197px;
+  background-repeat: repeat;
+}
+
+.our-team-section {
+  background-image: url(/images/our-team-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.pillar-of-temple-section {
+  background-image: url(/images/pillar-of-temple.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 767px) {
+  .hero-section {
+    background-image: url(/images/hero-image-mobile.png);
+    background-position-x: 1%;
+  }
+  .pillar-of-temple-section {
+    background-image: url(/images/pillar-of-temple-mobile.jpg);
+  }
+  .our-team-section {
+    background-image: url(/images/our-team-bg-mobile.jpg);
+  }
+  .grid-section-bg {
+    background-size: 126px 189px;
+  }
+  .footer-bg {
+    background-image: url(/images/footer-mobile.png);
+    background-size: 100%;
+  }
+}

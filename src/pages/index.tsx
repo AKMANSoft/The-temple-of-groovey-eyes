@@ -13,11 +13,11 @@ import AnimatedText from "./_AnimatedText";
 
 export default function Page() {
   return (
-    <div className="bg-black">
+    <div className="bg-black w-full">
       <Header />
       <section
         className={cn(
-          "flex flex-col h-full md:h-auto w-full aspect-[3.7/4] bg-primary-image md:aspect-[1.2/1] bg-no-repeat",
+          "flex flex-col h-full md:h-auto w-full hero-section",
           "  md:bg-black  mt-4 md:-mt-6 lg:mt-[0px]  items-center justify-center"
         )}
       >
@@ -26,7 +26,7 @@ export default function Page() {
           Get Ordained Today
         </button>
       </section>
-      <section className="relative z-10 px-4 py-20 pb-[98px] -mt-4 bg-primary md:hidden">
+      <section className="relative z-10 px-4 py-20 pb-[98px] -mt-2 bg-primary md:hidden">
         <div className="pt-2">
           <img
             src="/images/start-bottom.png"
@@ -77,7 +77,7 @@ export default function Page() {
       <section
         className={cn(
           "hidden md:flex items-center justify-center bg-star-image w-full h-auto aspect-[1.82/1] xl:aspect-[1.9/1]",
-          "-mt-[18px] lg:-mt-[20px] md:px-[12px] lg:px-[11%] xl:px-[15%] py-[9%]"
+          "-mt-[18px] lg:-mt-[30px] md:px-[12px] lg:px-[11%] xl:px-[15%] py-[9%]"
         )}
       >
         <div
@@ -120,7 +120,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className="flex justify-center px-4 bg-pillar-image lg:h-auto">
+      <section className="flex justify-center pillar-of-temple-section px-4 lg:h-auto">
         <div className="w-full  max-w-[1000px] text-center pt-[53px] pb-[65px] lg:py-[100px]">
           <h2 className="text-white text-[26px] leading-[30px] lg:text-[60px] lg:leading-[60px] font-normal uppercase">
             THE PILLARS of the temple
@@ -177,7 +177,7 @@ export default function Page() {
       </section>
       <section
         className={cn(
-          "flex flex-col items-center justify-center bg-ourteam-image",
+          "flex flex-col items-center justify-center our-team-section",
           "lg:px-0 pt-[63px] lg:pt-[100px] pb-[138px] lg:pb-[100px]"
         )}
       >
@@ -213,7 +213,7 @@ export default function Page() {
           />
         </div>
       </section>
-      <motion.section className="flex flex-col items-center w-full h-fit bg-whitepaper-image bg-primary">
+      <motion.section className="flex flex-col items-center w-full grid-section-bg bg-primary">
         <div className="px-4 lg:px-0">
           <div className="text-center max-w-[1000px] w-full lg:px-[120px] py-[60px] bg-black/60 backdrop-blur-[10px] rounded-[30px]  lg:rounded-[80px] mt-[60px]  lg:mt-[100px] px-4">
             <h2 className="text-pink text-[26px] lg:text-[60px] leading-[100%] font-normal uppercase ">
@@ -281,22 +281,23 @@ export default function Page() {
         </div>
 
         {/* FAQ Section  */}
-        <div
-          id="faq"
-          className={cn(
-            "flex flex-col items-center pt-[60px] pb-[41px] lg:pb-[100px] mt-[20px] lg:mt-[40px] bg-black/60",
-            "max-w-[1000px] w-full backdrop-blur-[10px] rounded-[30px] lg:rounded-[80px]"
-          )}
-        >
-          <h2 className="text-pink text-[60px] uppercase leading-[100%] font-normal">
-            FAQs
-          </h2>
-          <div className="mt-[33px] w-full">
-            <FAQsSection />
+        <div className="w-full px-4 lg:px-0">
+          <div
+            className={cn(
+              "flex flex-col items-center pt-[60px] pb-[41px] lg:pb-[100px] mt-[20px] lg:mt-[40px] bg-black/60",
+              "max-w-[1000px] w-full backdrop-blur-[10px] rounded-[30px] lg:rounded-[80px] mx-auto"
+            )}
+          >
+            <h2 className="text-pink text-[60px] uppercase leading-[100%] font-normal">
+              FAQs
+            </h2>
+            <div className="mt-[33px] w-full">
+              <FAQsSection />
+            </div>
           </div>
         </div>
       </motion.section>
-      <motion.div className="flex flex-col items-center bg-footer-image -mt-[332px] h-[838px] pt-[342px] lg:pt-[214px]">
+      <motion.div className="flex flex-col items-center footer-bg -mt-[79px] md:-mt-[332px] h-[640px] md:h-[838px] pt-[89px] md:pt-[214px]">
         <Footer />
       </motion.div>
     </div>

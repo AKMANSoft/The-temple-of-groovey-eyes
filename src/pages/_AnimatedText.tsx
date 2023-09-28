@@ -26,12 +26,13 @@ export default function AnimatedText() {
         <motion.p
           className={cn(
             `md:text-[50px] text-secondary w-[180px] md:w-[336px] md:leading-[56px]`,
-            "text-2xl left-[24%] md:left-0 font-normal uppercase"
+            "text-2xl font-normal uppercase",
+            "-mt-11 md:mt-5 -ml-1 md:-ml-3"
           )}
           animate={{
             scale: [0, 1, 0],
-            translateX: [-80, 0, -80],
-            translateY: [65, 0, 65],
+            // translateX: [translateX, 0, translateX],
+            // translateY: [translateY, 0, translateY],
           }}
           transition={{
             duration: 4,

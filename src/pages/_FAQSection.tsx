@@ -305,10 +305,10 @@ export default function FAQsSection() {
         <AccordionItem
           key={index}
           value={`faq-${index}`}
-          className="p-[30px] py-[14px] md:py-[22px] md:px-6 bg-white/20 w-full"
+          className="px-[14px] py-[14px] md:py-[20px] md:px-6 bg-white/20 rounded-[40px] data-[state=open]:rounded-[30px] w-full"
         >
           <AccordionTrigger className="font-normal data-[state=open]:font-bold">
-            <span>{faq.heading}</span>
+            <span className="w-full text-start">{faq.heading}</span>
           </AccordionTrigger>
           <AccordionContent className="">{faq.content}</AccordionContent>
         </AccordionItem>
