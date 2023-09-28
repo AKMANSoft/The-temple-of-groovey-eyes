@@ -15,7 +15,7 @@ export default function AnimatedText() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % texts.length);
-    }, 5000);
+    }, 7000);
 
     return () => clearInterval(interval);
   }, []);
@@ -35,9 +35,9 @@ export default function AnimatedText() {
             // translateY: [translateY, 0, translateY],
           }}
           transition={{
-            duration: 4,
+            duration: 6,
             ease: "easeInOut",
-            times: [0, 0.8, 1.2],
+            times: [0, 0.2, 1.5],
             repeat: Infinity,
             repeatDelay: 1,
             repeatType: "loop",
