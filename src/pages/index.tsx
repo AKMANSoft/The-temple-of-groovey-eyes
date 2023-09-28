@@ -17,16 +17,16 @@ export default function Page() {
       <Header />
       <section
         className={cn(
-          "flex flex-col h-full md:h-auto w-full hero-section",
-          "  md:bg-black  mt-4 md:-mt-6 lg:mt-[0px]  items-center justify-center"
+          "flex flex-col h-full md:h-auto w-full hero-section ",
+          "  md:bg-black  -mt-2 md:-mt-6 lg:mt-[0px]  items-center justify-center"
         )}
       >
         <AnimatedText />
-        <button className="text-sm md:text-lg font-normal text-secondary bg-primary py-[14px] px-[30px] md:px-10 md:py-5 uppercase rounded-[40px] md:mt-[140px] ">
+        <button className="text-sm md:text-lg font-normal text-secondary bg-primary py-[14px] px-[30px] md:px-10 md:py-5 uppercase rounded-[40px] mt-10 md:mt-[140px] lg:mt-[148px] ">
           Get Ordained Today
         </button>
       </section>
-      <section className="relative z-10 px-4 py-20 pb-[98px] -mt-2 bg-primary md:hidden">
+      <section className="relative z-10 px-4 py-20 pb-[98px]  md:-mt-2 bg-primary md:hidden">
         <div className="pt-2">
           <img
             src="/images/start-bottom.png"

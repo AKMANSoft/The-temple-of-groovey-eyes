@@ -25,9 +25,9 @@ export default function AnimatedText() {
       {
         <motion.p
           className={cn(
-            `md:text-[50px] text-secondary w-[180px] md:w-[336px] md:leading-[56px]`,
+            `md:text-[50px] xl:text-[60px] text-secondary w-[180px] md:w-[336px] md:leading-[56px]`,
             "text-2xl font-normal uppercase",
-            "-mt-11 md:mt-5 -ml-1 md:-ml-3"
+            "mt-12 md:mt-16 lg:mt-7 -ml-1 md:-ml-3"
           )}
           animate={{
             scale: [0, 1, 0],
@@ -37,7 +37,7 @@ export default function AnimatedText() {
           transition={{
             duration: 4,
             ease: "easeInOut",
-            times: [0, 0.6, 1],
+            times: [0, 0.8, 1.2],
             repeat: Infinity,
             repeatDelay: 1,
             repeatType: "loop",
