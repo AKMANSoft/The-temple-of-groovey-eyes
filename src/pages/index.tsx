@@ -18,17 +18,19 @@ export default function Page() {
       <section
         className={cn(
           "flex flex-col h-full md:h-auto w-full hero-section ",
-          "  md:bg-black  -mt-2 md:-mt-6 lg:mt-[0px]  items-center justify-center"
+          "md:bg-black  -mt-2 md:-mt-6 lg:mt-[0px] items-center justify-center"
         )}
       >
-        <AnimatedText />
-        <div className="mt-[70px] xl:mt-[230px]">
-        <button className="text-sm md:text-lg font-normal text-secondary bg-primary py-[14px] px-[30px] md:px-10 md:py-5 uppercase rounded-[40px] mt-10 md:mt-[140px] lg:mt-[148px] ">
-          Get Ordained Today
-        </button>
+        <div className="-mt-[22%] md:-mt-[6%] lg:mt-5 xl:mt-1 2xl:-mt-2">
+          <AnimatedText />
+        </div>
+        <div className="mt-[30px] xl:mt-[230px]">
+          <button className="text-sm md:text-lg font-normal text-secondary bg-primary py-[14px] px-[30px] md:px-10 md:py-5 uppercase rounded-[40px] mt-10 md:mt-[140px] lg:mt-[148px] ">
+            Get Ordained Today
+          </button>
         </div>
       </section>
-      <section className="relative z-10 px-4 py-20 pb-[98px]  md:-mt-2 bg-primary md:hidden">
+      <section className="relative z-10 px-4 py-20 pb-[98px] -mt-1  md:-mt-2 bg-primary md:hidden">
         <div className="pt-2">
           <img
             src="/images/start-bottom.png"
