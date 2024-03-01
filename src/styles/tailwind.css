@@ -4,6 +4,7 @@
 
 html {
   font-family: "Spicy Rice";
+  scroll-behavior: smooth;
 }
 /* Define a CSS class using Tailwind CSS */
 .star {

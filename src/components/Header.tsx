@@ -2,7 +2,7 @@ import MenuBar from "./MenuBar";
 
 export default function Header() {
   return (
-    <header className="w-full h-full bg-black ">
+    <header className="`w-full h-full bg-black`">
       <nav className="flex items-center justify-between w-full px-4 lg:px-5 pt-[10px] lg:pt-5 xl:px-[70px] xl:mx-auto ">
         <a href="/">
           <img
@@ -17,7 +17,7 @@ export default function Header() {
           <a href="#roadmap">Roadmap </a>
           <a href="">Shop</a>
           <a href="#faq">FAQ</a>
-          <a href="">GET ORDAINED</a>
+          <a href="/ordained">GET ORDAINED</a>
         </div>
         <button className="text-lg font-normal text-primary bg-white px-[30px] py-[14px] uppercase rounded-[40px] xl:block hidden leading-[100%] h-[53px]">
           Join Whitelist

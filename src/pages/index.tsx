@@ -319,7 +319,7 @@ export default function Page() {
         </div>
 
         {/* FAQ Section  */}
-        <div className="w-full px-4 lg:px-0">
+        <div className="w-full px-4 lg:px-0" id="faq">
           <div
             className={cn(
               "flex flex-col items-center pt-[60px] pb-[41px] lg:pb-[100px] mt-[20px] lg:mt-[40px] bg-black/60",

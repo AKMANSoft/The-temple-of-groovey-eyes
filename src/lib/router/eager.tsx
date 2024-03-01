@@ -1,25 +1,19 @@
+import GetOrdained from "@/pages/_GetOrdained";
 import { ReactNode } from "react";
 import { LoaderFunction, createBrowserRouter } from "react-router-dom";
-
-
-
 
 export type PageRoute = {
   path: string;
   PageContent: () => ReactNode;
   ErrorBoundary?: () => JSX.Element;
   loader?: LoaderFunction;
-}
-
-
+};
 
 const pages = import.meta.glob(
   "../../pages/**/*.{tsx,jsx}",
   { eager: true }
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-) as Record<string, any>
-
-
+) as Record<string, any>;
 
 const routes: PageRoute[] = [];
 for (const path of Object.keys(pages)) {
@@ -28,7 +22,7 @@ for (const path of Object.keys(pages)) {
     continue;
   }
 
-  const exactFilename = fileName.substring(fileName.lastIndexOf("/"))
+  const exactFilename = fileName.substring(fileName.lastIndexOf("/"));
   if (exactFilename.startsWith("_") || exactFilename === "layout") {
     continue;
   }
@@ -38,21 +32,26 @@ for (const path of Object.keys(pages)) {
     : fileName.replace(/\/index/, "");
 
   routes.push({
-    path: pages[path].path ?? (fileName === "index" ? "/" : `/${normalizedPathName.toLowerCase()}`),
+    path:
+      pages[path].path ??
+      (fileName === "index" ? "/" : `/${normalizedPathName.toLowerCase()}`),
     PageContent: pages[path].default,
     loader: pages[path]?.loader,
     ErrorBoundary: pages[path]?.ErrorBoundary,
   });
 }
 
-const router = createBrowserRouter(
-  routes.map(({ PageContent, path, loader, ErrorBoundary }) => ({
+const router = createBrowserRouter([
+  ...routes.map(({ PageContent, path, loader, ErrorBoundary }) => ({
     path: path,
     loader: loader,
     element: <PageContent />,
     ...(ErrorBoundary && { errorElement: <ErrorBoundary /> }),
-  }))
-);
-
+  })),
+  {
+    path: "/ordained",
+    element: <GetOrdained />,
+  },
+]);
 
 export default router;
