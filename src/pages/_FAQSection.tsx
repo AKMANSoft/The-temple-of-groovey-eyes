@@ -16,7 +16,7 @@ const faqsList = [
     heading: "What does Groovy Eye mean?",
     content: (
       <>
-        We perceive one another from an interior place, from the core belief
+        {/* We perceive one another from an interior place, from the core belief
         system there tells our eyes how to regard the things they see. Too many
         people look upon expressions of love and see ugliness, sin, and disgust.
         Too many people look upon women’s bodies and see shamefulness. Too many
@@ -29,7 +29,11 @@ const faqsList = [
         To be a Groovy Eye, all you have to do is look a bit deeper, below the
         surface, where inherent commonality of humanity resides, and the job is
         done. You’ve found your people! Welcome to the Temple of the Groovy Eye!
-        Welcome home.
+        Welcome home. */}
+        
+Yours are the Groovy Eyes. We perceive one another from an interior place, from the core belief system that tells our eyes how to regard the things they see. Too many people look upon expressions of love and see ugliness, sin, and disgust. Too many people look upon women’s bodies and see shamefulness. Too many people look upon those of different races or physical abilities and see lesser people. These are unnatural ways of seeing. We know love is always beautiful, women’s bodies are not shameful, and biological differences don’t make anyone less. The problem, therefore, must be in their eyes. To be a Groovy Eye, all you have to do is look a bit deeper, below the surface, where inherent commonality of humanity resides, and see that equality is the truth: the job is done. You’ve found your people! Welcome to the Temple of the Groovy Eye! Welcome home.
+
+
       </>
     ),
   },

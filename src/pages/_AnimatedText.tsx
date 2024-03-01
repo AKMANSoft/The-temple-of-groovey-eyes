@@ -25,7 +25,7 @@ export default function AnimatedText() {
       {
         <motion.p
           className={cn(
-            `md:text-[50px] xl:text-[60px] text-secondary w-[180px] md:w-[336px] md:leading-[56px]`,
+            `md:text-[50px] xl:text-[53.8px] text-secondary w-[180px] md:w-[336px] md:leading-[56px]`,
             "text-2xl font-normal uppercase",
             "mt-28 md:mt-48  lg:mt-[99px] xl:mt-[260px] -ml-0 md:-ml-3 xl:-ml-5"
           )}

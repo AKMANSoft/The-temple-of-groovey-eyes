@@ -140,7 +140,7 @@ export default function Page() {
           <div className="grid grid-cols-1 gap-5 mt-5 place-items-center lg:grid-cols-2 lg:mt-10">
             <Card
               src={"/images/piller-of-beginning.jpg"}
-              heading="THE PILLAR OF THE BEGINNING"
+              heading="THE PILLAR OF THE CREATION"
               subheading="“Matter is energy solidified.” – Albert Einstein"
               content={
                 <p>
@@ -159,9 +159,9 @@ export default function Page() {
               transbutton="View NFTS"
             />
             <Card
-              src={"/images/piller-of-wave.jpg"}
-              heading="THE PILLAR OF THE BEGINNING"
-              subheading="“Life is a wave, which in no two consecutive moments of its existence is composed of the same particles.” –John Tyndall"
+              src={"/images/piller-of-wave.png"}
+              heading="PILLAR OF THE WAVE"
+              subheading="“Life is a wave, which in no two consecutive moments of its existence is composed of the same particles.” – John Tyndall"
               content={
                 <p>
                   As an artist I have a deep fascination with waves, their
@@ -190,7 +190,7 @@ export default function Page() {
         </p>
         <div className="flex gap-5 overflow-x-auto max-w-[1000px] h-full w-full mt-[18px] md:mt-[26px] no-scroll-bar">
           <TeamComponent
-            src={"/images/circle.png"}
+            src={"/images/mary-team.png"}
             heading="Mary Salen"
             content={
               <p>
@@ -204,14 +204,11 @@ export default function Page() {
             }
           />
           <TeamComponent
-            src={"/images/circle.png"}
+            src={"/images/stu-team.png"}
             heading="Stu Salen"
             content={
               <p>
-                Is an attorney, patent-holding inventor, Peace Corps volunteer
-                alum, organic farmer, teacher,foster and adoptive parent, and
-                social justice activist––devoted to the ideal of Equality in our
-                Lifetime.
+                Is an attorney, patent-holding inventor, Peace Corps volunteer alum, organic farmer, teacher, foster and adoptive parent, and social justice activist ––devoted to the ideal of Equality in our Lifetime.
               </p>
             }
           />
@@ -253,7 +250,7 @@ export default function Page() {
               ))}
             </div>
             <div className="w-full flex flex-col items-center  text-center gap-5 lg:gap-10 max-w-[810px] px-5 mt-5 lg:mt-[30px]">
-              <p className="text-sm font-normal text-white lg:text-base font-Inter">
+              {/* <p className="text-sm font-normal text-white lg:text-base font-Inter">
                 Imagine sharing a beautiful celebration in real time, in a
                 beautiful virtual space where guests from all over the world can
                 gather and interact with one another, without travel expenses!
@@ -271,7 +268,44 @@ export default function Page() {
                 the sacredness of our present power to do good, and the holy
                 nature of our time spent on Earth dedicated to action in pursuit
                 of equality.
-              </p>
+              </p> */}
+               <p className="text-sm font-normal text-white lg:text-base font-Inter">
+        <span className="font-Inter">
+          {" "}
+          {/* Members are also eligible to submit art and writing for consideration
+          in the GroovyVerse gallery, newsletter, and blog. Moreover, Temple
+          ordination authorizes you to{" "} */}
+          Here in Pennsylvania, where the Temple is based, the fees for officiating a marriage range from $300-$800, plus expenses and a customary extra fee for a rehearsal. Of course, you can officiate for your friends and family for free, but it can also be a sweet side-hustle if you love the work and feel called to join people together in love and equality in the name of the Temple of the Groovy Eye. 
+
+        </span>
+        <br />
+        <br />
+        {/* <span className="">legally officiate marriage ceremonies</span>{" "} */}
+        <span className="font-Inter">
+          {" "}
+          {/* in all 50 states and wherever your country’s local laws allow. But
+          that’s not all, you could officiate hand-fastings, child-welcoming
+          ceremonies, funerals and memorial services. You’ll receive your
+          ordination credentials, a clergy parking pass, and an official Temple
+          press pass to get you up close to newsworthy equality and social
+          justice events to cover for the GroovyVerse.{" "} */}
+          In addition to being ordained, members will also be eligible to submit art and writing for consideration and publication in the GroovyVerse gallery, journal, and blog.
+
+        </span>
+        <br />
+        <br />
+        <span className="font-Inter">
+          {/* Be a love and equality activist—and earn extra income as a marriage
+          officiant! Here in Pennsylvania, where the Temple is based, the fees
+          for officiating a marriage range from $300-$800, plus expenses and a
+          customary extra fee for a rehearsal. Of course, you can officiate for
+          your friends and family for free, but it can also be a sweet
+          side-hustle if you love the work and feel called to join people
+          together in love and equality in the name of the Temple of the Groovy
+          Eye. */}
+          Groovy Eyes see groovy things. They look upon love and see beauty. They look for truth and see equality. It’s time to embrace love and equality, here and now, as a way of thinking and a way of life! Our sincerely held belief is in the sacredness of our present power to do good, and the holy nature of our time spent on Earth dedicated to action in pursuit of equality.
+        </span>
+      </p>
             </div>
             <p className="text-white text-base lg:text-xl font-normal mt-10 lg:mt-[60px]">
               This is the dream. This is the new way.
@@ -310,107 +344,143 @@ export default function Page() {
 
 const RoadMap = [
   {
-    heading: "This is not your grandfather’s religion.",
+    heading: "All People Are Created Equal.",
     content: (
       <p>
         <span className="font-Inter">
-          It’s time for a new religion! The Temple of the Groovy Eye is where
+          {/* It’s time for a new religion! The Temple of the Groovy Eye is where
           atheists, agnostics, and equality-loving spiritual people from all
           around the world can join together in the noble pursuit of: Equality
           in Our Lifetime! Be part of the new science-based movement rooted in
           truth and love! Come share ideas with one another, tell your stories
           and be part of a bright new community of voices in tune with love and
-          amplified by the knowledge that:
+          amplified by the knowledge that: */}
+          Come join the new movement! The Temple of the Groovy Eye is a Philosophical Union where atheists, agnostics,
+           and equality-loving spiritual people from around the world can join forces in the noble pursuit of:
         </span>
-        <span className="">All People Are Created Equal.</span>
-        <span className="block font-Inter mt-[20px]">
-          Equality is a single thing. Groovy Eyes see the diversity inherent in
+        <span className="">
+          {/* All People Are Created Equal. */}
+          Equality in Our Lifetime! 
+          </span>
+        <span className=" font-Inter ">
+          {/* Equality is a single thing. Groovy Eyes see the diversity inherent in
           our species as an evolutionary achievement––a glorious crown. Groovy
           Eyes embrace all genders and the LGBTQ+ community, we defend women’s
           rights and self-sovereignty, and we stand firmly against racism and
           prejudice. We are committed to preserving our environment for the next
           generation, and we are not afraid to speak on behalf of these issues
-          and use our non-violent power to strive for equality.
+          and use our non-violent power to strive for equality. */}
+           Be part of the new art and science-based movement rooted in truth and love! Come share ideas with one another,
+            tell your stories, and be part of a bright new community of voices in tune with love and amplified by the knowledge that:
+             All People Are Created Equal.
+
         </span>
       </p>
     ),
   },
   {
-    heading: "The GroovyVerse is our sacred space",
+    heading: "ALL memberships come with the opportunity to be legally ordained!",
     content: (
       <p className="font-Inter">
-        It’s time for truth and love to take their rightful place in the world
+        {/* It’s time for truth and love to take their rightful place in the world
         and deliver the dream of equality for us all. We can achieve it now like
-        never before, together––in the Metaverse!
+        never before, together––in the Metaverse! */}
+        Groovy Eyes see that equality is a single thing, and it begins at home. They see the diversity inherent in our species as an evolutionary achievement––a glorious crown. Groovy Eyes embrace all genders and the LGBTQ+ community, we defend women’s rights and self-sovereignty, and we stand collectively against racism, prejudice, and inequality. We are committed to preserving our environment for the next generation,
+         and we are not afraid to speak on behalf of these issues and use our non-violent power to strive for a more perfect union. 
+
         <br />
         <br />
-        The Temple of the Groovy Eye is a registered, non-profit religious
+        {/* The Temple of the Groovy Eye is a registered, non-profit religious
         institution in the Commonwealth of Pennsylvania, USA. A portion of the
         original purchase price for every NFT is tax-deductible (at least in the
         US) and will account for both your membership fee and a donation to the
         building fund for our Metaverse – the “GroovyVerse”. Original owners of
-        the first drop of NFTs will have lifetime membership status.
+        the first drop of NFTs will have lifetime membership status. */}
+        The Temple of the Groovy Eye is registered as a religious institution, but it is not your grandfather’s religion.
+         We are here to redefine what is holy, and redirect our minds, in a true religious sense, to the natural, present world
+          and the sacred task of using our power in it. To elevate truth and love to their rightful place in the world and finally
+           deliver the dream of equality for us all. We can achieve it together, now like never before––and we want to ordain you!
+            ALL memberships come with the opportunity to be legally ordained!
+
       </p>
     ),
   },
   {
-    heading: "ALL memberships come with the opportunity to be ordained!",
+    heading: "Get ordained—and earn extra income as a marriage officiant! ",
     content: (
       <p>
         <span className="font-Inter">
           {" "}
-          A place to gather, share art and writing, tell our stories and be
+          {/* A place to gather, share art and writing, tell our stories and be
           pro-active. A worldwide union of free-thinking, freedom-loving people
           who are hungry for a community to belong to that shares the sincerely
-          held belief that:{" "}
+          held belief that:{" "} */}
+          The Temple of the Groovy Eye currently resides on the web, and is finalizing plans to build a metaverse, the “GroovyVerse”, which will be a place to gather, share art and writing, tell our stories, and be pro-active. A worldwide
+           union of free-thinking, freedom-loving people who are hungry for belonging. A community that shares the sincerely held belief that:
         </span>{" "}
         <span> Here is a Holy Place to Be.</span>
+        <span className="font-Inter"> The GroovyVerse will be safe space to gather as equals, regardless of physical ability or geographic location. It will be a place for wedding ceremonies, memorial services and solemnities, baby-welcoming ceremonies, hand-fastings and other celebrations of life and love. We want you with us!</span>
         <br />
         <br />
         <span className="font-Inter">
-          The GroovyVerse is a safe space to be together as equals, regardless
-          of physical ability or geographic location. It is place for wedding
-          ceremonies, memorial services and solemnities, baby-welcoming
-          ceremonies, hand-fastings and other celebrations of life and love. We
-          want you with us!
+        The Temple of the Groovy Eye is a registered, non-profit religious institution in the Commonwealth of Pennsylvania, USA. A portion of the original purchase price for every NFT is tax-deductible (at least in the US) and will account for your membership fee, a portion of which will be dedicated toward construction of the GroovyVerse. Original ordained members of the first drop of NFTs will have lifetime membership status.
+
+        </span>
+        <br />
+        <br />
+        <span className="font-Inter">
+        Moreover, Temple ordination authorizes you to legally officiate marriage ceremonies in all 50 states and wherever your country’s local laws allow. But that’s not all, you could officiate egalitarian commitment ceremonies, hand-fastings, child-welcoming ceremonies, funerals and memorial services. You may even be able to officiate weddings and other ceremonies in the GroovyVerse! Imagine sharing a beautiful celebration in real time, in a beautiful virtual space where guests from all over the world can gather and interact with one another, without travel expenses! We can make it happen!
+
+        </span>
+        <br />
+        <br />
+        <span className="font-Inter">
+        Once you complete the easy ordination process, you’ll receive your frameable ordination credentials in the mail, as well as a clergy parking pass and an official Temple press pass to get you up close to newsworthy equality and social justice events to cover for the Temple.
         </span>
       </p>
     ),
   },
-  {
-    heading:
-      "You can even officiate weddings and other ceremonies in the GroovyVerse!",
-    content: (
-      <p>
-        <span className="font-Inter">
-          {" "}
-          Members are also eligible to submit art and writing for consideration
-          in the GroovyVerse gallery, newsletter, and blog. Moreover, Temple
-          ordination authorizes you to{" "}
-        </span>
-        <span className="">legally officiate marriage ceremonies</span>{" "}
-        <span className="font-Inter">
-          {" "}
-          in all 50 states and wherever your country’s local laws allow. But
-          that’s not all, you could officiate hand-fastings, child-welcoming
-          ceremonies, funerals and memorial services. You’ll receive your
-          ordination credentials, a clergy parking pass, and an official Temple
-          press pass to get you up close to newsworthy equality and social
-          justice events to cover for the GroovyVerse.{" "}
-        </span>
-        <br />
-        <br />
-        <span className="font-Inter">
-          Be a love and equality activist—and earn extra income as a marriage
-          officiant! Here in Pennsylvania, where the Temple is based, the fees
-          for officiating a marriage range from $300-$800, plus expenses and a
-          customary extra fee for a rehearsal. Of course, you can officiate for
-          your friends and family for free, but it can also be a sweet
-          side-hustle if you love the work and feel called to join people
-          together in love and equality in the name of the Temple of the Groovy
-          Eye.
-        </span>
-      </p>
-    ),
-  },
+  // {
+  //   heading:
+  //     "You can even officiate weddings and other ceremonies in the GroovyVerse!",
+  //   content: (
+  //     <p>
+  //       <span className="font-Inter">
+  //         {" "}
+  //         {/* Members are also eligible to submit art and writing for consideration
+  //         in the GroovyVerse gallery, newsletter, and blog. Moreover, Temple
+  //         ordination authorizes you to{" "} */}
+  //         Here in Pennsylvania, where the Temple is based, the fees for officiating a marriage range from $300-$800, plus expenses and a customary extra fee for a rehearsal. Of course, you can officiate for your friends and family for free, but it can also be a sweet side-hustle if you love the work and feel called to join people together in love and equality in the name of the Temple of the Groovy Eye. 
+
+  //       </span>
+  //       <br />
+  //       <br />
+  //       {/* <span className="">legally officiate marriage ceremonies</span>{" "} */}
+  //       <span className="font-Inter">
+  //         {" "}
+  //         {/* in all 50 states and wherever your country’s local laws allow. But
+  //         that’s not all, you could officiate hand-fastings, child-welcoming
+  //         ceremonies, funerals and memorial services. You’ll receive your
+  //         ordination credentials, a clergy parking pass, and an official Temple
+  //         press pass to get you up close to newsworthy equality and social
+  //         justice events to cover for the GroovyVerse.{" "} */}
+  //         In addition to being ordained, members will also be eligible to submit art and writing for consideration and publication in the GroovyVerse gallery, journal, and blog.
+
+  //       </span>
+  //       <br />
+  //       <br />
+  //       <span className="font-Inter">
+  //         {/* Be a love and equality activist—and earn extra income as a marriage
+  //         officiant! Here in Pennsylvania, where the Temple is based, the fees
+  //         for officiating a marriage range from $300-$800, plus expenses and a
+  //         customary extra fee for a rehearsal. Of course, you can officiate for
+  //         your friends and family for free, but it can also be a sweet
+  //         side-hustle if you love the work and feel called to join people
+  //         together in love and equality in the name of the Temple of the Groovy
+  //         Eye. */}
+  //         Groovy Eyes see groovy things. They look upon love and see beauty. They look for truth and see equality. It’s time to embrace love and equality, here and now, as a way of thinking and a way of life! Our sincerely held belief is in the sacredness of our present power to do good, and the holy nature of our time spent on Earth dedicated to action in pursuit of equality.
+  //       </span>
+  //     </p>
+  //   ),
+  // },
 ];
