@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 // import borderImg from "/images/shape.png";
 import Slider from "@/components/Slider";
-import WhatYouGet from "../components/WhatYouGet";
+import WhatYouGet from "@/components/WhatYouGet";
 import Footer from "@/components/Footer";
 import { cn } from "@/lib/utils";
 
@@ -11,7 +11,7 @@ export default function GetOrdained() {
       <div className="bg-primary">
         <Header />
         <div className={cn(
-          "flex items-center justify-center flex-col w-full h-auto  bg-borderImg bg-no-repeat",
+          "hidden md:flex items-center justify-center flex-col w-full h-auto  bg-borderImg ",
           "-mt-[18px] lg:-mt-[10px] md:px-[12px] lg:px-[11%] xl:px-[15%] py-[7%] "
         )}
         >

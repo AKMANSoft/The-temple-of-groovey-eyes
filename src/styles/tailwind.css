@@ -70,3 +70,10 @@ html {
     background-size: 100%;
   }
 }
+
+.banner-bg{
+  background-image: url(/images/shape.png);
+  background-position:center;
+  background-size:contain;
+  background-repeat: no-repeat;
+}
