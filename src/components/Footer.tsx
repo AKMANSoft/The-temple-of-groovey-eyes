@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <>
       <footer className="flex flex-col items-center justify-center">
-        <a href="" className="bg-white rounded-full mt-[170px]">
+        <a href="" className="bg-white rounded-full">
           <img
             src="/images/logo.svg"
             alt=""
