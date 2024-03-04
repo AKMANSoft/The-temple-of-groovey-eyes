@@ -21,7 +21,7 @@ export default function GetOrdained() {
               Ordination and other cool stuff
             </p>
 
-            <div className=" text-center mb-[35%] md:mb-[15%] lg:mb-[20%] w-[300px] sm:w-[500px] md:w-[600px] lg:w-[760px] font-Inter text-[14px]">
+            <div className=" text-center mb-[30%] md:mb-[10%]  w-[300px] sm:w-[500px] md:w-[600px] lg:w-[760px] font-Inter text-[14px]">
               <p className="mt-5 lg:mt-10 text-white">
                 <span className="text-white font-bold ">
                   ALL memberships come with the opportunity to be ordained!{" "}
@@ -75,20 +75,20 @@ export default function GetOrdained() {
           </div>
         </div>
 
-        <div className="grid-section-bg pb-7 lg:pb-[440px] h-auto ">
+        <div className="grid-section-bg pb-7 h-auto ">
           <div className="mt-[-200px] h-[230px] bg-primary mb-[100px]">
           <Slider />
           </div>
-          <div className="mt-[200px]">
+          <div className="mt-[200px] md:mt-[200px] lg:mt-[400px]">
             <WhatYouGet />
           </div>
-          <div className="w-auto lg:w-[1000px] bg-white py-[438px] mx-4 lg:mx-auto mt-10 rounded-[80px] lg:absolute z-50 lg:top-[78%] left-[15%]">
+          <div className="w-auto lg:w-[1000px] bg-white py-[438px] mx-4 lg:mx-auto mt-10 rounded-[80px] lg:relative  z-50">
             <p className="w-[208px] lg:w-full font-normal text-[30px] text-primary text-center  mx-auto">
               *Embedded google form view*
             </p>
           </div>
         </div>
-        <div className="footer-bg relative pb-[100px] lg:py-[150px]">
+        <div className="footer-bg py-[100px] lg:pt-[300px] lg:absolute lg:bottom-[-620%] xl:bottom-[-485%] w-full">
           <Footer />
         </div>
       </div>
