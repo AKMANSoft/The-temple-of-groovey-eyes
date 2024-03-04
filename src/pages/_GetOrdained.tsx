@@ -20,7 +20,7 @@ export default function GetOrdained() {
             Ordination and other cool stuff
             </p>
             
-          <div className=" text-center mb-[35%] md:mb-[15%] lg:mb-[20%] w-[300px] sm:w-[500px] md:w-[600px] lg:w-[760px] font-Inter text-[14px]">
+          <div className=" text-center mb-[35%] md:mb-[15%] lg:mb-[20%] w-[300px] sm:w-[500px] md:w-[550px] lg:w-[760px] font-Inter text-[14px]">
             <p className="mt-5 lg:mt-10 text-white">
               <span className="text-white font-bold ">
                 ALL memberships come with the opportunity to be ordained!{" "}
@@ -77,7 +77,7 @@ export default function GetOrdained() {
             <Slider />
             <WhatYouGet />
           </div>
-          <div className="w-auto lg:w-[1000px] bg-white py-[438px] mx-5 lg:mx-0 mt-10 rounded-[80px] lg:absolute z-50 lg:top-[78%] lg:left-[15%] ">
+          <div className="w-auto lg:w-[1000px] bg-white py-[438px] mx-4 lg:mx-auto mt-10 rounded-[80px] lg:absolute z-50 lg:top-[78%] left-[15%]">
             <p className="w-[208px] lg:w-full font-normal text-[30px] text-primary text-center  mx-auto">
               *Embedded google form view*
             </p>
