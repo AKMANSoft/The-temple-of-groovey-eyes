@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function Header() {
   const [activeLink , setActiveLink] =useState('ordained');
 
-  const handleSetActiveLink = (a) => {
+  const handleSetActiveLink = (a:string) => {
     setActiveLink(a);
   };
   

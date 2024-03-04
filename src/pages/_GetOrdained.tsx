@@ -1,9 +1,10 @@
 import Header from "@/components/Header";
 // import borderImg from "/images/shape.png";
 import Slider from "@/components/Slider";
-import WhatYouGet from "@/components/WhatYouGet";
 import Footer from "@/components/Footer";
 import { cn } from "@/lib/utils";
+import WhatYouGet  from '@/components/WhatYouGet';
+
 
 export default function GetOrdained() {
   return (
@@ -49,7 +50,7 @@ export default function GetOrdained() {
                 officiate life ceremonies, such as child-welcoming,
                 hand-fastings, funerals and memorial services, but most
                 importantly, commitment ceremonies, including legally binding
-                marriages in all 50 states and anywhere in the world local
+marriages in all 50 states and anywhere in the world local
                 jurisdictions allow.
               </p>
               <br />
