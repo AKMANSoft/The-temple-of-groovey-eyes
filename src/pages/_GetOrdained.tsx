@@ -11,25 +11,25 @@ export default function GetOrdained() {
       <div className="bg-primary">
         <Header />
         <div className={cn(
-          "hidden md:flex items-center justify-center flex-col w-full h-auto  bg-borderImg ",
+          "flex items-center justify-center flex-col w-full h-auto  bg-borderImg bg-no-repeat",
           "-mt-[18px] lg:-mt-[10px] md:px-[12px] lg:px-[11%] xl:px-[15%] py-[7%] "
         )}
         >
           
           {/* <img src={borderImg} alt="" className="" /> */}
-          <div>
-            <p className="text-sm lg:text-[53.85px] font-normal text-white mt-24">
+          <div className="">
+            <p className="text-sm lg:text-[53.85px] font-normal text-white">
               Ordination and other cool stuff
             </p>
             <p className="mt-10 text-white">
-              <span className="text-white bold text-[14px]">
+              <span className="text-white font-bold text-[14px]">
                 ALL memberships come with the opportunity to be ordained!{" "}
               </span>
               <span>
                 Simply navigate to the Membership page, provide your full name,
                 contact info, and attest to the sincerely held belief that:{" "}
               </span>
-              <span className="text-white bold text-[14px]">
+              <span className="text-white font-bold text-[14px]">
                 All People are Created Equal
               </span>
               <span>
@@ -70,18 +70,18 @@ export default function GetOrdained() {
           </div>
         </div>
 
-        <div className="grid-section-bg relative pb-[500px]">
-          <div className=" relative top-[-300px] ">
+        <div className="grid-section-bg relative pb-4 lg:pb-[500px]">
+          <div className=" relative top-[-40px] lg:top-[-300px] ">
             <Slider />
             <WhatYouGet />
           </div>
-          <div className="xs:w-full lg:w-[1000px] bg-white py-[438px] mx-auto rounded-[80px] absolute z-50 top-[80%] lg:left-[15%]">
+          <div className="w-auto md:w-[1000px] bg-white py-[438px] mx-5 rounded-[80px] md:absolute z-50 lg:top-[80%] lg:left-[15%]">
             <p className="font-normal text-[30px] text-primary text-center ">
               *Embedded google form view*
             </p>
         </div>
         </div>
-        <div className="footer-bg relative py-[150px]">
+        <div className="footer-bg relative pb-[100px] lg:py-[150px]">
           <Footer />
         </div>
       </div>

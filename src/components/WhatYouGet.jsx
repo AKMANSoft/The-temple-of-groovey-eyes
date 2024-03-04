@@ -71,7 +71,7 @@ export default function WhatYouGet() {
         </div> 
 
     ))}
-    <button className='btn rounded-3xl bg-pink text-white text-center px-[30px] py-[14px]'>JOIN WHITELIST</button>
+    {/* <button className='btn rounded-3xl bg-pink text-white text-center px-[30px] py-[14px]'>JOIN WHITELIST</button> */}
     </div>
     </div>
     
