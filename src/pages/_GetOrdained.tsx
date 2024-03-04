@@ -1,21 +1,27 @@
 import Header from "@/components/Header";
-import borderImg from "/images/shape.png";
+// import borderImg from "/images/shape.png";
 import Slider from "@/components/Slider";
-import WhatYouGet from "@/components/WhatYouGet";
+import WhatYouGet from "../components/WhatYouGet";
 import Footer from "@/components/Footer";
+import { cn } from "@/lib/utils";
 
 export default function GetOrdained() {
   return (
     <>
-      <div className="bg-primary w-full h-full ">
+      <div className="bg-primary">
         <Header />
-        <div className=" w-full xs:pb-0 pb-[450px] ">
-          <img src={borderImg} alt="" className="" />
-          <div className="text-center w-1/2 mx-auto absolute sm:top[20%] lg:top-96 sm:left-10 lg:left-80 text-white">
-            <p className="text-sm lg:text-[53.85px] font-normal text-white h-auto lg:h-[65px]">
+        <div className={cn(
+          "hidden md:flex items-center justify-center flex-col w-full h-auto  bg-borderImg ",
+          "-mt-[18px] lg:-mt-[10px] md:px-[12px] lg:px-[11%] xl:px-[15%] py-[7%] "
+        )}
+        >
+          
+          {/* <img src={borderImg} alt="" className="" /> */}
+          <div>
+            <p className="text-sm lg:text-[53.85px] font-normal text-white mt-24">
               Ordination and other cool stuff
             </p>
-            <p>
+            <p className="mt-10 text-white">
               <span className="text-white bold text-[14px]">
                 ALL memberships come with the opportunity to be ordained!{" "}
               </span>
@@ -34,7 +40,7 @@ export default function GetOrdained() {
               </span>
               <br />
             </p>
-            <p>
+            <p className="text-white">
               Ordination as a Temple “Groovy Eye” is a legal credential
               equivalent to any reverend, priest, rabbi, or minister. With this
               credential, you may represent our Philosophical Union and
@@ -44,7 +50,7 @@ export default function GetOrdained() {
               and anywhere in the world local jurisdictions allow.
             </p>
             <br />
-            <p>
+            <p className="text-white">
               Along with your ordination credentials, you will receive a clergy
               parking pass, and an official Temple press pass to get you up
               close to newsworthy equality and social justice events to cover
@@ -53,7 +59,7 @@ export default function GetOrdained() {
               Groovy Union journal, and blog.
             </p>
             <br />
-            <p>
+            <p className="text-white">
               You can even officiate weddings and other ceremonies in the
               GroovyVerse! Imagine sharing a beautiful celebration in real time,
               in a beautiful virtual space where guests from all over the world

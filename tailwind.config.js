@@ -15,17 +15,20 @@ export default {
         "star-image": "url(/images/star.jpg)",
         "ourteam-image": "url(/images/ourteam.jpg)",
         "primary-image-mobile": "url(/images/theme-bg-mobile1.png)",
+        "borderImg" :'url(/images/shape.png)',
       },
       backgroundPosition: {
         "star-image": "center",
         "ourteam-image": "center",
         "primary-image-mobile": "center",
+        'borderImg':'center'
       },
       backgroundSize: {
         "primary-image": "cover",
         "star-image": "cover",
         "ourteam-image": "cover",
         "primary-image-mobile": "cover",
+        'borderImg':'cover'
       },
       keyframes: {
         scroll: {
