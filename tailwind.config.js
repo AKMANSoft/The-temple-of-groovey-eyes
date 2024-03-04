@@ -28,7 +28,7 @@ export default {
         "star-image": "cover",
         "ourteam-image": "cover",
         "primary-image-mobile": "cover",
-        'borderImg':'contain'
+        'borderImg':'cover'
       },
       keyframes: {
         scroll: {

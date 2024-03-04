@@ -73,7 +73,8 @@ html {
 
 .banner-bg{
   background-image: url(/images/shape.png);
-  background-position:center;
-  background-size:contain;
+  background-position:fixed;
+  background-size:100%;
   background-repeat: no-repeat;
+  
 }

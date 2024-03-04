@@ -8,28 +8,28 @@ import { cn } from "@/lib/utils";
 export default function GetOrdained() {
   return (
     <>
-      <div className="bg-primary">
+      <div className="bg-primary ">
         <Header />
+        <div className="px-4">
         <div className={cn(
-          "hidden md:flex items-center justify-center flex-col w-full h-auto  bg-borderImg ",
-          "-mt-[18px] lg:-mt-[10px] md:px-[12px] lg:px-[11%] xl:px-[15%] py-[7%] "
+          "flex items-center justify-center flex-col w-full h-auto  banner-bg px-4",
+          " md:px-[16px] lg:px-[11%] xl:px-[15%] py-[11%] "
         )}
         >
-          
-          {/* <img src={borderImg} alt="" className="" /> */}
-          <div className="">
-            <p className="text-sm lg:text-[53.85px] font-normal text-white">
-              Ordination and other cool stuff
+            <p className="text-2xl lg:text-[53.85px] font-normal text-white uppercase pt-[58px] lg:pt-[100px] w-[300px] sm:w-[500px] md:w-[600px] lg:w-auto text-center ">
+            Ordination and other cool stuff
             </p>
-            <p className="mt-10 text-white">
-              <span className="text-white font-bold text-[14px]">
+            
+          <div className=" text-center mb-[35%] md:mb-[15%] lg:mb-[20%] w-[300px] sm:w-[500px] md:w-[600px] lg:w-[760px] font-Inter text-[14px]">
+            <p className="mt-5 lg:mt-10 text-white">
+              <span className="text-white font-bold ">
                 ALL memberships come with the opportunity to be ordained!{" "}
               </span>
               <span>
                 Simply navigate to the Membership page, provide your full name,
                 contact info, and attest to the sincerely held belief that:{" "}
               </span>
-              <span className="text-white font-bold text-[14px]">
+              <span className="text-white font-bold ">
                 All People are Created Equal
               </span>
               <span>
@@ -38,8 +38,8 @@ export default function GetOrdained() {
                 acceptance is immediate and your ordination package will be sent
                 to you via US mail.
               </span>
-              <br />
             </p>
+              <br />
             <p className="text-white">
               Ordination as a Temple “Groovy Eye” is a legal credential
               equivalent to any reverend, priest, rabbi, or minister. With this
@@ -70,13 +70,15 @@ export default function GetOrdained() {
           </div>
         </div>
 
-        <div className="grid-section-bg relative pb-4 lg:pb-[500px]">
-          <div className=" relative top-[-40px] lg:top-[-300px] ">
+        </div>
+
+        <div className="grid-section-bg relative pb-7 lg:pb-[440px] h-auto">
+          <div className=" relative top-[-200px] md:top-[-200px] lg:top-[-320px]">
             <Slider />
             <WhatYouGet />
           </div>
-          <div className="w-auto md:w-[1000px] bg-white py-[438px] mx-5 rounded-[80px] md:absolute z-50 lg:top-[80%] lg:left-[15%]">
-            <p className="font-normal text-[30px] text-primary text-center ">
+          <div className="w-auto lg:w-[1000px] bg-white py-[438px] mx-5 lg:mx-0 mt-10 rounded-[80px] lg:absolute z-50 lg:top-[78%] lg:left-[15%] ">
+            <p className="w-[208px] lg:w-full font-normal text-[30px] text-primary text-center  mx-auto">
               *Embedded google form view*
             </p>
         </div>
