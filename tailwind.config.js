@@ -10,6 +10,7 @@ export default {
         primary: "#0101FF",
         secondary: "#E9E933",
         pink: "#DA5AED",
+        gray:'rgba(1, 1, 255, 0.10)'
       },
       backgroundImage: {
         "star-image": "url(/images/star.jpg)",

@@ -1,4 +1,5 @@
 import GetOrdained from "@/pages/_GetOrdained";
+import Mint from "@/pages/_Mint";
 import { ReactNode } from "react";
 import { LoaderFunction, createBrowserRouter } from "react-router-dom";
 
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
   {
     path: "/ordained",
     element: <GetOrdained />,
+  },
+  {
+    path: "/mint",
+    element: <Mint />,
   },
 ]);
 
