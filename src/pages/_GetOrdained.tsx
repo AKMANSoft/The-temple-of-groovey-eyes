@@ -21,7 +21,7 @@ export default function GetOrdained() {
               Ordination and other cool stuff
             </p>
 
-            <div className=" text-center mb-[30%] md:mb-[10%]  w-[300px] sm:w-[500px] md:w-[600px] lg:w-[760px] font-Inter text-[14px]">
+            <div className=" text-center mb-[30%] md:mb-[30%] xl:mb-[0%] w-[300px] sm:w-[500px] md:w-[600px] lg:w-[760px] font-Inter text-[14px]">
               <p className="mt-5 lg:mt-10 text-white">
                 <span className="text-white font-bold ">
                   ALL memberships come with the opportunity to be ordained!{" "}
@@ -71,25 +71,27 @@ export default function GetOrdained() {
                 requirements.)
               </p>
               <br />
+              <br />
+              <br />
             </div>
           </div>
         </div>
 
-        <div className="grid-section-bg pb-7 h-auto ">
-          <div className="mt-[-200px] h-[230px] bg-primary mb-[100px]">
+        <div className="grid-section-bg h-auto ">
+          <div className="mt-[-200px] h-[290px] bg-primary mb-[100px]">
           <Slider />
           </div>
-          <div className="mt-[200px] md:mt-[200px] lg:mt-[400px]">
+          <div className="mt-[200px] md:mt-[200px] lg:mt-[340px]">
             <WhatYouGet />
           </div>
-          <div className="w-auto lg:w-[1000px] bg-white py-[438px] mx-4 lg:mx-auto mt-10 rounded-[80px] lg:relative  z-50">
+          <div className="w-auto lg:w-[1000px] bg-white py-[438px] mx-4 lg:mx-auto mt-10 rounded-[80px] lg:relative  z-50 mb-7 lg:mb-[-200px]">
             <p className="w-[208px] lg:w-full font-normal text-[30px] text-primary text-center  mx-auto">
               *Embedded google form view*
             </p>
           </div>
-        </div>
-        <div className="footer-bg py-[100px] lg:pt-[300px] lg:absolute lg:bottom-[-620%] xl:bottom-[-485%] w-full">
+        <div className="footer-bg py-[100px] lg:pt-[300px] w-full">
           <Footer />
+        </div>
         </div>
       </div>
     </>
