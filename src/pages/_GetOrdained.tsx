@@ -90,7 +90,7 @@ marriages in all 50 states and anywhere in the world local
               *Embedded google form view*
             </p>
           </div>
-        <div className="footer-bg py-[100px] lg:pt-[300px] w-full">
+        <div className="footer-bg py-[132px] lg:pt-[300px] w-full">
           <Footer />
         </div>
         </div>

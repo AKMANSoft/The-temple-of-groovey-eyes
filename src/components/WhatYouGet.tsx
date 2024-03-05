@@ -4,7 +4,9 @@
 export const data = [
     {
         heading:'You get a beautiful piece of original NFT photographic art',
-        content:'Created for the Temple of the Groovy Eye by Mary Salen, an American woman artist, which you may display proudly, gift, collect, trade, and print for personal use (commercial use prohibited). You also receive a single-use “Membership” NFT, which you may use, gift, or trade. Once exercised, the Membership NFT will be burned.        '
+        content:(
+            <p>Created for the Temple of the Groovy Eye {' '} <b>by Mary Salen</b> {" "}, an American woman artist, which you may display proudly, gift, collect, trade, and print for personal use (commercial use prohibited). You also receive a single-use “Membership” NFT, which you may use, gift, or trade. Once exercised, the Membership NFT will be burned.  </p>
+        )
     },
     {
         heading:'A Temple of the Groovy Eye certificate of ordination',
@@ -12,7 +14,8 @@ export const data = [
     },
     {
         heading:'A very groovy instant side-hustle – or main hustle!',
-        content:'This is not only fun, and an opportunity to speak out on behalf of love and equality, but an instant money-maker! The Temple will maintain a directory of ordained persons (with your consent) where people who want a Groovy Eye wedding, or other life-event ceremony, can find you'
+        content:(
+            <p>This is not only fun, and an opportunity to speak out on behalf of love and equality, but an{' '} <b>instant money-maker! </b>{' '} The Temple will maintain a directory of ordained persons (with your consent) where people who want a Groovy Eye wedding, or other life-event ceremony, can find you </p>)
     },
     {
         heading:'You get a beautiful piece of original NFT photographic art',
@@ -53,19 +56,19 @@ export default function WhatYouGet() {
     <div className="w-full px-4 lg:px-0">
           <div
             className="flex flex-col items-center pb-[83px] md:pb-[80px] pt-[60px] bg-black/60 max-w-[1000px] mx-auto w-full backdrop-blur-[10px] rounded-[30px] lg:rounded-[80px] "
-            id="roadmap"
+            
           >
             <h2 className="text-pink text-[26px] lg:text-[60px] leading-[100%] uppercase font-normal">
                 What you get:
             </h2>
             <p className="text-pink text-[26px] lg:text-[30px] leading-[100%] uppercase font-normal xs:w-full px-2 lg:w-[560px] text-center mt-2.5">A lot! The purchase of an NFT gets you a lifetime membership!  Plus:</p>
-            <div className="flex flex-col gap-[30px] mt-[30px]"></div>
+            {/* <div className="flex flex-col gap-[30px] mt-[30px]"></div> */}
     {data.map((data,index)=>(
-       <div key={index} className="w-full flex flex-col items-center  text-center gap-5 max-w-[810px] px-5 mt-10">
-            <p className="bg-secondary  text-sm lg:text-xl rounded-[40px] lg:rounded-[60px] max-w-[800px] w-full text-primary h-auto lg:h-[65px] flex items-center justify-center px-8 py-3">
+       <div key={index} className="w-full flex flex-col items-center  text-center gap-5 max-w-[810px] mt-7">
+            <p className="bg-secondary  text-sm lg:text-xl rounded-[40px] lg:rounded-[60px] max-w-[800px] w-full text-primary h-auto lg:h-[65px] flex items-center justify-center px-8 ">
                 {data.heading}
             </p>
-            <p className="text-sm font-normal text-white lg:text-base ">
+            <p className="text-sm font-Inter text-white">
                 {data.content}
             </p>
         </div> 
