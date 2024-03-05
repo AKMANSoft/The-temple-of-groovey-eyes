@@ -85,12 +85,12 @@ export default function GetOrdained() {
           <div className="mt-[180px] md:mt-[200px] lg:mt-[340px]">
             <WhatYouGet />
           </div>
-          <div className="w-auto lg:w-[1000px] bg-white py-[438px] mx-4 lg:mx-auto mt-10 rounded-[80px] lg:relative  z-50 mb-7 lg:mb-[-200px]">
+          <div className="w-auto lg:w-[1000px] bg-white py-[438px] mx-4 lg:mx-auto mt-10 rounded-[80px] lg:relative  z-50 mb-[18px] lg:mb-[-200px]">
             <p className="w-[208px] lg:w-full font-normal text-[30px] text-primary text-center  mx-auto">
               *Embedded google form view*
             </p>
           </div>
-        <div className="footer-bg pb-[78px] lg:pb-[132px] pt-[100px] lg:pt-[300px] w-full">
+        <div className="footer-bg pb-[73px] lg:pb-[132px] pt-[100px] lg:pt-[300px] w-full">
           <Footer />
         </div>
         </div>
