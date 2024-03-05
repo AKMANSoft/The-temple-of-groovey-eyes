@@ -10,7 +10,8 @@ export default {
         primary: "#0101FF",
         secondary: "#E9E933",
         pink: "#DA5AED",
-        gray:'rgba(1, 1, 255, 0.10)'
+        gray:'rgba(1, 1, 255, 0.10)',
+        mintColor:"rgba(1, 1, 255, 0.70)"
       },
       backgroundImage: {
         "star-image": "url(/images/star.jpg)",
@@ -54,6 +55,8 @@ export default {
       },
       fontFamily: {
         Inter: "Inter",
+        graphik:'Graphik',
+        spicyRice:"Spicy Rice"
       },
     },
   },

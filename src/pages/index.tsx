@@ -249,7 +249,7 @@ export default function Page() {
                 <RoadMapListItem RoadMap={RoadMap} />
               ))}
             </div>
-            <div className="w-full flex flex-col items-center  text-center gap-5 lg:gap-10 max-w-[810px] px-5 mt-5 lg:mt-[30px]">
+            <div className="w-full flex flex-col items-center  text-center gap-5 lg:gap-10 max-w-[810px]  mt-5 lg:mt-[30px]">
               {/* <p className="text-sm font-normal text-white lg:text-base font-Inter">
                 Imagine sharing a beautiful celebration in real time, in a
                 beautiful virtual space where guests from all over the world can
@@ -269,9 +269,9 @@ export default function Page() {
                 nature of our time spent on Earth dedicated to action in pursuit
                 of equality.
               </p> */}
-               <p className="text-sm font-normal text-white lg:text-base font-Inter">
-        <span className="font-Inter">
-          {" "}
+               <p className="text-[16px] font-normal text-white lg:text-base font-Inter">
+          <span className="font-Inter">
+          
           {/* Members are also eligible to submit art and writing for consideration
           in the GroovyVerse gallery, newsletter, and blog. Moreover, Temple
           ordination authorizes you to{" "} */}
@@ -356,7 +356,7 @@ const RoadMap = [
           and be part of a bright new community of voices in tune with love and
           amplified by the knowledge that: */}
           Come join the new movement! The Temple of the Groovy Eye is a Philosophical Union where atheists, agnostics,
-           and equality-loving spiritual people from around the world can join forces in the noble pursuit of:
+           and equality-loving spiritual people from around the world can join forces in the noble pursuit of: {''}
         </span>
         <span className="">
           {/* All People Are Created Equal. */}
@@ -410,12 +410,12 @@ const RoadMap = [
     content: (
       <p>
         <span className="font-Inter">
-          {" "}
+          
           {/* A place to gather, share art and writing, tell our stories and be
           pro-active. A worldwide union of free-thinking, freedom-loving people
           who are hungry for a community to belong to that shares the sincerely
           held belief that:{" "} */}
-          The Temple of the Groovy Eye currently resides on the web, and is finalizing plans to build a metaverse, the “GroovyVerse”, which will be a place to gather, share art and writing, tell our stories, and be pro-active. A worldwide
+          The Temple of the Groovy Eye currently resides on the web, and is finalizing plans to build a metaverse, the <b> “GroovyVerse” </b>, which will be a place to gather, share art and writing, tell our stories, and be pro-active. A worldwide
            union of free-thinking, freedom-loving people who are hungry for belonging. A community that shares the sincerely held belief that: {" "}
         </span>
         <span> Here is a Holy Place to Be.</span>
