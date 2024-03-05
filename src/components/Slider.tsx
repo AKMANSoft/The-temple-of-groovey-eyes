@@ -39,7 +39,7 @@ function Slider() {
 	return (
 		<div
 			ref={containerRef}
-			className="w-full py-[60px] overflow-x-auto no-scroll-bar relative"
+			className="w-full pt-[40px] lg:py-[60px] overflow-x-auto no-scroll-bar relative"
 		>
 			<motion.div
 				ref={scrollRef}

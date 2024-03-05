@@ -64,8 +64,8 @@ export default function WhatYouGet() {
             <p className="text-pink text-[26px] lg:text-[30px] leading-[100%] uppercase font-normal xs:w-full px-2 lg:w-[560px] text-center mt-2.5">A lot! The purchase of an NFT gets you a lifetime membership!  Plus:</p>
             {/* <div className="flex flex-col gap-[30px] mt-[30px]"></div> */}
             {data.map((data,index)=>(
-                <div key={index} className="w-full flex flex-col items-center  text-center gap-5 max-w-[810px] mt-7">
-                    <p className="bg-secondary  text-sm lg:text-xl rounded-[40px] lg:rounded-[60px] max-w-[800px] w-full text-primary h-auto lg:h-[65px] flex items-center justify-center px-8 ">
+                <div key={index} className="w-full flex flex-col items-center  text-center gap-5 max-w-[300px] lg:max-w-[810px] mt-7">
+                    <p className="bg-secondary  text-sm lg:text-xl rounded-[40px] lg:rounded-[60px] max-w-[303px] lg:max-w-[800px] w-full text-primary h-auto lg:h-[65px] flex items-center justify-center px-8 py-[14px] lg:py-0">
                         {data.heading}
                     </p>
                     <p className="text-sm font-Inter text-white mb-5">
