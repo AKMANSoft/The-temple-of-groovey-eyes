@@ -56,13 +56,13 @@ export default function MintPage() {
                                 Mint Your NFT
                             </h3>
                         </div>
-                        <div className="lg:flex  gap-x-5 lg:w-[850px] px-7 mt-[30px]">
+                        <div className="lg:flex  gap-x-5 lg:w-[850px] px-[25px] mt-2.5 lg:mt-[30px]">
                             <div>
-                                <img src="/images/piller-of-beginning.jpg" alt=""  className="rounded-[20px] object-cover object-center w-[418px] h-[285px]" />
+                                <img src="/images/piller-of-beginning.jpg" alt=""  className="rounded-[20px] object-cover object-center w-[418px] h-[196px] lg:h-[285px]" />
                             </div>
                             {/* status and price div*/}
                             <div className="lg:w-1/2 flex flex-col justify-between mx-4  md:space-y-0 space-y-2">
-                                <div className="flex justify-between text-xs font-semibold">
+                                <div className="flex justify-between text-xs font-semibold mt-5 lg:mt-0">
                                     <p className="text-mintColor">
                                         STATUS
                                     </p>
@@ -120,13 +120,13 @@ export default function MintPage() {
                     </div>
                 </div>
             
-            <div className="relative pt-[117px]">
+            <div className="relative lg:pt-[117px]">
                 <div className="hidden lg:flex items-center justify-center absolute  left-1/2 -translate-x-1/2 -translate-y-1/2 mt-[100px] ">
                     <a href="/">
                         <img src="/images/logo.svg" alt="" className='w-[160px] md:w-[198px]' />
                     </a>
                 </div>
-                <div className="md:flex items-center py-40 justify-between mx-auto lg:w-[846px]">
+                <div className="md:flex items-center py-[120px] lg:py-40 justify-between mx-auto lg:w-[846px]">
                     <div className="lg:flex hidden">
                         <p className="text-white text-base ">
                             © 2023 – Kraut9 – All Rights Reserved

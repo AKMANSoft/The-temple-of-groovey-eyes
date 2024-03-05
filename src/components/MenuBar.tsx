@@ -1,6 +1,7 @@
 import { Cross1Icon } from "@radix-ui/react-icons";
 import { useEffect, useState } from "react";
 import { PrimaryButton } from "@/components/ui/Button";
+import { Link } from "react-router-dom";
 
 export default function MenuBar() {
   const [isContentOpen, setIsContentOpen] = useState(false);
@@ -59,7 +60,9 @@ export default function MenuBar() {
             </div>
             <div className="flex w-full mt-[43px]">
               <PrimaryButton className="bg-white text-primary w-full text-2xl px-[30px] py-5 text-center">
-                Join Whitelist
+                <Link to='/mint'>
+                  Join Whitelist
+                </Link>
               </PrimaryButton>
             </div>
           </div>
