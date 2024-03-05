@@ -67,7 +67,7 @@ Equality begins at home, let’s officially pronounce that.
       <>
         {/* Yes! We are registered in the Commonwealth of Pennsylvania as a <span className="font-bold">non-profit</span> religious institution, and as such, individuals ordained by the Temple are recognized in all 50 states!Please check with your local jurisdiction to be sure that no additional paperwork or confirmation is required. Letters of good standing from the Temple are not generally required but are available upon request to ordained members for a nominal fee.
         International members should inquire with their local governments. We will work with you! */}
-        Yes! We are registered in the Commonwealth of Pennsylvania as a<span className="font-bold">non-profit</span>  religious institution, and as such, individuals ordained by the Temple are recognized in all 50 states! Please check with your local jurisdiction to be sure that no additional paperwork or confirmation is required. Letters of good standing from the Temple are not generally required but are available upon request to ordained members for a nominal fee. International members should inquire with their local governments. We will work with you!
+        Yes! We are registered in the Commonwealth of Pennsylvania as a {' '}<span className="font-bold">non-profit</span>  religious institution, and as such, individuals ordained by the Temple are recognized in all 50 states! Please check with your local jurisdiction to be sure that no additional paperwork or confirmation is required. Letters of good standing from the Temple are not generally required but are available upon request to ordained members for a nominal fee. International members should inquire with their local governments. We will work with you!
 
       </>
     ),
@@ -76,7 +76,7 @@ Equality begins at home, let’s officially pronounce that.
     heading: "Can I get paid to officiate weddings and other ceremonies?",
     content: (
       <>
-        You bet! Being an ordained “Groovy Eye” a <span className="font-bold">great</span> side hustle––or main hustle! Get paid to join people together in <span className="font-bold">love and equality</span> in the name of the Temple of the Groovy Eye. The going rate for marriage officiants in the USA ranges from <span className="font-bold">$300-$800 per ceremony, plus expenses and extra for a rehearsal!</span> Get paid to do something beautiful! How cool is that?
+        You bet! Being an ordained “Groovy Eye” a great side hustle––or main hustle! Get paid to join people together in <span className="font-bold">love and equality</span> in the name of the Temple of the Groovy Eye. The going rate for marriage officiants in the USA ranges from <span className="font-bold">$300-$800 per ceremony, plus expenses and extra for a rehearsal!</span> Get paid to do something beautiful! How cool is that?
       </>
     ),
   },
@@ -103,7 +103,8 @@ Equality begins at home, let’s officially pronounce that.
     content: (
       <>
         {/* The Temple of the Groovy Eye has already secured the “land,” the virtual space to build the GroovyVerse. */}
-         All “building funds” received from NFT sales will go directly into the development of the site, with the goal of going live <span className="font-bold">this year!</span> Updates on progress will be regularly provided on the website.
+        All “building funds” received from NFT sales will go directly into the development of the site, with the goal of raising sufficient funds to go live in 2024! Updates on progress will be regularly provided on the website.
+
       </>
     ),
   },
@@ -111,7 +112,8 @@ Equality begins at home, let’s officially pronounce that.
     heading: "Do I have to believe in God to join?",
     content: (
       <>
-        <span className="font-bold"> NO!</span> We welcome all atheists, agnostics, and equality-loving spiritual people. Our focus is on the sanctity of here and now, and the holy nature of our own actions in the world.
+        <span className="font-bold"> NO!</span> We are a philosophical union that welcomes all atheists, agnostics, and equality-loving spiritual people. Our only focus is on the sanctity of here and now, and the holy nature of our own actions in this, present world. 
+            <br />
          <span className="font-bold">Here is a Holy Place to Be.</span>
       </>
     ),
@@ -122,19 +124,26 @@ Equality begins at home, let’s officially pronounce that.
       <>
         {/* We do not charge annual fees for "founding" NFT owners! We will charge a small annual fee for subsequent membership to enable us to maintain the functioning of the Temple. We want a community that is easy to join, inclusive, and welcoming. A first-time founding, first drop NFT purchase <span className="font-bold"> will cover you forever.</span> You will remain a member for as long as you continue to share the Temple’s love for equality. Of course, we’d appreciate it very much if you’d consider buying our merch online too. Your purchases help us grow and improve our outreach—and make cool gifts—but are in no way required. We do provide members with a sweet discount though! */}
         We do not charge annual fees for “founding” first-drop members! We will charge an annual fee for subsequent memberships that enable us to maintain the functioning of the Temple. We want a community that is easy to join, inclusive, and welcoming. Membership from the <span className="font-bold">first NFT drop will cover you forever.</span> You will remain a member for as long as you continue to share the Temple’s love for equality. Of course, we’d appreciate it very much if you’d consider buying our merch online too. Your purchases help us grow and improve our outreach—and make cool gifts—but are in no way required. We do provide members with free shipping and special discounts, though!
-      </>
-    ),
-  },
-  {
-    heading: "Mint details:",
-    content: (
-      <>
-        Our initial drop is small, meant to create a strong, founding group, and consists of 500 NFTs divided into the first two foundational Pillars – “Creation,” and “The Wave.” <br />
-        Price: $150 each, 30% of which is tax-deductible (in the US) and will account for your lifetime Temple of the Groovy Eye membership fee and donation to the “GroovyVerse Building Fund.” <br />
+      <br /><br /><span className="font-bold">
+      Mint details:
+      </span><br />
+      Our initial drop is small, meant to create a strong, founding group, and consists of 500 NFTs divided into the first two foundational Pillars – “Creation,” and “The Wave.” 
+        Price: ___ ETH, 30% of which is tax-deductible (in the US) and will account for your lifetime Temple of the Groovy Eye membership fee and contribution to the “GroovyVerse Building Fund.”
         Founding members will have their names displayed in the Temple for the Grand Opening and archived as part of the Temple’s permanent history.
       </>
     ),
   },
+  // {
+  //   heading: "Mint details:",
+  //   content: (
+  //     <> 
+  //       Our initial drop is small, meant to create a strong, founding group, and consists of 500 NFTs divided into the first two foundational Pillars – “Creation,” and “The Wave.” 
+  //       Price: ___ ETH, 30% of which is tax-deductible (in the US) and will account for your lifetime Temple of the Groovy Eye membership fee and contribution to the “GroovyVerse Building Fund.”
+  //       Founding members will have their names displayed in the Temple for the Grand Opening and archived as part of the Temple’s permanent history.
+
+  //     </>
+  //   ),
+  // },
   {
     heading: "Why join?",
     content: (
@@ -148,7 +157,7 @@ Equality begins at home, let’s officially pronounce that.
     content: (
       <>
         Marriages, commitment ceremonies, and hand-fastings are important to the Temple because we know that equality begins at home. Equality is love’s natural bedfellow, and relationships anchored in equality model that respect and love to the world; and when the commitment to equality is included in the union, a strong foundation is mindfully laid for society. As an ordained Groovy Eye, you can include our (or your own) statement of equality in every celebration of a love commitment. 
-<br />
+<br /><br />
 A broad foundation of equality in the home is central to our lives, opens eyes and minds and reaches out to broader relationships and organizations. It makes the Temple’s quest for Equality in Our Lifetime achievable, one love-match at a time. This is how we do it. This is how love wins.
       </>
     ),
