@@ -33,7 +33,9 @@ export default function Header() {
             onClick={() => handleSetActiveLink('ordained')}>GET ORDAINED</Link>
         </div>
         <button className="text-lg font-normal text-primary bg-white px-[30px] py-[14px] uppercase rounded-[40px] xl:block hidden leading-[100%] h-[53px]">
+          <Link to='/mint'>
           Join Whitelist
+          </Link>
         </button>
         <MenuBar />
       </nav>

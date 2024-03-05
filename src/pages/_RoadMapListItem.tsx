@@ -12,7 +12,7 @@ type RoadMapListItemProps = {
 
 export default function RoadMapListItem({ RoadMap }: RoadMapListItemProps) {
     return (
-        <div className="w-full flex flex-col items-center  text-center gap-5 lg:gap-10 max-w-[810px] px-5">
+        <div className="w-full flex flex-col items-center  text-center gap-5 lg:gap-10 max-w-[810px] px-5 lg:px-0">
             <p className="text-sm font-normal text-white lg:text-base">
                 {RoadMap.content}
             </p>

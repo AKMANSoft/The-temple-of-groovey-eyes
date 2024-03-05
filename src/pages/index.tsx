@@ -370,7 +370,7 @@ const RoadMap = [
           prejudice. We are committed to preserving our environment for the next
           generation, and we are not afraid to speak on behalf of these issues
           and use our non-violent power to strive for equality. */}
-           Be part of the new art and science-based movement rooted in truth and love! Come share ideas with one another,
+            {''} Be part of the new art and science-based movement rooted in truth and love! Come share ideas with one another,
             tell your stories, and be part of a bright new community of voices in tune with love and amplified by the knowledge that:
              All People Are Created Equal.
 
@@ -416,8 +416,8 @@ const RoadMap = [
           who are hungry for a community to belong to that shares the sincerely
           held belief that:{" "} */}
           The Temple of the Groovy Eye currently resides on the web, and is finalizing plans to build a metaverse, the “GroovyVerse”, which will be a place to gather, share art and writing, tell our stories, and be pro-active. A worldwide
-           union of free-thinking, freedom-loving people who are hungry for belonging. A community that shares the sincerely held belief that:
-        </span>{" "}
+           union of free-thinking, freedom-loving people who are hungry for belonging. A community that shares the sincerely held belief that: {" "}
+        </span>
         <span> Here is a Holy Place to Be.</span>
         <span className="font-Inter"> The GroovyVerse will be safe space to gather as equals, regardless of physical ability or geographic location. It will be a place for wedding ceremonies, memorial services and solemnities, baby-welcoming ceremonies, hand-fastings and other celebrations of life and love. We want you with us!</span>
         <br />

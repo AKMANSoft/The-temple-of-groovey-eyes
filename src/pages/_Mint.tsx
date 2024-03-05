@@ -1,4 +1,6 @@
 // import { PrimaryButton, SecondaryButton } from "../components/Buttons";
+import Footer from '@/components/Footer';
+import MintFooter from '@/components/MintFooter';
 import { useState } from 'react';
 
 
@@ -118,19 +120,19 @@ export default function MintPage() {
                     </div>
                 </div>
             
-            <div className="relative">
-                <div className="flex items-center justify-center absolute  left-1/2 -translate-x-1/2 -translate-y-1/2 mt-[127px]">
+            <div className="relative ">
+                <div className="hidden md-flex items-center justify-center absolute  left-1/2 -translate-x-1/2 -translate-y-1/2 mt-[127px] ">
                     <a href="/">
                         <img src="/images/logo.svg" alt="" className='w-[160px] md:w-[198px]' />
                     </a>
                 </div>
                 <div className="md:flex items-center py-40 justify-around mx-16 max-w-screen-xl xl:mx-auto">
                     <div className="md:flex hidden">
-                        <p className="text-white text-base font-normal">
+                        <p className="text-white text-base ">
                             © 2023 – Kraut9 – All Rights Reserved
                         </p>
                     </div>
-                    <div className="flex  md:space-x-[10px] justify-evenly mt-[55px] md:mt-0">
+                    <div className="hidden md-flex  md:space-x-[10px] justify-evenly ">
                     {/* <nav className="flex  items-center gap-5  "> */}
                         <a href="">
                             <img src="/svg/soundcloud.svg" alt="" />
@@ -149,14 +151,12 @@ export default function MintPage() {
                         </a>
                      {/* </nav> */}
                     </div>
-                    <div className="flex md:hidden py-7 ">
-                        <p className="text-white text-sm font-normal mx-auto">
-                            © 2023 – Kraut9 – All Rights Reserved
-                        </p>
-                    </div>
+                    
                 </div>
             </div>
             </div>
+                    
+                        <MintFooter />
         </div>
     )
 
