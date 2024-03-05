@@ -51,7 +51,7 @@ export default function Page() {
                 “All people are created equal.”
               </span>
             </p>
-            <p className=" text-sm font-normal text-primary/70 lg:w-[760px] md:w-[500px] w-[343px] text-center font-Inter   mt-5  md:max-lg:mt-1 px-4">
+            <p className=" text-sm font-normal text-primary/70 lg:w-[760px] md:w-[500px] w-[300px] text-center font-Inter   mt-5  md:max-lg:mt-1 ">
               The Temple of the Groovy Eye is a non-profit art and science-based
               religious institution registered in the Commonwealth of
               Pennsylvania, that relies on science to lead to fundamental truth
