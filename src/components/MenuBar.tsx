@@ -19,7 +19,7 @@ export default function MenuBar() {
 
   return (
     <>
-      <div className="xl:hidden">
+      <div className="lg:hidden">
         <img
           src="/images/menu-button.png"
           alt=""
@@ -53,7 +53,7 @@ export default function MenuBar() {
               <a href="#faq" className="block leading-[44px] ">
                 FAQ
               </a>
-              <a href="" className="block leading-[44px] ">
+              <a href="/ordained" className="block leading-[44px] ">
                 GET ORDAINED
               </a>
             </div>

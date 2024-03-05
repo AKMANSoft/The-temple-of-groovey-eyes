@@ -5,7 +5,7 @@ export const data = [
     {
         heading:'You get a beautiful piece of original NFT photographic art',
         content:(
-            <p>Created for the Temple of the Groovy Eye {' '} <b>by Mary Salen</b> {" "}, an American woman artist, which you may display proudly, gift, collect, trade, and print for personal use (commercial use prohibited). You also receive a single-use “Membership” NFT, which you may use, gift, or trade. Once exercised, the Membership NFT will be burned.  </p>
+            <p>Created for the Temple of the Groovy Eye {' '} <b className="font-bold">by Mary Salen</b> {" "}, an American woman artist, which you may display proudly, gift, collect, trade, and print for personal use (commercial use prohibited). You also receive a single-use “Membership” NFT, which you may use, gift, or trade. Once exercised, the Membership NFT will be burned.  </p>
         )
     },
     {
@@ -15,7 +15,7 @@ export const data = [
     {
         heading:'A very groovy instant side-hustle – or main hustle!',
         content:(
-            <p>This is not only fun, and an opportunity to speak out on behalf of love and equality, but an{' '} <b>instant money-maker! </b>{' '} The Temple will maintain a directory of ordained persons (with your consent) where people who want a Groovy Eye wedding, or other life-event ceremony, can find you </p>)
+            <p>This is not only fun, and an opportunity to speak out on behalf of love and equality, but an{' '} <b className="font-bold">instant money-maker! </b>{' '} The Temple will maintain a directory of ordained persons (with your consent) where people who want a Groovy Eye wedding, or other life-event ceremony, can find you </p>)
     },
     {
         heading:'You get a beautiful piece of original NFT photographic art',
@@ -63,19 +63,18 @@ export default function WhatYouGet() {
             </h2>
             <p className="text-pink text-[26px] lg:text-[30px] leading-[100%] uppercase font-normal xs:w-full px-2 lg:w-[560px] text-center mt-2.5">A lot! The purchase of an NFT gets you a lifetime membership!  Plus:</p>
             {/* <div className="flex flex-col gap-[30px] mt-[30px]"></div> */}
-    {data.map((data,index)=>(
-       <div key={index} className="w-full flex flex-col items-center  text-center gap-5 max-w-[810px] mt-7">
-            <p className="bg-secondary  text-sm lg:text-xl rounded-[40px] lg:rounded-[60px] max-w-[800px] w-full text-primary h-auto lg:h-[65px] flex items-center justify-center px-8 ">
-                {data.heading}
-            </p>
-            <p className="text-sm font-Inter text-white mb-5">
-                {data.content}
-            </p>
-        </div> 
+            {data.map((data,index)=>(
+                <div key={index} className="w-full flex flex-col items-center  text-center gap-5 max-w-[810px] mt-7">
+                    <p className="bg-secondary  text-sm lg:text-xl rounded-[40px] lg:rounded-[60px] max-w-[800px] w-full text-primary h-auto lg:h-[65px] flex items-center justify-center px-8 ">
+                        {data.heading}
+                    </p>
+                    <p className="text-sm font-Inter text-white mb-5">
+                        {data.content}
+                    </p>
+                </div> 
 
-    ))}
-    {/* <button className='btn rounded-3xl bg-pink text-white text-center px-[30px] py-[14px]'>JOIN WHITELIST</button> */}
-    </div>
+            ))}
+        </div>
     </div>
     
     </>

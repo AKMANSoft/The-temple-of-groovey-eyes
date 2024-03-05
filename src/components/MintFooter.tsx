@@ -4,7 +4,7 @@ export default function MintFooter() {
   return (
     <>
       <footer className="flex flex-col items-center justify-center bg-primary   -translate-y-1/2 pb-[106px] font-graphik">
-        <a href="" className="bg-white rounded-full mt-[-20%]">
+        <a href="" className="bg-white rounded-full mt-[-20%] md:mt-[-10%]">
           <img
             src="/images/logo.svg"
             alt=""

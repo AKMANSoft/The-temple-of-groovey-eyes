@@ -20,19 +20,19 @@ export default function Header() {
             className="w-[60px] h-auto lg:w-[120px] lg:h-[116px]"
           />
         </Link>
-        <div className="text-white text-base font-normal xl:flex justify-between gap-[50px]  hidden">
+        <div className="text-white text-base font-normal lg:flex justify-between gap-[50px] hidden">
           <Link to="/" className={activeLink === 'home' ? 'text-secondary' : 'text-white'}
             onClick={() => handleSetActiveLink('home')} > Home </Link>
-          <Link to="#roadmap" className={activeLink === 'roadmap' ? 'text-secondary' : 'text-white'}
-            onClick={() => handleSetActiveLink('roadmap')}>Roadmap </Link>
+          <a href="#roadmap" className={activeLink === 'roadmap' ? 'text-secondary' : 'text-white'}
+            onClick={() => handleSetActiveLink('roadmap')}>Roadmap </a>
           <Link to="" className={activeLink === 'shop' ? 'text-secondary' : 'text-white'}
             onClick={() => handleSetActiveLink('shop')}>Shop</Link>
-          <Link to="#faq" className={activeLink === 'faq' ? 'text-secondary' : 'text-white'}
-            onClick={() => handleSetActiveLink('faq')}>FAQ</Link>
+          <a href="#faq" className={activeLink === 'faq' ? 'text-secondary' : 'text-white'}
+            onClick={() => handleSetActiveLink('faq')}>FAQ</a>
           <Link to="/ordained" className={activeLink === 'ordained' ? 'text-secondary' : 'text-white'}
             onClick={() => handleSetActiveLink('ordained')}>GET ORDAINED</Link>
         </div>
-        <button className="text-lg font-normal text-primary bg-white px-[30px] py-[14px] uppercase rounded-[40px] xl:block hidden leading-[100%] h-[53px]">
+        <button className="text-lg font-normal text-primary bg-white px-[30px] py-[14px] uppercase rounded-[40px] lg:block hidden leading-[100%] h-[53px]">
           <Link to='/mint'>
           Join Whitelist
           </Link>

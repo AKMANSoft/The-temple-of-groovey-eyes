@@ -88,7 +88,7 @@ export default function MintPage() {
                                 </div>
                                 <div className="space-y-[14px]">
                                     <div>
-                                        <p className="text-base text-mintColor mt-[17px]">
+                                        <p className="text-base text-mintColor mt-[17px] font-semibold">
                                             How many NFT’s to mint?
                                         </p>
                                     </div>
@@ -121,18 +121,18 @@ export default function MintPage() {
                 </div>
             
             <div className="relative pt-[117px]">
-                <div className="hidden md:flex items-center justify-center absolute  left-1/2 -translate-x-1/2 -translate-y-1/2 mt-[100px] ">
+                <div className="hidden lg:flex items-center justify-center absolute  left-1/2 -translate-x-1/2 -translate-y-1/2 mt-[100px] ">
                     <a href="/">
                         <img src="/images/logo.svg" alt="" className='w-[160px] md:w-[198px]' />
                     </a>
                 </div>
-                <div className="md:flex items-center py-40 justify-around mx-16 max-w-screen-xl xl:mx-auto">
-                    <div className="md:flex hidden">
+                <div className="md:flex items-center py-40 justify-between mx-auto lg:w-[846px]">
+                    <div className="lg:flex hidden">
                         <p className="text-white text-base ">
                             © 2023 – Kraut9 – All Rights Reserved
                         </p>
                     </div>
-                    <div className="hidden md:flex  md:space-x-[10px] justify-evenly ">
+                    <div className="hidden lg:flex  md:space-x-[10px] justify-evenly ">
                     {/* <nav className="flex  items-center gap-5  "> */}
                         <a href="">
                             <img src="/svg/soundcloud.svg" alt="" />
@@ -155,7 +155,7 @@ export default function MintPage() {
                 </div>
             </div>
             </div>
-             <div className="md:hidden">
+             <div className="lg:hidden">
                      
             <MintFooter />
             </div>  

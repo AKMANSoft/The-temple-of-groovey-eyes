@@ -55,7 +55,7 @@ export default {
       },
       fontFamily: {
         Inter: "Inter",
-        graphik:'Graphik',
+        graphik:'Graphik Web Regular Regular',
         spicyRice:"Spicy Rice"
       },
     },

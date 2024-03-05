@@ -11,10 +11,10 @@ export default function GetOrdained() {
     <>
       <div className="bg-primary ">
         <Header />
-        <div className="px-4">
+        <div className="px-4 ">
           <div
             className={cn(
-              "flex items-center justify-center flex-col w-full h-auto  banner-bg px-4",
+              "flex items-center justify-center flex-col w-full h-auto  banner-bg ",
               " md:px-[16px] lg:px-[11%] xl:px-[15%] py-[11%] "
             )}
           >
@@ -22,7 +22,7 @@ export default function GetOrdained() {
               Ordination and other cool stuff
             </p>
 
-            <div className=" text-center mb-[30%] md:mb-[30%] xl:mb-[0%] w-[300px] sm:w-[500px] md:w-[600px] lg:w-[760px] font-Inter text-[14px]">
+            <div className=" text-center mb-[30%] md:mb-[30%] xl:mb-[0%] w-full sm:w-[500px] md:w-[550px] lg:w-[760px] font-Inter text-[14px]">
               <p className="mt-5 lg:mt-10 text-white">
                 <span className="text-white font-bold ">
                   ALL memberships come with the opportunity to be ordained!{" "}
@@ -50,7 +50,7 @@ export default function GetOrdained() {
                 officiate life ceremonies, such as child-welcoming,
                 hand-fastings, funerals and memorial services, but most
                 importantly, commitment ceremonies, including legally binding
-marriages in all 50 states and anywhere in the world local
+                marriages in all 50 states and anywhere in the world local
                 jurisdictions allow.
               </p>
               <br />
@@ -79,7 +79,7 @@ marriages in all 50 states and anywhere in the world local
         </div>
 
         <div className="grid-section-bg h-auto ">
-          <div className="mt-[-200px] h-[290px] bg-primary mb-[100px]">
+          <div className="mt-[-220px] h-[260px] bg-primary mb-[100px]">
           <Slider />
           </div>
           <div className="mt-[200px] md:mt-[200px] lg:mt-[340px]">
@@ -90,7 +90,7 @@ marriages in all 50 states and anywhere in the world local
               *Embedded google form view*
             </p>
           </div>
-        <div className="footer-bg py-[132px] lg:pt-[300px] w-full">
+        <div className="footer-bg pb-[132px] lg:pt-[300px] w-full">
           <Footer />
         </div>
         </div>
