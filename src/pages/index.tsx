@@ -269,7 +269,7 @@ export default function Page() {
                 nature of our time spent on Earth dedicated to action in pursuit
                 of equality.
               </p> */}
-               <p className="text-[16px] font-normal text-white lg:text-base font-Inter">
+               <p className="text-[16px] font-normal text-white lg:text-base font-Inter px-5 md:px-0">
           <span className="font-Inter">
           
           {/* Members are also eligible to submit art and writing for consideration

@@ -209,7 +209,7 @@ export default function FAQsSection() {
           <AccordionTrigger className="font-normal data-[state=open]:font-bold">
             <span className="w-full text-start">{faq.heading}</span>
           </AccordionTrigger>
-          <AccordionContent className="">{faq.content}</AccordionContent>
+          <AccordionContent className="text-xs">{faq.content}</AccordionContent>
         </AccordionItem>
       ))}
     </Accordion>
