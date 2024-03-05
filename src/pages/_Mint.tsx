@@ -35,9 +35,9 @@ export default function MintPage() {
     };
     return (
         <div>
-            <div className="pillar-of-temple-section bg-cover bg-no-repeat flex flex-col space-y-2.5 h-auto font-graphik">
+            <div className="pillar-of-temple-section bg-cover bg-no-repeat flex flex-col lg:space-y-2.5 h-auto font-graphik">
                 {/* main header section with logo image and button*/}
-                <div className="flex items-center justify-around ">
+                <div className="flex items-center justify-between lg:justify-around mt-2.5 lg:mt-0 mx-4">
                     <div>
                         <a href="/">
                             <img src="/images/logo.svg" className="md:w-[118px] md:h-[115px] w-[60px] h-[58px]" />
@@ -61,7 +61,7 @@ export default function MintPage() {
                                 <img src="/images/piller-of-beginning.jpg" alt=""  className="rounded-[20px] object-cover object-center w-[418px] h-[196px] lg:h-[285px]" />
                             </div>
                             {/* status and price div*/}
-                            <div className="lg:w-1/2 flex flex-col justify-between mx-4  md:space-y-0 space-y-2">
+                            <div className="lg:w-1/2 flex flex-col justify-between mx-4  ">
                                 <div className="flex justify-between text-xs font-semibold mt-5 lg:mt-0">
                                     <p className="text-mintColor">
                                         STATUS
@@ -70,7 +70,7 @@ export default function MintPage() {
                                         STARTING IN 12 DAYS
                                     </p>
                                 </div>
-                                <div className="flex  justify-between text-xs font-semibold text-primary">
+                                <div className="flex  justify-between text-xs font-semibold text-primary ">
                                     <p className="text-mintColor mt-2.5">
                                         PRICE
                                     </p>
