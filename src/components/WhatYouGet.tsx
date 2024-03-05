@@ -68,7 +68,7 @@ export default function WhatYouGet() {
             <p className="bg-secondary  text-sm lg:text-xl rounded-[40px] lg:rounded-[60px] max-w-[800px] w-full text-primary h-auto lg:h-[65px] flex items-center justify-center px-8 ">
                 {data.heading}
             </p>
-            <p className="text-sm font-Inter text-white">
+            <p className="text-sm font-Inter text-white mb-5">
                 {data.content}
             </p>
         </div> 
