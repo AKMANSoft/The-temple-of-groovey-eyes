@@ -3,7 +3,7 @@ import MenuBar from "./MenuBar";
 import { Link } from "react-router-dom";
 
 export default function Header() {
-  const [activeLink , setActiveLink] =useState('ordained');
+  const [activeLink , setActiveLink] =useState('home');
 
   const handleSetActiveLink = (a:string) => {
     setActiveLink(a);

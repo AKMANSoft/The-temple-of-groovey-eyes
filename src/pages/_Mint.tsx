@@ -58,7 +58,7 @@ export default function MintPage() {
                         </div>
                         <div className="lg:flex  gap-x-5 lg:w-[850px] px-7 mt-[30px]">
                             <div>
-                                <img src="/images/piller-of-beginning.jpg" alt=""  className="rounded-[20px] object-cover object-center w-[418px] h-[270px]" />
+                                <img src="/images/piller-of-beginning.jpg" alt=""  className="rounded-[20px] object-cover object-center w-[418px] h-[285px]" />
                             </div>
                             {/* status and price div*/}
                             <div className="lg:w-1/2 flex flex-col justify-between mx-4  md:space-y-0 space-y-2">
