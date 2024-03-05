@@ -42,9 +42,9 @@ export default function MenuBar() {
               </div>
             </div>
             <div className="text-white text-[32px] font-normal space-y-[20px] w-full mt-[30px]">
-              <a href="/" className="block leading-[44px] ">
+              <Link to="/" className="block leading-[44px] ">
                 Home
-              </a>
+              </Link>
               <a href="#roadmap" className="block leading-[44px] ">
                 Roadmap
               </a>
@@ -54,9 +54,9 @@ export default function MenuBar() {
               <a href="#faq" className="block leading-[44px] ">
                 FAQ
               </a>
-              <a href="/ordained" className="block leading-[44px] ">
+              <Link to="/ordained" className="block leading-[44px] ">
                 GET ORDAINED
-              </a>
+              </Link>
             </div>
             <div className="flex w-full mt-[43px]">
               <PrimaryButton className="bg-white text-primary w-full text-2xl px-[30px] py-5 text-center">
