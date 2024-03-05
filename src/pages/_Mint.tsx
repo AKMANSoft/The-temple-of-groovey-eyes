@@ -1,5 +1,5 @@
 // import { PrimaryButton, SecondaryButton } from "../components/Buttons";
-import Footer from '@/components/Footer';
+// import Footer from '@/components/Footer';
 import MintFooter from '@/components/MintFooter';
 import { useState } from 'react';
 
