@@ -335,7 +335,7 @@ export default function Page() {
           </div>
         </div>
       </motion.section>
-      <motion.div className="flex flex-col items-center footer-bg -mt-[109px] md:-mt-[232px] h-[540px] md:h-[783px] pt-[189px] md:pt-[350px]">
+      <motion.div className="flex flex-col items-center footer-bg -mt-[109px] md:-mt-[232px] h-[540px] md:h-[793px] pt-[189px] md:pt-[350px]">
         <Footer />
       </motion.div>
     </div>
