@@ -8,7 +8,7 @@ import { useState } from 'react';
 
 export default function MintPage() {
     const [nftCount, setNftCount] = useState(1);
-    const [remainingCount, setRemainingCount] = useState(0);
+    const [remainingCount, setRemainingCount] = useState(1000);
 
     const handleIncrement = () => {
         if (nftCount < remainingCount) {
@@ -57,11 +57,12 @@ export default function MintPage() {
                             </h3>
                         </div>
                         <div className="lg:flex  gap-x-5 lg:w-[850px] px-[25px] mt-2.5 lg:mt-[30px]">
-                            <div>
-                                <img src="/images/piller-of-beginning.jpg" alt=""  className="rounded-[20px] object-cover object-center w-[418px] h-[196px] lg:h-[285px]" />
+                            <div className=' lg:w-[418px] lg:h-[270px] rounded-[10px] lg:rounded-[30px]'>
+                                <img src="/images/piller-of-beginning.jpg" alt=""  className="hidden lg:block lg:rounded-[30px] object-cover object-center lg:w-[418px] lg:h-[270px]" />
+                                <img src="/images/piller-mint-mobile.png" alt=""  className="rounded-[10px] lg:hidden object-cover object-center w-[285px] h-[196px] " />
                             </div>
                             {/* status and price div*/}
-                            <div className="lg:w-1/2 flex flex-col justify-between mx-4  ">
+                            <div className="lg:w-[314px] flex flex-col justify-between mx-4  ">
                                 <div className="flex justify-between text-xs font-semibold mt-5 lg:mt-0">
                                     <p className="text-mintColor">
                                         STATUS
@@ -99,7 +100,7 @@ export default function MintPage() {
                                             <path d="M2 2H14" stroke="#0101FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                                             </svg>
                                         </button>
-                                        <p className="text-2xl  font-inter text-primary" onChange={handleCountChange}>
+                                        <p className="text-2xl  font-graphik text-primary" onChange={handleCountChange}>
                                             {nftCount}
                                         </p>
                                         <button className="absolute right-4 top-1/2 -translate-y-1/2" onClick={handleIncrement} disabled={nftCount >= remainingCount}>
@@ -109,7 +110,7 @@ export default function MintPage() {
                                         </button>
                                     </div>
                                     <div>
-                                        <button className="bg-white rounded-3xl text-primary  px-[30px] w-full md:px-[132px] py-3 font-spicyRice text-lg ">
+                                        <button className="bg-white rounded-3xl text-primary w-full md:w-auto px-[30px] md:px-[117px] py-3 font-spicyRice text-lg ">
                                             MINT NOW
                                         </button>
                                         
