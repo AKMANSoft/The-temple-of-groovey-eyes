@@ -8,7 +8,7 @@ import { useState } from 'react';
 
 export default function MintPage() {
     const [nftCount, setNftCount] = useState(1);
-    const [remainingCount, setRemainingCount] = useState(1000);
+    const [remainingCount, setRemainingCount] = useState(1001);
 
     const handleIncrement = () => {
         if (nftCount < remainingCount) {
