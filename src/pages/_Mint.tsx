@@ -81,7 +81,7 @@ export default function MintPage() {
                                 </div>
                                 <div className="space-y-2 md:space-y-0 ">
                                     <p className="text-primary text-base font-semibold input-for-proggressbar mt-[22px]">
-                                        {remainingCount - nftCount} Remaining
+                                        {(remainingCount - nftCount).toLocaleString()} Remaining
                                     </p>
                                     <div className="bg-gray h-3 rounded-full">
                                         <div className="w-[10%] h-full rounded-full bg-primary" style={{ width: calculateProgressBarWidth() }}></div>
