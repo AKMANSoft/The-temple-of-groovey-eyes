@@ -34,7 +34,7 @@ export default function Header() {
           <Link to="/ordained" className={activeLink === '/ordained' ? 'text-secondary' : 'text-white'}
             >GET ORDAINED</Link>
         </div>
-        <button className="text-lg font-normal text-primary bg-secondary px-[30px] py-[14px] uppercase rounded-[40px] lg:block hidden leading-[100%] h-[53px]">
+        <button className="text-lg font-normal text-primary bg-white px-[30px] py-[14px] uppercase rounded-[40px] lg:block hidden leading-[100%] h-[53px]">
           <Link to='/mint'>
           Join Whitelist
           </Link>
