@@ -37,7 +37,7 @@ export default function MintPage() {
         <div>
             <div className="pillar-of-temple-section bg-cover bg-no-repeat flex flex-col  h-auto font-graphik">
                 {/* main header section with logo image and button*/}
-                <div className="flex items-center justify-between   mt-2.5 lg:mt-0 mx-4 md:mx-auto md:w-[468px] lg:w-[846px] w-auto">
+                <div className="flex items-center justify-between   mt-2.5 lg:mt-0 mx-4 md:mx-auto md:w-[468px] lg:w-[810px] w-auto">
                     <div>
                         <a href="/">
                             <img src="/images/logo.svg" className="md:w-[118px] md:h-[115px] w-[60px] h-[58px]" />
