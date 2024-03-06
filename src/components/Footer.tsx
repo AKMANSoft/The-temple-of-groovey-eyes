@@ -8,7 +8,7 @@ export default function Footer() {
           <img
             src="/images/logo.svg"
             alt=""
-            className="w-[160px] h-[155px] md:h-[157px]"
+            className="w-[160px] h-[155px] md:h-[161px]"
           />
         </a>
         <a href="" className="mt-[46px] md:mt-[30px]">
