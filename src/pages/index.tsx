@@ -24,8 +24,8 @@ export default function Page() {
         <div className="-mt-[22%] md:-mt-[6%] lg:mt-5 xl:mt-1 2xl:-mt-2">
           <AnimatedText />
         </div>
-        <div className="mt-[30px] xl:mt-[111px]">
-          <button className="text-sm md:text-lg font-normal text-secondary bg-primary py-[14px] px-[30px] md:px-10 md:py-5 uppercase rounded-[40px] mt-10 md:mt-[140px] lg:mt-[111px] ">
+        <div className="mt-[30px] xl:mt-[230px]">
+          <button className="text-sm md:text-lg font-normal text-secondary bg-primary py-[14px] px-[30px] md:px-10 md:py-5 uppercase rounded-[40px] mt-10 md:mt-[140px] lg:mt-[148px] ">
             Get Ordained Today
           </button>
         </div>
@@ -335,7 +335,7 @@ export default function Page() {
           </div>
         </div>
       </motion.section>
-      <motion.div className="flex flex-col items-center footer-bg -mt-[109px] md:-mt-[232px] h-[540px] md:h-[792px] pt-[189px] md:pt-[350px]">
+      <motion.div className="flex flex-col items-center footer-bg -mt-[109px] md:-mt-[232px] h-[540px] md:h-[783px] pt-[189px] md:pt-[350px]">
         <Footer />
       </motion.div>
     </div>
