@@ -53,7 +53,7 @@ export default function MintPage() {
                     <div className="flex flex-col bg-secondary lg:w-[846px] items-center justify-center lg:rounded-[40px] rounded-[20px]  pt-10  mx-4 md:pb-10 pb-[47px]">
                         <div>
                             <h3 className="md:text-[40px] text-2xl font-extrabold text-primary font-spicyRice">
-                                Mint Your NFT
+                                MINT YOUR NFT
                             </h3>
                         </div>
                         <div className="lg:flex  gap-x-5 lg:w-[850px] px-[25px] mt-2.5 lg:mt-[30px]">

@@ -42,7 +42,7 @@ export default function Page() {
             alt=""
             className="absolute top-2 w-[calc(100vw_-_42px)] -translate-x-1/2 left-1/2 -z-10"
           />
-          <div className=" flex flex-col items-center text-center justify-center rounded-[310px] bg-secondary max-w-[1000px] w-full h-auto xl:p-16 xl:pt-[80px] xl:pb-[74px] p-5 pt-[60px] pb-[88px] md:max-lg:p-5">
+          <div className=" flex flex-col items-center text-center justify-center rounded-[310px] bg-secondary max-w-[1000px] w-[342px] mx-auto h-auto xl:p-16 xl:pt-[80px] xl:pb-[74px] pt-[60px] pb-[88px] md:max-lg:p-5">
             <p className=" flex flex-col items-center justify-center text-primary font-normal uppercase w-[201px] md:w-full  ">
               <span className="text-base xl:text-[30px] ">
                 Groovy Eyes hold this truth to be self-evident:
@@ -86,7 +86,7 @@ export default function Page() {
       >
         <div
           className={cn(
-            "flex flex-col items-center text-center justify-center rounded-[310px] bg-secondary w-full h-full",
+            "flex flex-col items-center text-center justify-center rounded-[310px] bg-secondary w-[342px] md:w-full h-full",
             "xl:p-16 xl:pt-[80px] xl:pb-[74px] p-5 pt-[60px] pb-[88px] md:max-lg:p-5"
           )}
         >
@@ -99,7 +99,7 @@ export default function Page() {
               “All people are created equal.”
             </span>
           </h2>
-          <p className="text-sm font-normal leading-[23px] text-primary/70 lg:w-[760px] md:w-[500px] w-[343px] text-center font-Inter  mt-5  md:max-lg:mt-1">
+          <p className="text-sm font-normal leading-[23px] text-primary/70 lg:w-[760px] md:w-[500px] w-[300px] text-center font-Inter  mt-5  md:max-lg:mt-1">
             The Temple of the Groovy Eye is a non-profit art and science-based
             religious institution registered in the Commonwealth of
             Pennsylvania, that relies on science to lead to fundamental truth
@@ -238,7 +238,7 @@ export default function Page() {
 
         <div className="w-full px-4 lg:px-0">
           <div
-            className="flex flex-col items-center pb-[83px] md:pb-[80px] pt-[60px] bg-black/60 max-w-[1000px] mx-auto w-full backdrop-blur-[10px] rounded-[30px] lg:rounded-[80px] "
+            className="flex flex-col items-center pb-[83px] md:pb-[80px] pt-[60px] bg-black/60 max-w-[1000px] mx-auto w-full backdrop-blur-[10px] rounded-[30px] lg:rounded-[80px] mt-[60px]"
             id="roadmap"
           >
             <h2 className="text-pink text-[26px] lg:text-[60px] leading-[100%] uppercase font-normal">
