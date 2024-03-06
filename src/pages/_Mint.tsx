@@ -49,7 +49,7 @@ export default function MintPage() {
                         </button>
                     </div>
                 </div>
-                <div className="flex items-center justify-center pt-[30px] lg:pt-0 ">
+                <div className="flex items-center justify-center pt-[30px] lg:pt-0 lg:mt-2.5 ">
                     <div className="flex flex-col bg-secondary lg:w-[846px] items-center justify-center lg:rounded-[40px] rounded-[20px]  pt-10  mx-4 md:pb-10 pb-[47px]">
                         <div>
                             <h3 className="md:text-[40px] text-2xl font-extrabold text-primary font-spicyRice">
