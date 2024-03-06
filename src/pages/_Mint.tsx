@@ -35,7 +35,7 @@ export default function MintPage() {
     };
     return (
         <div>
-            <div className="pillar-of-temple-section bg-cover bg-no-repeat flex flex-col lg:space-y-2.5 h-auto font-graphik">
+            <div className="pillar-of-temple-section bg-cover bg-no-repeat flex flex-col  h-auto font-graphik">
                 {/* main header section with logo image and button*/}
                 <div className="flex items-center justify-between   mt-2.5 lg:mt-0 mx-4 md:mx-auto md:w-[468px] lg:w-[846px] w-auto">
                     <div>
@@ -121,19 +121,19 @@ export default function MintPage() {
                     </div>
                 </div>
             
-            <div className="relative lg:pt-[117px]">
+            <div className="relative lg:pt-[127px]">
                 <div className="hidden lg:flex items-center justify-center absolute  left-1/2 -translate-x-1/2 -translate-y-1/2 mt-[100px] ">
                     <a href="/">
                         <img src="/images/logo.svg" alt="" className='w-[160px] md:w-[198px]' />
                     </a>
                 </div>
-                <div className="md:flex items-center py-[120px] lg:py-40 justify-between mx-auto lg:w-[846px]">
-                    <div className="lg:flex hidden">
+                <div className="md:flex items-center py-[120px] lg:pt-40 lg:pb-12 justify-between mx-auto lg:w-[846px]">
+                    <div className="lg:flex hidden lg:mt-5">
                         <p className="text-white text-base ">
                             © 2023 – Kraut9 – All Rights Reserved
                         </p>
                     </div>
-                    <div className="hidden lg:flex  md:space-x-[10px] justify-evenly ">
+                    <div className="hidden lg:flex  md:space-x-[10px] justify-evenly mt-5">
                     {/* <nav className="flex  items-center gap-5  "> */}
                         <a href="">
                             <img src="/svg/soundcloud.svg" alt="" />
